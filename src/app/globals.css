@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Primary */
+  --color-navy: #0A2240;
+  --color-sky-blue: #6CB4D9;
+  --color-white: #FFFFFF;
+
+  /* Secondary */
+  --color-teal: #0B7A8A;
+  --color-teal-hover: #096574;
+  --color-ice-white: #F7F9FC;
+  --color-soft-blue: #D6E8F2;
+
+  /* Neutrals */
+  --color-dark-gray: #3D4A5C;
+  --color-mid-gray: #6B7A8D;
+  --color-warm-gray: #E8ECF1;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --border-radius: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-dark-gray);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Click-to-call phone links */
+a[href^="tel:"] {
+  color: var(--color-teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a[href^="tel:"]:hover {
+  color: var(--color-teal-hover);
+}
+
+/* Section alternating backgrounds */
+.section-white {
+  background-color: var(--color-white);
+}
+
+.section-ice {
+  background-color: var(--color-ice-white);
+}
+
+/* Container */
+.container-site {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-site {
+    padding: 0 2rem;
+  }
+}
