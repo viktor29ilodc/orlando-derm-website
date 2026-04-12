@@ -29,51 +29,59 @@ export const metadata = {
 
 function NavBar() {
   return (
-    <header className="bg-white border-b border-warm-gray sticky top-0 z-50">
-      {/* Top bar with phone numbers — hidden on mobile */}
-      <div className="hidden md:block bg-navy text-white text-sm">
-        <div className="container-site flex justify-between items-center py-1.5">
-          <div className="flex gap-6">
-            {LOCATIONS.map(loc => (
-              <a key={loc.id} href={`tel:${loc.phoneTel}`} className="hover:text-sky-accent transition-colors">
-                {loc.name}: {loc.phone}
-              </a>
-            ))}
+    <header className="sticky top-0 z-50">
+      {/* Top bar — logo + action buttons */}
+      <div className="bg-navy">
+        <div className="container-site flex items-center justify-between py-4">
+          {/* Logo — replace div with <img src="/images/logo-white.png" alt="Orlando Dermatology Center" /> once uploaded */}
+          <Link href="/" className="flex-shrink-0">
+            <div className="text-white">
+              <span className="font-bold text-xl leading-tight tracking-tight block">ORLANDO</span>
+              <span className="font-bold text-2xl leading-tight tracking-tight block">ÐERMATOLOGY</span>
+              <span className="font-bold text-lg leading-tight tracking-tight block">CENTER</span>
+            </div>
+          </Link>
+
+          {/* Action buttons */}
+          <div className="flex items-center gap-3">
+            <a href={`tel:${LOCATIONS[0].phoneTel}`} className="hidden sm:inline-flex border border-white text-white hover:bg-white hover:text-navy px-6 py-2.5 rounded-card text-sm font-semibold transition-colors uppercase tracking-wide">
+              Call Us
+            </a>
+            <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-6 py-2.5 rounded-card text-sm font-semibold transition-colors uppercase tracking-wide">
+              Book Online
+            </a>
+            <a href="https://www.orlandodermatologycenter.com/booking" className="hidden md:inline-flex border border-white text-white hover:bg-white hover:text-navy px-6 py-2.5 rounded-card text-sm font-semibold transition-colors uppercase tracking-wide">
+              Make a Payment
+            </a>
           </div>
-          <span className="text-sky-accent text-xs">{PRACTICE.hours}</span>
         </div>
       </div>
 
-      {/* Main nav */}
-      <nav className="container-site flex items-center justify-between py-3">
-        <Link href="/" className="flex-shrink-0">
-          {/* Logo — replace with actual image once uploaded to /public */}
-          <div className="flex flex-col">
-            <span className="text-navy font-bold text-lg leading-tight tracking-tight">ORLANDO</span>
-            <span className="text-navy font-bold text-xl leading-tight tracking-tight">DERMATOLOGY</span>
-            <span className="text-navy font-bold text-sm leading-tight tracking-tight">CENTER</span>
+      {/* Navigation tabs */}
+      <nav className="bg-white border-b border-warm-gray">
+        <div className="container-site">
+          <div className="flex items-center overflow-x-auto">
+            {[
+              { label: 'Home', href: '/' },
+              { label: 'Conditions', href: '/conditions' },
+              { label: 'Services', href: '/services' },
+              { label: 'Laser Treatments', href: '/services/laser-treatments' },
+              { label: 'New Patients', href: '/new-patients' },
+              { label: 'Patient Portal', href: 'https://patientportal.advancedmd.com/account/logon?lk=140478', external: true },
+              { label: 'Blog', href: '/blog' },
+              { label: 'Testimonials', href: '/testimonials' },
+              { label: 'Contact Us', href: '/contact' },
+            ].map(item => (
+              <a
+                key={item.label}
+                href={item.href}
+                {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                className="px-4 py-3.5 text-dark-gray hover:text-teal text-xs font-semibold uppercase tracking-widest whitespace-nowrap transition-colors border-b-2 border-transparent hover:border-teal"
+              >
+                {item.label}
+              </a>
+            ))}
           </div>
-        </Link>
-
-        {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center gap-6">
-          <Link href="/services" className="text-dark-gray hover:text-teal text-sm font-medium transition-colors">Services</Link>
-          <Link href="/conditions" className="text-dark-gray hover:text-teal text-sm font-medium transition-colors">Conditions</Link>
-          <Link href="/providers" className="text-dark-gray hover:text-teal text-sm font-medium transition-colors">Providers</Link>
-          <Link href="/locations" className="text-dark-gray hover:text-teal text-sm font-medium transition-colors">Locations</Link>
-          <Link href="/new-patients" className="text-dark-gray hover:text-teal text-sm font-medium transition-colors">New Patients</Link>
-          <Link href="/contact" className="text-dark-gray hover:text-teal text-sm font-medium transition-colors">Contact</Link>
-        </div>
-
-        <div className="flex items-center gap-3">
-          {/* Mobile call button */}
-          <a href={`tel:${LOCATIONS[0].phoneTel}`} className="lg:hidden bg-navy text-white px-4 py-2 rounded-card text-sm font-semibold">
-            Call Us
-          </a>
-          {/* Book button — will link to NexHealth or scheduling */}
-          <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-5 py-2.5 rounded-card text-sm font-semibold transition-colors">
-            Book Online
-          </a>
         </div>
       </nav>
     </header>
