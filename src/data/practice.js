@@ -83,6 +83,7 @@ export const PROVIDERS = [
     credentials: ['Board-Certified, American Board of Dermatology', 'Fellow, American Academy of Dermatology (FAAD)', 'American Society of Mohs Surgery'],
     education: 'National Medical University of Kyiv, Residency at University of Cincinnati',
     languages: ['English', 'Russian', 'Spanish', 'Hebrew'],
+    services: ['Mohs Surgery', 'Skin Cancer Surgery', 'Superficial Radiation Treatment', 'General Dermatology'],
     slug: 'vitaly-blatnoy-md',
   },
   {
@@ -110,10 +111,10 @@ export const PROVIDERS = [
     slug: 'stella-terenteva-aprn',
   },
   {
-    id: 'anam-jaffar-pa-c',
-    name: 'Anam Jaffar, PA-C',
+    id: 'joanna-kluger-wesley-pa',
+    name: 'Joanna Kluger-Wesley, PA',
     title: 'Dermatology Provider',
-    slug: 'anam-jaffar-pa-c',
+    slug: 'joanna-kluger-wesley-pa',
   },
   {
     id: 'amanda-hulce-aprn',
@@ -126,12 +127,6 @@ export const PROVIDERS = [
     name: 'Cassie de los Angeles, PA-C',
     title: 'Dermatology Provider',
     slug: 'cassie-de-los-angeles-pa-c',
-  },
-  {
-    id: 'dilan-ipek-aprn',
-    name: 'Dilan Ipek, APRN',
-    title: 'Dermatology Provider',
-    slug: 'dilan-ipek-aprn',
   },
 ];
 
