@@ -108,6 +108,13 @@ export function medicalProcedureSchema(service) {
       '@type': 'MedicalTherapy',
       name: service.name,
     },
+    // E-E-A-T: Medical content reviewed by board-certified physician
+    author: {
+      '@type': 'Physician',
+      name: 'Vitaly Blatnoy, MD',
+      url: `${PRACTICE.url}/providers/vitaly-blatnoy-md`,
+      qualification: 'Board-Certified Dermatologist, FAAD',
+    },
   };
 }
 
@@ -154,6 +161,11 @@ export function organizationSchema() {
     url: PRACTICE.url,
     logo: `${PRACTICE.url}/images/logo.png`,
     description: PRACTICE.description,
+    identifier: {
+      '@type': 'PropertyValue',
+      propertyID: 'NPI',
+      value: PRACTICE.npi,
+    },
     medicalSpecialty: ['Dermatology', 'Mohs Surgery'],
     isAcceptingNewPatients: true,
     sameAs: [
