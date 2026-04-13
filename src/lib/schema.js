@@ -28,6 +28,7 @@ export function localBusinessSchema(location) {
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Friday', opens: '08:00', closes: '14:00' },
     ],
     medicalSpecialty: 'Dermatology',
+    hasMap: location.mapUrl,
     parentOrganization: {
       '@type': 'MedicalOrganization',
       name: PRACTICE.name,
@@ -43,6 +44,7 @@ export function physicianSchema(provider) {
     '@type': 'Physician',
     name: provider.name,
     url: `${PRACTICE.url}/providers/${provider.slug}`,
+    image: `${PRACTICE.url}/images/providers/${provider.slug}.jpg`,
     medicalSpecialty: 'Dermatology',
     isAcceptingNewPatients: true,
     worksFor: {
@@ -65,6 +67,12 @@ export function physicianSchema(provider) {
     }),
     ...(provider.languages && {
       knowsLanguage: provider.languages,
+    }),
+    ...(provider.services && {
+      availableService: provider.services.map(s => ({
+        '@type': 'MedicalProcedure',
+        name: s,
+      })),
     }),
   };
 }
@@ -125,7 +133,7 @@ export function breadcrumbSchema(items) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: items.map((item, i) => ({
-      '@type': 'ListItemElement',
+      '@type': 'ListItem',
       position: i + 1,
       name: item.name,
       item: item.url ? `${PRACTICE.url}${item.url}` : undefined,
@@ -148,6 +156,14 @@ export function organizationSchema() {
     description: PRACTICE.description,
     medicalSpecialty: ['Dermatology', 'Mohs Surgery'],
     isAcceptingNewPatients: true,
+    sameAs: [
+      'https://www.facebook.com/orlandodermatology/',
+      'https://www.healthgrades.com/physician/dr-vitaly-blatnoy-xms8t',
+      'https://www.zocdoc.com/doctor/vitaly-blatnoy-md-56078',
+      'https://health.usnews.com/doctors/vitaly-blatnoy-202282',
+      'https://www.vitals.com/doctors/Dr_Vitaly_Blatnoy.html',
+      'https://doctor.webmd.com/doctor/vitaly-blatnoy-d292c295-d500-4f2e-b8e9-be490e3faff1-overview',
+    ],
     potentialAction: {
       '@type': 'ReserveAction',
       target: {
@@ -178,6 +194,15 @@ export function organizationSchema() {
       areaServed: 'Central Florida',
       availableLanguage: ['English', 'Spanish', 'Russian'],
     })),
+    areaServed: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: 28.6396,
+        longitude: -81.2084,
+      },
+      geoRadius: '50000',
+    },
   };
 }
 
