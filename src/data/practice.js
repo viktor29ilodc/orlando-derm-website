@@ -5,6 +5,9 @@ export const PRACTICE = {
   legalName: 'Dermatology and Skin Cancer Surgery Center LLC dba Orlando Dermatology Center',
   url: 'https://www.orlandodermatologycenter.com',
   bookingUrl: 'https://www.orlandodermatologycenter.com/book', // Replace with NexHealth URL once live
+  paymentUrl: 'https://www.orlandodermatologycenter.com/booking', // Payment portal
+  patientPortalUrl: 'https://patientportal.advancedmd.com/account/logon?lk=140478', // AdvancedMD patient portal
+  npi: '1174078281', // Group NPI (Type 2)
   description: 'Board-certified dermatologists providing medical, cosmetic, and surgical dermatology including Mohs surgery across 4 Central Florida locations.',
   hours: 'Mon-Thu 8am-4pm, Fri 8am-2pm',
   hoursStructured: {
@@ -90,12 +93,14 @@ export const PROVIDERS = [
     id: 'tim-nyckowski-do',
     name: 'Tim Nyckowski, DO',
     title: 'Dermatologist & Mohs Surgeon',
+    npi: '1003313735',
     slug: 'tim-nyckowski-do',
   },
   {
     id: 'mikhail-vaysberg-do',
     name: 'Mikhail Vaysberg, DO',
     title: 'Board Certified Facial Plastic and Reconstructive Surgeon',
+    npi: '1083639561',
     slug: 'mikhail-vaysberg-do',
   },
   {
