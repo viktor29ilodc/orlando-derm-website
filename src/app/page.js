@@ -127,20 +127,26 @@ export default function HomePage() {
           <p className="text-dark-gray mb-10 max-w-2xl">Board-certified physicians, surgeons, and advanced practice providers dedicated to your skin health.</p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
-            {PROVIDERS.map(provider => (
-              <Link
-                key={provider.id}
-                href={`/providers/${provider.slug}`}
-                className="bg-white border border-warm-gray rounded-card p-5 text-center hover:border-sky-accent transition-colors group"
-              >
-                {/* Placeholder for provider photo */}
-                <div className="w-20 h-20 bg-soft-blue rounded-full mx-auto mb-3" />
-                <h3 className="text-navy font-semibold text-sm group-hover:text-teal transition-colors">
-                  {provider.name}
-                </h3>
-                <p className="text-mid-gray text-xs mt-1">{provider.title}</p>
-              </Link>
-            ))}
+            {PROVIDERS.map(provider => {
+              const ext = provider.slug === 'joanna-kluger-wesley-pa' ? 'png' : 'jpg';
+              return (
+                <Link
+                  key={provider.id}
+                  href={`/providers/${provider.slug}`}
+                  className="bg-white border border-warm-gray rounded-card p-5 text-center hover:border-sky-accent transition-colors group"
+                >
+                  <img
+                    src={`/images/providers/${provider.slug}.${ext}`}
+                    alt={provider.name}
+                    className="w-24 h-28 object-cover object-top rounded-full mx-auto mb-3"
+                  />
+                  <h3 className="text-navy font-semibold text-sm group-hover:text-teal transition-colors">
+                    {provider.name}
+                  </h3>
+                  <p className="text-mid-gray text-xs mt-1">{provider.title}</p>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
