@@ -33,13 +33,9 @@ function NavBar() {
       {/* Top bar — logo + action buttons */}
       <div className="bg-navy">
         <div className="container-site flex items-center justify-between py-4">
-          {/* Logo — replace div with <img src="/images/logo-white.png" alt="Orlando Dermatology Center" /> once uploaded */}
+          {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="text-white">
-              <span className="font-bold text-xl leading-tight tracking-tight block">ORLANDO</span>
-              <span className="font-bold text-2xl leading-tight tracking-tight block">ÐERMATOLOGY</span>
-              <span className="font-bold text-lg leading-tight tracking-tight block">CENTER</span>
-            </div>
+            <img src="/images/logo-white.png" alt="Orlando Dermatology Center" className="h-14 md:h-16 w-auto" />
           </Link>
 
           {/* Action buttons */}
@@ -96,11 +92,7 @@ function Footer() {
           {/* Brand column */}
           <div>
             <div className="mb-4">
-              <span className="font-bold text-lg">ORLANDO</span>
-              <br />
-              <span className="font-bold text-xl">DERMATOLOGY</span>
-              <br />
-              <span className="font-bold text-sm text-sky-accent">CENTER</span>
+              <img src="/images/logo-white.png" alt="Orlando Dermatology Center" className="h-14 w-auto" />
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Board-certified dermatologists providing comprehensive medical, cosmetic, and surgical skin care across Central Florida.
