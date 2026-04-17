@@ -51,7 +51,7 @@ export default function HomePage() {
       <SchemaScript schema={organizationSchema()} />
       <SchemaScript schema={faqSchema(homeFaqs)} />
 
-      {/* ── HERO BANNER ── */}
+      {/* ── 1. HERO BANNER ── */}
       <section className="relative bg-navy overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/general/HeroBanner.png" alt="" className="w-full h-full object-cover opacity-30" />
@@ -74,7 +74,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── LOCATIONS BAR ── */}
+      {/* ── 2. LOCATIONS BAR ── */}
       <section className="bg-ice-white border-b border-warm-gray">
         <div className="container-site py-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -90,7 +90,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── ABOUT ── */}
+      {/* ── 3. ABOUT ── */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">About Orlando Dermatology Center</h2>
@@ -108,7 +108,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── AWARDS ── */}
+      {/* ── 4. AWARDS ── */}
       <section className="section-ice py-12">
         <div className="container-site">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
@@ -126,7 +126,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SERVICES GRID ── */}
+      {/* ── 5. SERVICES GRID ── */}
       <section className="bg-navy py-12 md:py-16">
         <div className="container-site">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-2">Services</h2>
@@ -158,7 +158,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CONDITIONS GRID ── */}
+      {/* ── 6. CONDITIONS GRID ── */}
       <section className="bg-navy py-12 md:py-16 border-t border-gray-700">
         <div className="container-site">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-2">Conditions</h2>
@@ -190,10 +190,45 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── PROVIDERS ── */}
+      {/* ── 7. AFFILIATIONS ── */}
+      <section className="section-white py-12">
+        <div className="container-site">
+          <h2 className="text-2xl font-bold text-navy text-center mb-2">Affiliations</h2>
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-8" />
+          <div className="flex flex-wrap justify-center gap-8 md:gap-14 items-center">
+            <img src="/images/general/affiliate-advent.png" alt="AdventHealth" className="h-14 md:h-20 w-auto object-contain" />
+            <img src="/images/general/affiliate-orlandohealth.png" alt="Orlando Health" className="h-14 md:h-20 w-auto object-contain" />
+            <img src="/images/general/affiliate-ucf.png" alt="UCF College of Medicine" className="h-14 md:h-20 w-auto object-contain" />
+            <a href="https://www.carecredit.com/go/346HSH/?dtc=DS7X&sitecode=CCCAPDS7X" target="_blank" rel="noopener noreferrer">
+              <img src="/images/general/carecredit-logo.png" alt="CareCredit" className="h-14 md:h-20 w-auto object-contain" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 8. OUR MISSION ── */}
+      <section className="section-ice py-12 md:py-16">
+        <div className="container-site max-w-4xl">
+          <div className="text-center mb-8">
+            <p className="text-mid-gray text-sm uppercase tracking-widest mb-2">OUR</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-navy">MISSION</h2>
+            <div className="w-16 h-0.5 bg-sky-accent mx-auto mt-4" />
+          </div>
+          <p className="text-dark-gray text-center text-lg leading-relaxed mb-8">
+            With a comprehensive and goal-driven approach, we at Orlando Dermatology Center are devoted to offering the residents of Central Florida the greatest quality skin care. Through specialized, individualized dermatological care, we want to improve well-being and inspire confidence.
+          </p>
+          <p className="text-dark-gray leading-relaxed">
+            <span className="font-bold text-navy">Dr. Vitaly Blatnoy</span> leads our team of highly qualified experts in this endeavor. One skin at a time, our goal is to improve lives. We strive to provide access to first-rate skin care to assure healthiness of the skin — a crucial component of overall wellness. We work hard to educate our patients so they can take a pro-active approach to their skin health. We are committed to understanding and treating a wide variety of dermatological disorders. In our effort to provide quality, we embrace innovation, constantly keeping up with dermatology advancements to offer the most recent therapies to our patients. We have empathy, compassion, and a steadfast dedication to meeting the needs of our patients, their families, and the larger community because of our faith-based culture. At the <span className="font-bold text-navy">Orlando Dermatology Center</span>, we are honored to support and guide each patient on their path to healthy skin because we firmly believe that it has the ability to impact lives.
+          </p>
+        </div>
+      </section>
+
+      {/* ── 9. PROVIDERS ── */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site">
-          <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">Our Providers</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">
+            Meet <span className="font-bold">Our Providers</span>
+          </h2>
           <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
             {PROVIDERS.map(provider => {
@@ -206,6 +241,7 @@ export default function HomePage() {
                     <h3 className="text-navy font-semibold text-sm group-hover:text-teal transition-colors">{provider.name}</h3>
                     <p className="text-mid-gray text-xs mt-1">{provider.title}</p>
                     {provider.role && <p className="text-teal text-xs font-semibold mt-1">{provider.role}</p>}
+                    <span className="text-teal text-xs font-semibold mt-2 inline-block">Learn more</span>
                   </div>
                 </Link>
               );
@@ -214,19 +250,85 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── AFFILIATIONS ── */}
-      <section className="section-ice py-10">
+      {/* ── 10. NEW PATIENTS ── */}
+      <section className="section-ice py-12">
         <div className="container-site">
-          <h2 className="text-lg font-semibold text-navy text-center mb-6">Hospital Affiliations</h2>
-          <div className="flex flex-wrap justify-center gap-10 md:gap-16 items-center">
-            <img src="/images/general/affiliate-advent.png" alt="AdventHealth" className="h-12 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/general/affiliate-orlandohealth.png" alt="Orlando Health" className="h-12 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/general/affiliate-ucf.png" alt="UCF College of Medicine" className="h-12 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+          <h2 className="text-2xl font-bold text-navy text-center mb-2">NEW PATIENTS</h2>
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="flex flex-col sm:flex-row justify-center gap-8 md:gap-16">
+            <Link href="/new-patients" className="text-center group">
+              <div className="w-20 h-20 bg-navy rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+              </div>
+              <h3 className="text-navy font-semibold text-base mb-1 group-hover:text-teal transition-colors">New Patient Forms</h3>
+              <span className="text-teal text-sm font-semibold">Fill & Sign</span>
+            </Link>
+            <Link href="/new-patients" className="text-center group">
+              <div className="w-20 h-20 bg-navy rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" /></svg>
+              </div>
+              <h3 className="text-navy font-semibold text-base mb-1 group-hover:text-teal transition-colors">Insurance</h3>
+              <span className="text-teal text-sm font-semibold">See More</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ── FAQ ── */}
+      {/* ── 11. FIND US — LOCATIONS WITH MAPS ── */}
+      <section className="section-white py-12 md:py-16">
+        <div className="container-site">
+          <h3 className="text-mid-gray text-sm uppercase tracking-widest text-center mb-1">FIND US</h3>
+          <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">OUR LOCATIONS</h2>
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {LOCATIONS.map(loc => (
+              <div key={loc.id} className="bg-white border border-warm-gray rounded-card overflow-hidden">
+                <div className="h-48 bg-warm-gray">
+                  <iframe
+                    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(loc.address + ' ' + loc.city + ' ' + loc.state + ' ' + loc.zip)}`}
+                    width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
+                    title={`Map to ${loc.name} office`}
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-navy font-bold text-lg mb-2">{loc.name}</h3>
+                  <p className="text-dark-gray text-sm mb-1">{loc.address}</p>
+                  <p className="text-dark-gray text-sm mb-3">{loc.city}, {loc.state} {loc.zip}</p>
+                  <div className="flex items-center gap-4">
+                    <a href={`tel:${loc.phoneTel}`} className="text-teal font-semibold text-base">{loc.phone}</a>
+                    <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-4 py-2 rounded-card text-sm font-semibold transition-colors">Book Online</a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 12. TESTIMONIALS PREVIEW ── */}
+      <section className="section-ice py-12 md:py-16">
+        <div className="container-site max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">What Our Patients Say</h2>
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-card p-6 border border-warm-gray">
+              <div className="text-sky-accent text-2xl mb-3">★★★★★</div>
+              <p className="text-dark-gray text-sm leading-relaxed italic mb-4">"Dr. Blatnoy and his entire team are outstanding. Professional, thorough, and genuinely caring. Best dermatology experience I've had in Central Florida."</p>
+              <p className="text-navy font-semibold text-sm">— Patient Review</p>
+            </div>
+            <div className="bg-white rounded-card p-6 border border-warm-gray">
+              <div className="text-sky-accent text-2xl mb-3">★★★★★</div>
+              <p className="text-dark-gray text-sm leading-relaxed italic mb-4">"The staff is amazing and the wait time is minimal. I had my skin cancer screening done quickly and efficiently. Highly recommend Orlando Dermatology Center."</p>
+              <p className="text-navy font-semibold text-sm">— Patient Review</p>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/testimonials" className="text-teal font-semibold hover:underline">Read More Testimonials →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 13. FAQ ── */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">Frequently Asked Questions</h2>
@@ -242,7 +344,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CTA BANNER ── */}
+      {/* ── 14. CTA BANNER ── */}
       <section className="bg-navy text-white py-12">
         <div className="container-site text-center">
           <h2 className="text-2xl font-bold mb-4">Ready to Schedule Your Visit?</h2>
