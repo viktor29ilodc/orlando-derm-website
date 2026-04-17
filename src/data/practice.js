@@ -149,6 +149,8 @@ export const SERVICES = [
   { id: 'laser-vein', name: 'Laser Vein Removal', category: 'cosmetic', slug: 'laser-vein-removal', shortDesc: 'Laser treatment for spider veins and leg veins.' },
   { id: 'chemical-peels', name: 'Chemical Peels', category: 'cosmetic', slug: 'chemical-peels', shortDesc: 'Professional-grade peels for skin renewal.' },
   { id: 'skin-care', name: 'Skin Care', category: 'cosmetic', slug: 'skin-care', shortDesc: 'Medical-grade skincare treatments and products.' },
+  { id: 'skin-tag-removal', name: 'Skin Tag Removal', category: 'medical', slug: 'skin-tag-removal', shortDesc: 'Quick, painless removal of skin tags.' },
+  { id: 'laser-treatments', name: 'Laser Treatments', category: 'cosmetic', slug: 'laser-treatments', shortDesc: 'Advanced laser technology for skin rejuvenation and correction.' },
 ];
 
 export const CONDITIONS = [
