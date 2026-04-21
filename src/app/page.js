@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { PRACTICE, LOCATIONS, PROVIDERS, SERVICES, CONDITIONS } from '@/data/practice';
 import { organizationSchema, SchemaScript, faqSchema } from '@/lib/schema';
 
@@ -52,24 +53,54 @@ export default function HomePage() {
       <SchemaScript schema={faqSchema(homeFaqs)} />
 
       {/* ── 1. HERO BANNER ── */}
-      <section className="relative bg-navy overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="/images/general/HeroBanner.png" alt="" className="w-full h-full object-cover opacity-30" />
-        </div>
-        <div className="relative container-site py-16 md:py-24">
-          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
-            ORLANDO<br />DERMATOLOGY<br />CENTER
-          </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl">
-            Dermatology & Mohs Surgery Practice located in Oviedo, Orlando, Lake Mary and Casselberry, FL
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <a href={PRACTICE.patientPortalUrl} target="_blank" rel="noopener noreferrer" className="bg-white text-navy px-5 py-2.5 rounded-card text-sm font-semibold hover:bg-gray-100 transition-colors">
-              Patient Portal
-            </a>
-            <a href={PRACTICE.paymentUrl} className="bg-white text-navy px-5 py-2.5 rounded-card text-sm font-semibold hover:bg-gray-100 transition-colors">
-              Make a Payment
-            </a>
+      <section className="relative isolate bg-navy overflow-hidden">
+        <div className="relative h-[72vh] min-h-[520px] max-h-[760px] w-full">
+          <Image
+            src="/images/hero/hero-derm-2560.jpg"
+            alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
+            fill
+            priority
+            sizes="100vw"
+            placeholder="blur"
+            blurDataURL="/images/hero/hero-derm-blur.jpg"
+            className="object-cover object-[35%_center] md:object-center"
+          />
+
+          {/* Readability gradient — dark at bottom-left where text sits, fading up and right */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-gradient-to-tr from-navy/85 via-navy/45 to-transparent"
+          />
+
+          {/* Content */}
+          <div className="relative z-10 flex h-full items-end">
+            <div className="container-site w-full pb-12 md:pb-20">
+              <div className="max-w-2xl">
+                <p className="mb-4 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-sky-accent">
+                  Central Florida Dermatology
+                </p>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-5">
+                  ORLANDO<br />DERMATOLOGY<br />CENTER
+                </h1>
+                <p className="text-base md:text-lg text-white/90 mb-8 max-w-xl leading-relaxed">
+                  Dermatology &amp; Mohs Surgery Practice located in Oviedo, Orlando, Lake Mary and Casselberry, FL
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  
+                    href="/book"
+                    className="bg-teal hover:bg-teal-hover text-white px-7 py-3 rounded-card text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
+                  >
+                    Book Appointment
+                  </a>
+                  
+                    href={`tel:${LOCATIONS[0].phoneTel}`}
+                    className="border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-7 py-3 rounded-card text-sm font-semibold transition-colors"
+                  >
+                    {LOCATIONS[0].phone}
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
