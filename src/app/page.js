@@ -327,7 +327,7 @@ export default function HomePage() {
                   <p className="text-dark-gray text-sm mb-3">{loc.city}, {loc.state} {loc.zip}</p>
                   <div className="flex items-center gap-4">
                     <a href={`tel:${loc.phoneTel}`} className="text-teal font-semibold text-base">{loc.phone}</a>
-                    <a <a   href="/book" className="bg-teal hover:bg-teal-hover text-white px-4 py-2 rounded-card text-sm font-semibold transition-colors">Book Online</a>
+                    <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-4 py-2 rounded-card text-sm font-semibold transition-colors">Book Online</a>
                   </div>
                 </div>
               </div>
@@ -381,12 +381,13 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold mb-4">Ready to Schedule Your Visit?</h2>
           <p className="text-gray-300 mb-6 max-w-lg mx-auto">Accepting new patients at all 4 locations. Book online or call today.</p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a <a   href="/book" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
-            <a <a   href={`tel:${LOCATIONS[0].phoneTel}`} className="border border-sky-accent text-sky-accent hover:bg-sky-accent hover:text-navy px-8 py-3 rounded-card font-semibold transition-colors">{LOCATIONS[0].phone}</a>
+            <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
+            <a href={`tel:${LOCATIONS[0].phoneTel}`} className="border border-sky-accent text-sky-accent hover:bg-sky-accent hover:text-navy px-8 py-3 rounded-card font-semibold transition-colors">{LOCATIONS[0].phone}</a>
           </div>
         </div>
       </section>
     </>
   );
 }
+
 
