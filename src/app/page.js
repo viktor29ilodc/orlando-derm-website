@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import Image from 'next/image';
 import { PRACTICE, LOCATIONS, PROVIDERS, SERVICES, CONDITIONS } from '@/data/practice';
 import { organizationSchema, SchemaScript, faqSchema } from '@/lib/schema';
@@ -52,7 +52,7 @@ export default function HomePage() {
       <SchemaScript schema={organizationSchema()} />
       <SchemaScript schema={faqSchema(homeFaqs)} />
 
-      {/* ── 1. HERO BANNER ── */}
+      {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
         <div className="relative h-[72vh] min-h-[520px] max-h-[760px] w-full">
           <Image
@@ -65,14 +65,10 @@ export default function HomePage() {
             blurDataURL="/images/hero/hero-derm-blur.jpg"
             className="object-cover object-[35%_center] md:object-center"
           />
-
-          {/* Readability gradient — dark at bottom-left where text sits, fading up and right */}
           <div
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-tr from-navy/85 via-navy/45 to-transparent"
           />
-
-          {/* Content */}
           <div className="relative z-10 flex h-full items-end">
             <div className="container-site w-full pb-12 md:pb-20">
               <div className="max-w-2xl">
@@ -105,7 +101,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 2. LOCATIONS BAR ── */}
+      {/* LOCATIONS BAR */}
       <section className="bg-ice-white border-b border-warm-gray">
         <div className="container-site py-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -121,17 +117,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 3. ABOUT ── */}
+      {/* ABOUT */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">About Orlando Dermatology Center</h2>
           <div className="text-dark-gray leading-relaxed space-y-4">
-            <p>Orlando Dermatology Center is well known for the team's dedication to patient-centered care, personalized attention, and inclusive culture that makes everyone feel at home. Their exceptional team of board-certified dermatologists, physician assistants, certified nurse practitioners, and other compassionate staff welcome children, teens, and adults to their offices in Oviedo, Lake Mary, Casselberry and Orlando, Florida.</p>
+            <p>Orlando Dermatology Center is well known for the team&apos;s dedication to patient-centered care, personalized attention, and inclusive culture that makes everyone feel at home. Their exceptional team of board-certified dermatologists, physician assistants, certified nurse practitioners, and other compassionate staff welcome children, teens, and adults to their offices in Oviedo, Lake Mary, Casselberry and Orlando, Florida.</p>
             <p>The practice has a long history in Central Florida, serving as leaders that uphold the highest standards of courtesy and medical professionalism, making sure that each patient is treated with respect and understanding.</p>
-            <p>The team has a solid reputation for reliability and providing a quality of care that can only be achieved through their extensive knowledge and skill combined with the practice's state-of-the-art facility equipped with today's most advanced technology.</p>
+            <p>The team has a solid reputation for reliability and providing a quality of care that can only be achieved through their extensive knowledge and skill combined with the practice&apos;s state-of-the-art facility equipped with today&apos;s most advanced technology.</p>
             <p>Whether patients need medical, cosmetic, or surgical dermatologic care, they can depend on getting the help they need with minimal wait times.</p>
             <p>The comprehensive medical services available at Orlando Dermatology Center include every skin challenge imaginable, from common problems like cysts, eczema, psoriasis, and skin tags to challenges like hidradenitis suppurativa (HS) and skin cancer.</p>
-            <p>The team specializes in rejuvenating people's skin and appearance with an array of cosmetic therapies. Many patients seek services like intensive skin care, anti-aging care, IPL laser rejuvenation, and laser treatments.</p>
+            <p>The team specializes in rejuvenating people&apos;s skin and appearance with an array of cosmetic therapies. Many patients seek services like intensive skin care, anti-aging care, IPL laser rejuvenation, and laser treatments.</p>
             <p>In addition to advanced laser treatments, the team is renowned for its expertise in superficial radiation therapy (SRT), a cutting-edge therapy for treating skin cancer and removing keloid scars. They also specialize in Mohs surgery, removing skin cancer while preserving healthy tissues.</p>
             <p>The Orlando Dermatology Center team is devoted to building connections and meeting the dermatologic needs of each patient. Beyond customized medical and aesthetic treatments, they empower patients with information, provide follow-up care, and coordinate with other medical professionals to provide complete, interdisciplinary care.</p>
             <p>To learn more about the services available at Orlando Dermatology Center or schedule a consultation, call the nearest office or book online today.</p>
@@ -139,7 +135,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 4. AWARDS ── */}
+      {/* AWARDS */}
       <section className="section-ice py-12">
         <div className="container-site">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
@@ -157,7 +153,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 5. SERVICES GRID ── */}
+      {/* SERVICES GRID */}
       <section className="bg-navy py-12 md:py-16">
         <div className="container-site">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-2">Services</h2>
@@ -179,7 +175,7 @@ export default function HomePage() {
                   <div className="relative z-10 px-4">
                     <h3 className="text-white font-bold text-sm md:text-base uppercase tracking-wide mb-3">{service.name}</h3>
                     <span className="text-sky-accent text-sm font-semibold flex items-center justify-center gap-1">
-                      Read More <span className="text-lg">→</span>
+                      Read More <span className="text-lg">&rarr;</span>
                     </span>
                   </div>
                 </Link>
@@ -189,7 +185,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 6. CONDITIONS GRID ── */}
+      {/* CONDITIONS GRID */}
       <section className="bg-navy py-12 md:py-16 border-t border-gray-700">
         <div className="container-site">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-2">Conditions</h2>
@@ -211,7 +207,7 @@ export default function HomePage() {
                   <div className="relative z-10 px-4">
                     <h3 className="text-white font-bold text-sm md:text-base uppercase tracking-wide mb-3">{condition.name}</h3>
                     <span className="text-sky-accent text-sm font-semibold flex items-center justify-center gap-1">
-                      Read More <span className="text-lg">→</span>
+                      Read More <span className="text-lg">&rarr;</span>
                     </span>
                   </div>
                 </Link>
@@ -221,7 +217,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 7. AFFILIATIONS ── */}
+      {/* AFFILIATIONS */}
       <section className="section-white py-12">
         <div className="container-site">
           <h2 className="text-2xl font-bold text-navy text-center mb-2">Affiliations</h2>
@@ -237,7 +233,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 8. OUR MISSION ── */}
+      {/* OUR MISSION */}
       <section className="section-ice py-12 md:py-16">
         <div className="container-site max-w-4xl">
           <div className="text-center mb-8">
@@ -249,12 +245,12 @@ export default function HomePage() {
             With a comprehensive and goal-driven approach, we at Orlando Dermatology Center are devoted to offering the residents of Central Florida the greatest quality skin care. Through specialized, individualized dermatological care, we want to improve well-being and inspire confidence.
           </p>
           <p className="text-dark-gray leading-relaxed">
-            <span className="font-bold text-navy">Dr. Vitaly Blatnoy</span> leads our team of highly qualified experts in this endeavor. One skin at a time, our goal is to improve lives. We strive to provide access to first-rate skin care to assure healthiness of the skin — a crucial component of overall wellness. We work hard to educate our patients so they can take a pro-active approach to their skin health. We are committed to understanding and treating a wide variety of dermatological disorders. In our effort to provide quality, we embrace innovation, constantly keeping up with dermatology advancements to offer the most recent therapies to our patients. We have empathy, compassion, and a steadfast dedication to meeting the needs of our patients, their families, and the larger community because of our faith-based culture. At the <span className="font-bold text-navy">Orlando Dermatology Center</span>, we are honored to support and guide each patient on their path to healthy skin because we firmly believe that it has the ability to impact lives.
+            <span className="font-bold text-navy">Dr. Vitaly Blatnoy</span> leads our team of highly qualified experts in this endeavor. One skin at a time, our goal is to improve lives. We strive to provide access to first-rate skin care to assure healthiness of the skin &mdash; a crucial component of overall wellness. We work hard to educate our patients so they can take a pro-active approach to their skin health. We are committed to understanding and treating a wide variety of dermatological disorders. In our effort to provide quality, we embrace innovation, constantly keeping up with dermatology advancements to offer the most recent therapies to our patients. We have empathy, compassion, and a steadfast dedication to meeting the needs of our patients, their families, and the larger community because of our faith-based culture. At the <span className="font-bold text-navy">Orlando Dermatology Center</span>, we are honored to support and guide each patient on their path to healthy skin because we firmly believe that it has the ability to impact lives.
           </p>
         </div>
       </section>
 
-      {/* ── 9. PROVIDERS ── */}
+      {/* PROVIDERS */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site">
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">
@@ -281,7 +277,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 10. NEW PATIENTS ── */}
+      {/* NEW PATIENTS */}
       <section className="section-ice py-12">
         <div className="container-site">
           <h2 className="text-2xl font-bold text-navy text-center mb-2">NEW PATIENTS</h2>
@@ -292,7 +288,7 @@ export default function HomePage() {
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
               </div>
               <h3 className="text-navy font-semibold text-base mb-1 group-hover:text-teal transition-colors">New Patient Forms</h3>
-              <span className="text-teal text-sm font-semibold">Fill & Sign</span>
+              <span className="text-teal text-sm font-semibold">Fill &amp; Sign</span>
             </Link>
             <Link href="/new-patients" className="text-center group">
               <div className="w-20 h-20 bg-navy rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -305,7 +301,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 11. FIND US — LOCATIONS WITH MAPS ── */}
+      {/* FIND US */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site">
           <h3 className="text-mid-gray text-sm uppercase tracking-widest text-center mb-1">FIND US</h3>
@@ -336,30 +332,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 12. TESTIMONIALS PREVIEW ── */}
+      {/* TESTIMONIALS */}
       <section className="section-ice py-12 md:py-16">
         <div className="container-site max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">What Our Patients Say</h2>
           <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-card p-6 border border-warm-gray">
-              <div className="text-sky-accent text-2xl mb-3">★★★★★</div>
-              <p className="text-dark-gray text-sm leading-relaxed italic mb-4">"Dr. Blatnoy and his entire team are outstanding. Professional, thorough, and genuinely caring. Best dermatology experience I've had in Central Florida."</p>
-              <p className="text-navy font-semibold text-sm">— Patient Review</p>
+              <div className="text-sky-accent text-2xl mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p className="text-dark-gray text-sm leading-relaxed italic mb-4">&ldquo;Dr. Blatnoy and his entire team are outstanding. Professional, thorough, and genuinely caring. Best dermatology experience I&apos;ve had in Central Florida.&rdquo;</p>
+              <p className="text-navy font-semibold text-sm">&mdash; Patient Review</p>
             </div>
             <div className="bg-white rounded-card p-6 border border-warm-gray">
-              <div className="text-sky-accent text-2xl mb-3">★★★★★</div>
-              <p className="text-dark-gray text-sm leading-relaxed italic mb-4">"The staff is amazing and the wait time is minimal. I had my skin cancer screening done quickly and efficiently. Highly recommend Orlando Dermatology Center."</p>
-              <p className="text-navy font-semibold text-sm">— Patient Review</p>
+              <div className="text-sky-accent text-2xl mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p className="text-dark-gray text-sm leading-relaxed italic mb-4">&ldquo;The staff is amazing and the wait time is minimal. I had my skin cancer screening done quickly and efficiently. Highly recommend Orlando Dermatology Center.&rdquo;</p>
+              <p className="text-navy font-semibold text-sm">&mdash; Patient Review</p>
             </div>
           </div>
           <div className="text-center mt-8">
-            <Link href="/testimonials" className="text-teal font-semibold hover:underline">Read More Testimonials →</Link>
+            <Link href="/testimonials" className="text-teal font-semibold hover:underline">Read More Testimonials &rarr;</Link>
           </div>
         </div>
       </section>
 
-      {/* ── 13. FAQ ── */}
+      {/* FAQ */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">Frequently Asked Questions</h2>
@@ -375,7 +371,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 14. CTA BANNER ── */}
+      {/* CTA BANNER */}
       <section className="bg-navy text-white py-12">
         <div className="container-site text-center">
           <h2 className="text-2xl font-bold mb-4">Ready to Schedule Your Visit?</h2>
