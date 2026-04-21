@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
-        <div className="relative h-[72vh] min-h-[520px] max-h-[760px] w-full">
+        <div className="relative h-[55vh] min-h-[440px] max-h-[620px] w-full">
           <Image
             src="/images/hero/hero-derm-2560.jpg"
             alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
@@ -389,5 +389,6 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
