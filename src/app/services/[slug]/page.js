@@ -116,7 +116,7 @@ export default function ServicePage({ params }) {
               <Link key={loc.id} href={`/locations/${loc.id}`} className="bg-white border border-warm-gray rounded-card p-4 hover:border-sky-accent transition-colors">
                 <h3 className="text-navy font-semibold text-sm mb-1">{loc.name}</h3>
                 <p className="text-dark-gray text-xs mb-2">{loc.address}</p>
-                <a href={`tel:${loc.phoneTel}`} className="text-teal text-sm font-semibold">{loc.phone}</a>
+                <span className="text-teal text-sm font-semibold">{loc.phone}</span>
               </Link>
             ))}
           </div>

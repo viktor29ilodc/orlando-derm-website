@@ -32,21 +32,21 @@ function NavBar() {
     <header className="sticky top-0 z-50">
       {/* Top bar — logo + action buttons */}
       <div className="bg-navy">
-        <div className="container-site flex items-center justify-between py-4">
+        <div className="container-site flex items-center justify-between py-6">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <img src="/images/logo-white.png" alt="Orlando Dermatology Center" className="h-14 md:h-16 w-auto" />
+            <img src="/images/logo-white.png" alt="Orlando Dermatology Center" className="h-10 md:h-12 w-auto" />
           </Link>
 
           {/* Action buttons */}
           <div className="flex items-center gap-3">
-            <a href={`tel:${LOCATIONS[0].phoneTel}`} className="hidden sm:inline-flex border border-white text-white hover:bg-white hover:text-navy px-6 py-2.5 rounded-card text-sm font-semibold transition-colors uppercase tracking-wide">
+            <a href={`tel:${LOCATIONS[0].phoneTel}`} className="hidden sm:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
               Call Us
             </a>
-            <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-6 py-2.5 rounded-card text-sm font-semibold transition-colors uppercase tracking-wide">
+            <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
               Book Online
             </a>
-            <a href="https://www.orlandodermatologycenter.com/booking" className="hidden md:inline-flex border border-white text-white hover:bg-white hover:text-navy px-6 py-2.5 rounded-card text-sm font-semibold transition-colors uppercase tracking-wide">
+            <a href="https://www.orlandodermatologycenter.com/booking" className="hidden md:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
               Make a Payment
             </a>
           </div>

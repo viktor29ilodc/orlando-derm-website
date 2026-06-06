@@ -114,7 +114,7 @@ export default function HomePage() {
                 <h2 className="text-navy font-bold text-base mb-1">{loc.name}</h2>
                 <p className="text-dark-gray text-sm mb-1">{loc.address}</p>
                 <p className="text-dark-gray text-sm mb-2">{loc.city}, {loc.state} {loc.zip}</p>
-                <a href={`tel:${loc.phoneTel}`} className="text-teal font-semibold text-sm">{loc.phone}</a>
+                <span className="text-teal font-semibold text-sm">{loc.phone}</span>
               </Link>
             ))}
           </div>
@@ -249,7 +249,7 @@ export default function HomePage() {
             With a comprehensive and goal-driven approach, we at Orlando Dermatology Center are devoted to offering the residents of Central Florida the greatest quality skin care. Through specialized, individualized dermatological care, we want to improve well-being and inspire confidence.
           </p>
           <p className="text-dark-gray leading-relaxed">
-            <span className="font-bold text-navy">Dr. Vitaly Blatnoy</span> leads our team of highly qualified experts in this endeavor. One skin at a time, our goal is to improve lives. We strive to provide access to first-rate skin care to assure healthiness of the skin &mdash; a crucial component of overall wellness. We work hard to educate our patients so they can take a pro-active approach to their skin health. We are committed to understanding and treating a wide variety of dermatological disorders. In our effort to provide quality, we embrace innovation, constantly keeping up with dermatology advancements to offer the most recent therapies to our patients. We have empathy, compassion, and a steadfast dedication to meeting the needs of our patients, their families, and the larger community because of our faith-based culture. At the <span className="font-bold text-navy">Orlando Dermatology Center</span>, we are honored to support and guide each patient on their path to healthy skin because we firmly believe that it has the ability to impact lives.
+            <span className="font-bold text-navy">Dr. Vitaly Blatnoy</span> leads our team of highly qualified experts in this endeavor. One patient at a time, our goal is to improve lives. We strive to provide access to first-rate skin care to ensure the health of the skin &mdash; a crucial component of overall wellness. We work hard to educate our patients so they can take a proactive approach to their skin health. We are committed to understanding and treating a wide variety of dermatological disorders. In our effort to provide quality, we embrace innovation, constantly keeping up with dermatology advancements to offer the most recent therapies to our patients. We have empathy, compassion, and a steadfast dedication to meeting the needs of our patients, their families, and the larger community because of our faith-based culture. At the <span className="font-bold text-navy">Orlando Dermatology Center</span>, we are honored to support and guide each patient on their path to healthy skin because we firmly believe that it has the ability to impact lives.
           </p>
         </div>
       </section>
@@ -316,7 +316,7 @@ export default function HomePage() {
               <div key={loc.id} className="bg-white border border-warm-gray rounded-card overflow-hidden">
                 <div className="h-48 bg-warm-gray">
                   <iframe
-                    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(loc.address + ' ' + loc.city + ' ' + loc.state + ' ' + loc.zip)}`}
+                    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:${loc.placeId}`}
                     width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
                     title={`Map to ${loc.name} office`}
                   />

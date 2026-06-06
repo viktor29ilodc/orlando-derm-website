@@ -25,12 +25,9 @@ export default function ContactPage() {
                 <h2 className="text-navy font-bold text-lg mb-3">{loc.name}</h2>
                 <p className="text-dark-gray text-sm mb-1">{loc.address}</p>
                 <p className="text-dark-gray text-sm mb-3">{loc.city}, {loc.state} {loc.zip}</p>
-                <a href={`tel:${loc.phoneTel}`} className="text-teal font-semibold text-lg block mb-3">{loc.phone}</a>
+                <a href={`tel:${loc.phoneTel}`} className="text-teal font-semibold text-lg block mb-3 underline hover:text-teal-hover">{loc.phone}</a>
                 <p className="text-mid-gray text-sm mb-4">Mon–Thu 8am–4pm | Fri 8am–2pm</p>
-                <div className="flex gap-3">
-                  <a href={`tel:${loc.phoneTel}`} className="bg-teal hover:bg-teal-hover text-white px-4 py-2 rounded-card text-sm font-semibold transition-colors">Call</a>
-                  <a href={loc.mapUrl} target="_blank" rel="noopener noreferrer" className="border border-navy text-navy px-4 py-2 rounded-card text-sm font-semibold hover:bg-navy hover:text-white transition-colors">Directions</a>
-                </div>
+                <a href={loc.mapUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-4 py-2 rounded-card text-sm font-semibold transition-colors inline-block">Directions</a>
               </div>
             ))}
           </div>
