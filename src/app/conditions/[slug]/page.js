@@ -49,7 +49,7 @@ export default function ConditionPage({ params }) {
             Expert diagnosis and treatment for {condition.name.toLowerCase()} at Orlando Dermatology Center.
           </p>
           <div className="flex gap-4 mt-6">
-            <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
+            <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
             <a href={`tel:${LOCATIONS[0].phoneTel}`} className="border border-sky-accent text-sky-accent hover:bg-sky-accent hover:text-navy px-6 py-3 rounded-card font-semibold transition-colors">Call {LOCATIONS[0].phone}</a>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function ConditionPage({ params }) {
         <div className="container-site text-center">
           <h2 className="text-xl font-bold mb-3">Get Expert Help for {condition.name}</h2>
           <p className="text-gray-300 mb-5">Board-certified dermatologists accepting new patients at all 4 locations.</p>
-          <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
+          <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
         </div>
       </section>
     </>

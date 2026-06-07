@@ -35,7 +35,7 @@ export default function ContactPage() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-navy mb-4">Book Online</h2>
             <p className="text-dark-gray mb-6">Schedule your appointment at any of our 4 locations.</p>
-            <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
+            <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
           </div>
         </div>
       </section>

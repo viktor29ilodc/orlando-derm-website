@@ -4,7 +4,7 @@ export const PRACTICE = {
   name: 'Orlando Dermatology Center',
   legalName: 'Dermatology and Skin Cancer Surgery Center LLC dba Orlando Dermatology Center',
   url: 'https://www.orlandodermatologycenter.com',
-  bookingUrl: 'https://www.orlandodermatologycenter.com/book', // Replace with NexHealth URL once live
+  bookingUrl: 'https://pp-wfe-100.advancedmd.com/140478/onlinescheduling/v2/patients',
   paymentUrl: 'https://www.orlandodermatologycenter.com/booking', // Payment portal
   patientPortalUrl: 'https://patientportal.advancedmd.com/account/logon?lk=140478', // AdvancedMD patient portal
   npi: '1174078281', // Group NPI (Type 2)

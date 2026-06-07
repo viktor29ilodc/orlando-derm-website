@@ -60,7 +60,7 @@ export default function NewPatientsPage() {
             Ready to get started? Book online or call any of our 4 locations.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">Book Online</a>
+            <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">Book Online</a>
             {LOCATIONS.map(loc => (
               <a key={loc.id} href={`tel:${loc.phoneTel}`} className="border border-warm-gray text-dark-gray hover:border-teal hover:text-teal px-4 py-3 rounded-card text-sm font-medium transition-colors">
                 {loc.name}: {loc.phone}
