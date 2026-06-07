@@ -236,6 +236,9 @@ export default function HomePage() {
             <a href="https://med.ucf.edu/person/vitaly-blatnoy/" target="_blank" rel="noopener noreferrer">
               <img src="/images/general/affiliate-ucf.png" alt="UCF College of Medicine" className="h-14 md:h-20 w-auto object-contain" />
             </a>
+            <a href="https://www.orlandomagazine.com/2023-physician-spotlight-orlando-dermatology-center/" target="_blank" rel="noopener noreferrer">
+              <img src="/images/general/castle-connolly-2025.png" alt="Castle Connolly Top Doctors 2025" className="h-14 md:h-20 w-auto object-contain" />
+            </a>
             <a href="https://www.carecredit.com/go/346HSH/?dtc=DS7X&sitecode=CCCAPDS7X" target="_blank" rel="noopener noreferrer">
               <img src="/images/general/carecredit-logo.png" alt="CareCredit" className="h-14 md:h-20 w-auto object-contain" />
             </a>
