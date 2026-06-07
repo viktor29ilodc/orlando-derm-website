@@ -152,7 +152,9 @@ export default function HomePage() {
             <img src="/images/general/award-distinguishednetwork.png" alt="Distinguished Network - Expert Network" className="h-28 md:h-32 w-auto object-contain" />
             <img src="/images/general/award-aad.png" alt="AAD Fellow - Excellence in Dermatology" className="h-28 md:h-32 w-auto object-contain" />
             <img src="/images/general/award-honoredpros.png" alt="America's Most Honored Professionals" className="h-28 md:h-32 w-auto object-contain" />
-            <img src="/images/general/award-orlandosfinest.png" alt="Orlando's Finest Doctors 2023" className="h-28 md:h-32 w-auto object-contain" />
+            <a href="https://www.orlandomagazine.com/2023-physician-spotlight-orlando-dermatology-center/" target="_blank" rel="noopener noreferrer">
+              <img src="/images/general/award-orlandosfinest.png" alt="Orlando's Finest Doctors 2023" className="h-28 md:h-32 w-auto object-contain" />
+            </a>
           </div>
         </div>
       </section>
