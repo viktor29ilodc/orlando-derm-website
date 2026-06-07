@@ -26,7 +26,7 @@ export default function LocationsPage() {
               <div key={loc.id} className="bg-white border border-warm-gray rounded-card overflow-hidden">
                 <div className="h-48 bg-warm-gray">
                   <iframe
-                    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(loc.address + ' ' + loc.city + ' ' + loc.state + ' ' + loc.zip)}`}
+                    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:${loc.placeId}`}
                     width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
                     title={`Map to ${loc.name} office`}
                   />

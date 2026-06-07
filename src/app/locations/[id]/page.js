@@ -92,7 +92,7 @@ export default function LocationPage({ params }) {
               </div>
 
               <div className="flex gap-3">
-                <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">Book Online</a>
+                <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">Book Online</a>
                 <a href={`tel:${location.phoneTel}`} className="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-3 rounded-card font-semibold transition-colors">Call Us</a>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function LocationPage({ params }) {
             <div>
               <div className="rounded-card overflow-hidden border border-warm-gray h-80 bg-warm-gray">
                 <iframe
-                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(location.address + ' ' + location.city + ' ' + location.state + ' ' + location.zip)}`}
+                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:${location.placeId}`}
                   width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
                   title={`Map to Orlando Dermatology Center ${location.name}`}
                 />
@@ -136,7 +136,7 @@ export default function LocationPage({ params }) {
               <Link key={loc.id} href={`/locations/${loc.id}`} className="bg-white border border-warm-gray rounded-card p-4 hover:border-sky-accent transition-colors">
                 <h3 className="text-navy font-semibold text-sm mb-1">{loc.name}</h3>
                 <p className="text-dark-gray text-xs mb-2">{loc.address}</p>
-                <a href={`tel:${loc.phoneTel}`} className="text-teal text-sm font-semibold">{loc.phone}</a>
+                <span className="text-teal text-sm font-semibold">{loc.phone}</span>
               </Link>
             ))}
           </div>

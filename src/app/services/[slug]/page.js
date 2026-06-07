@@ -53,7 +53,7 @@ export default function ServicePage({ params }) {
             {service.shortDesc} Available at all 4 Orlando Dermatology Center locations.
           </p>
           <div className="flex gap-4 mt-6">
-            <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">
+            <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">
               Book Appointment
             </a>
             <a href={`tel:${LOCATIONS[0].phoneTel}`} className="border border-sky-accent text-sky-accent hover:bg-sky-accent hover:text-navy px-6 py-3 rounded-card font-semibold transition-colors">
@@ -116,7 +116,7 @@ export default function ServicePage({ params }) {
               <Link key={loc.id} href={`/locations/${loc.id}`} className="bg-white border border-warm-gray rounded-card p-4 hover:border-sky-accent transition-colors">
                 <h3 className="text-navy font-semibold text-sm mb-1">{loc.name}</h3>
                 <p className="text-dark-gray text-xs mb-2">{loc.address}</p>
-                <a href={`tel:${loc.phoneTel}`} className="text-teal text-sm font-semibold">{loc.phone}</a>
+                <span className="text-teal text-sm font-semibold">{loc.phone}</span>
               </Link>
             ))}
           </div>
@@ -128,7 +128,7 @@ export default function ServicePage({ params }) {
         <div className="container-site text-center">
           <h2 className="text-xl font-bold mb-3">Ready to Schedule Your {service.name} Consultation?</h2>
           <p className="text-gray-300 mb-5">Accepting new patients at all locations. Book online or call today.</p>
-          <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">
+          <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">
             Book Appointment
           </a>
         </div>

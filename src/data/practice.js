@@ -4,8 +4,8 @@ export const PRACTICE = {
   name: 'Orlando Dermatology Center',
   legalName: 'Dermatology and Skin Cancer Surgery Center LLC dba Orlando Dermatology Center',
   url: 'https://www.orlandodermatologycenter.com',
-  bookingUrl: 'https://www.orlandodermatologycenter.com/book', // Replace with NexHealth URL once live
-  paymentUrl: 'https://www.orlandodermatologycenter.com/booking', // Payment portal
+  bookingUrl: 'https://pp-wfe-100.advancedmd.com/140478/onlinescheduling/v2/patients',
+  paymentUrl: 'https://simplecheckout.authorize.net/payment/CatalogPayment.aspx', // Authorize.Net hosted payment portal
   patientPortalUrl: 'https://patientportal.advancedmd.com/account/logon?lk=140478', // AdvancedMD patient portal
   npi: '1174078281', // Group NPI (Type 2)
   description: 'Board-certified dermatologists providing medical, cosmetic, and surgical dermatology including Mohs surgery across 4 Central Florida locations.',
@@ -33,7 +33,8 @@ export const LOCATIONS = [
     phoneTel: '+14077061770',
     lat: 28.6396,
     lng: -81.2084,
-    mapUrl: 'https://maps.google.com/?q=7560+Red+Bug+Lake+Rd+Suite+1014+Oviedo+FL+32765',
+    mapUrl: 'https://www.google.com/maps/place/Orlando+Dermatology+Center/@28.6520897,-81.2462905,17z/data=!3m2!4b1!5s0x88e7694ed6b341df:0x582d9e3b15c90eaf!4m6!3m5!1s0x88e7694983e1236b:0x9d96e99285765f3a!8m2!3d28.652085!4d-81.2437102!16s%2Fg%2F11bcdhznr4?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D',
+    placeId: 'ChIJayPhg0lp54gROl92hZLplp0',
   },
   {
     id: 'orlando-waterford-lakes',
@@ -46,7 +47,8 @@ export const LOCATIONS = [
     phoneTel: '+14075383855',
     lat: 28.5395,
     lng: -81.2063,
-    mapUrl: 'https://maps.google.com/?q=422+South+Alafaya+Trl+Unit+26+Orlando+FL+32828',
+    mapUrl: 'https://www.google.com/maps/place/Orlando+Dermatology+Center/@28.5404214,-81.2103537,17z/data=!3m2!4b1!5s0x88e767b2b2f11ec1:0xe908a8f226ddc2ff!4m6!3m5!1s0x88e767b2b2e9e80d:0xf515c2823f3c69dc!8m2!3d28.5404167!4d-81.2077734!16s%2Fg%2F11b7rtw05p?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D',
+    placeId: 'ChIJDejpsrJn54gR3Gk8P4LCFfU',
   },
   {
     id: 'lake-mary',
@@ -59,7 +61,8 @@ export const LOCATIONS = [
     phoneTel: '+14074367375',
     lat: 28.7589,
     lng: -81.3178,
-    mapUrl: 'https://maps.google.com/?q=731+Stirling+Center+Place+Suite+1931+Lake+Mary+FL+32746',
+    mapUrl: 'https://www.google.com/maps/place/Orlando+Dermatology+Center/@28.7770599,-81.3513382,16.84z/data=!4m6!3m5!1s0x88e70df4b4cf1b97:0x351636c67f261412!8m2!3d28.7770911!4d-81.3487144!16s%2Fg%2F11h2_fv3l_?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D',
+    placeId: 'ChIJlxvPtPQN54gREhQmf8Y2FjU',
   },
   {
     id: 'casselberry',
@@ -72,7 +75,8 @@ export const LOCATIONS = [
     phoneTel: '+14076358012',
     lat: 28.6564,
     lng: -81.3270,
-    mapUrl: 'https://maps.google.com/?q=4970+South+US+Hwy+17+92+Casselberry+FL+32707',
+    mapUrl: 'https://www.google.com/maps/place/Orlando+Dermatology+Center/@28.6677258,-81.3423564,17z/data=!3m1!4b1!4m6!3m5!1s0x88e76fc178f50da3:0xca34eff868f98b0d!8m2!3d28.6677211!4d-81.3397761!16s%2Fg%2F11vrrhb5qy?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D',
+    placeId: 'ChIJow31eMFv54gRDYv5aPjvNMo',
   },
 ];
 

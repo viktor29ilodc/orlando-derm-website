@@ -104,7 +104,7 @@ export default function ProviderPage({ params }) {
         <div className="container-site text-center">
           <h2 className="text-xl font-bold text-navy mb-4">Schedule with {provider.name.split(',')[0]}</h2>
           <p className="text-dark-gray mb-6">Available at Orlando Dermatology Center locations across Central Florida.</p>
-          <a href="/book" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
+          <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-8 py-3 rounded-card font-semibold transition-colors">Book Appointment</a>
         </div>
       </section>
     </>
