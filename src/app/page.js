@@ -150,7 +150,9 @@ export default function HomePage() {
               <div className="w-24 h-0.5 bg-sky-accent mt-4 mx-auto md:mx-0" />
             </div>
             <img src="/images/general/award-distinguishednetwork.png" alt="Distinguished Network - Expert Network" className="h-28 md:h-32 w-auto object-contain" />
-            <img src="/images/general/award-aad.png" alt="AAD Fellow - Excellence in Dermatology" className="h-28 md:h-32 w-auto object-contain" />
+            <a href="https://find-a-derm.aad.org/search/B593/Vitaly%20Blatnoy,%20MD,%20FAAD" target="_blank" rel="noopener noreferrer">
+              <img src="/images/general/award-aad.png" alt="AAD Fellow - Excellence in Dermatology" className="h-28 md:h-32 w-auto object-contain" />
+            </a>
             <img src="/images/general/award-honoredpros.png" alt="America's Most Honored Professionals" className="h-28 md:h-32 w-auto object-contain" />
             <a href="https://www.orlandomagazine.com/2023-physician-spotlight-orlando-dermatology-center/" target="_blank" rel="noopener noreferrer">
               <img src="/images/general/award-orlandosfinest.png" alt="Orlando's Finest Doctors 2023" className="h-28 md:h-32 w-auto object-contain" />
