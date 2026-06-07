@@ -46,7 +46,7 @@ function NavBar() {
             <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
               Book Online
             </a>
-            <a href="https://www.orlandodermatologycenter.com/booking" className="hidden md:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
+            <a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
               Make a Payment
             </a>
           </div>
