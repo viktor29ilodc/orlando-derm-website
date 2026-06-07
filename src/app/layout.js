@@ -136,6 +136,7 @@ function Footer() {
               <li><Link href="/new-patients" className="text-sm text-gray-400 hover:text-white transition-colors">New Patient Info</Link></li>
               <li><Link href="/insurance" className="text-sm text-gray-400 hover:text-white transition-colors">Insurance</Link></li>
               <li><a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">Schedule Appointment</a></li>
+              <li><a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">Pay a Bill</a></li>
               <li><a href="https://patientportal.advancedmd.com/account/logon?lk=140478" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">Patient Portal</a></li>
               <li><Link href="/contact" className="text-sm text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
             </ul>

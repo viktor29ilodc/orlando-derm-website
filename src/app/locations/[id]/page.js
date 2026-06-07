@@ -91,9 +91,10 @@ export default function LocationPage({ params }) {
                 </div>
               </div>
 
-              <div className="flex gap-3">
+              <div className="flex flex-wrap gap-3">
                 <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">Book Online</a>
                 <a href={`tel:${location.phoneTel}`} className="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-3 rounded-card font-semibold transition-colors">Call Us</a>
+                <a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer" className="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-3 rounded-card font-semibold transition-colors">Make a Payment</a>
               </div>
             </div>
 

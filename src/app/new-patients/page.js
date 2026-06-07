@@ -47,13 +47,20 @@ export default function NewPatientsPage() {
             Access Patient Portal
           </a>
 
-          <h2 className="text-2xl font-bold text-navy mb-6">Insurance</h2>
+          <h2 className="text-2xl font-bold text-navy mb-6">Insurance &amp; Payments</h2>
           <p className="text-dark-gray mb-4">
             We accept most major insurance plans. Please contact your nearest office to verify that we accept your specific plan.
           </p>
-          <p className="text-dark-gray mb-10">
+          <p className="text-dark-gray mb-4">
             For cosmetic procedures not covered by insurance, we offer CareCredit financing options.
           </p>
+          <p className="text-dark-gray mb-4">
+            Need to pay a bill? Use our secure online payment portal.
+          </p>
+          <a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer"
+            className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors inline-block mb-10">
+            Make a Payment
+          </a>
 
           <h2 className="text-2xl font-bold text-navy mb-6">Schedule Your First Visit</h2>
           <p className="text-dark-gray mb-6">
