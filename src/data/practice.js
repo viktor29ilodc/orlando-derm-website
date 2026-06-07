@@ -5,7 +5,7 @@ export const PRACTICE = {
   legalName: 'Dermatology and Skin Cancer Surgery Center LLC dba Orlando Dermatology Center',
   url: 'https://www.orlandodermatologycenter.com',
   bookingUrl: 'https://pp-wfe-100.advancedmd.com/140478/onlinescheduling/v2/patients',
-  paymentUrl: 'https://simplecheckout.authorize.net/payment/CatalogPayment.aspx', // Authorize.Net hosted payment portal
+  paymentUrl: 'https://simplecheckout.authorize.net/payment/CatalogPayment.aspx?LinkId=dc67c1fe-3a7b-4b91-9fc1-04c04f1b581f', // Authorize.Net hosted payment portal
   patientPortalUrl: 'https://patientportal.advancedmd.com/account/logon?lk=140478', // AdvancedMD patient portal
   npi: '1174078281', // Group NPI (Type 2)
   description: 'Board-certified dermatologists providing medical, cosmetic, and surgical dermatology including Mohs surgery across 4 Central Florida locations.',
