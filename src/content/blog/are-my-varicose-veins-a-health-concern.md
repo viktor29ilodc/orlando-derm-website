@@ -2,7 +2,7 @@
 title: "Are My Varicose Veins a Health Concern?"
 date: 2025-03-12
 excerpt: "Varicose veins are rarely dangerous, but they can offer insight into your vascular health and occasionally signal conditions like chronic venous insufficiency. Learn how they form, what symptoms to watch for, and how laser vein removal can treat them."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2781818.jpeg"
+image: "/images/blog/2781818.jpg"
 author: ""
 ---
 

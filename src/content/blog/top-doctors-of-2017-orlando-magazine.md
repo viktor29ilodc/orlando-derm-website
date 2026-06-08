@@ -2,7 +2,7 @@
 title: "Top Doctors of 2017 â€“ Orlando Magazine"
 date: 2018-02-01
 excerpt: "Vitaly Blatnoy, MD of Orlando Dermatology Center was named to Orlando Magazine's annual list of top physicians in 2017."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633302.png"
+image: "/images/blog/2633302.png"
 author: ""
 ---
 

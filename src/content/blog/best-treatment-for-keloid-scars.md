@@ -2,7 +2,7 @@
 title: "Best Treatment for Keloid Scars"
 date: 2018-02-01
 excerpt: "Intralesional cryotherapy is a highly effective treatment for keloid scars, with a 100% positive response rate and dramatic improvement seen in just 1-2 treatments. Most patients see results within weeks, with only temporary discoloration as a side effect."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422119.jpg"
+image: "/images/blog/422119.webp"
 author: ""
 ---
 

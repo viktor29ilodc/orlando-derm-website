@@ -2,7 +2,7 @@
 title: "Non-Invasive Treatment for Leg Veins & Facial Veins"
 date: 2022-06-12
 excerpt: "Learn how IPL (intense pulsed light) laser treatment offers a quick, non-invasive way to reduce the appearance of spider veins and telangiectasias on the face and legs, with minimal recovery time."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633749.jpg"
+image: "/images/blog/2633749.jpg"
 author: ""
 ---
 

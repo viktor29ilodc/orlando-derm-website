@@ -2,7 +2,7 @@
 title: "Why Use Dermal Fillers?"
 date: 2018-08-07
 excerpt: "Dermal fillers are a safe, effective anti-aging treatment that replenishes lost facial volume, smooths wrinkles, and restores a youthful appearance without surgery or downtime. Learn how FDA-approved fillers work, what they treat, and what to expect from the procedure."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/docs/422156.jpg"
+image: "/images/blog/422156.webp"
 author: ""
 ---
 

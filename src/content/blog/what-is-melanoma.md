@@ -2,7 +2,7 @@
 title: "What is Melanoma?"
 date: 2018-06-19
 excerpt: "Melanoma is the most dangerous form of skin cancer, developing when UV-related DNA damage triggers mutations in pigment-producing skin cells. Learn the ABCDE warning signs, the four main types, risk factors, and how to prevent it."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422154.jpg"
+image: "/images/blog/422154.webp"
 author: ""
 ---
 

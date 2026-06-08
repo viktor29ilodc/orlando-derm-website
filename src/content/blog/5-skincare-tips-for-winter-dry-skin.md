@@ -2,7 +2,7 @@
 title: "5 Skincare Tips For Winter Dry Skin"
 date: 2020-12-10
 excerpt: "Winter's cold, dry air can leave skin dry and itchy. Dr. Blatnoy of the Orlando Dermatology Center shares five practical tips to protect and hydrate your skin during the colder months."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633696.jpg"
+image: "/images/blog/2633696.jpg"
 author: ""
 ---
 

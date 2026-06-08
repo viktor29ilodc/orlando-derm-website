@@ -2,7 +2,7 @@
 title: "How To Prevent Sun Damage To Your Skin"
 date: 2018-08-15
 excerpt: "Learn how to protect your skin from the sun's damaging UV rays and reduce your risk of skin cancer, including tips on sunscreen, protective clothing, healthy sun exposure for vitamin D, and yearly skin cancer screenings."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633660.jpg"
+image: "/images/blog/2633660.jpg"
 author: ""
 ---
 

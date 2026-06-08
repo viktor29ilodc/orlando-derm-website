@@ -2,7 +2,7 @@
 title: "How To Choose A Good Dermatologist"
 date: 2021-05-05
 excerpt: "A guide to selecting the right dermatologist, covering what to look for in board certification, insurance coverage, and provider bios, plus an introduction to Orlando Dermatology Center and Dr. Vitaly Blatnoy."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633709.png"
+image: "/images/blog/2633709.png"
 author: ""
 ---
 

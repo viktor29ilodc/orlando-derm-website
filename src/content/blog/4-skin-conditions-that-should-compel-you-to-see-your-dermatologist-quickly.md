@@ -2,7 +2,7 @@
 title: "4 Skin Conditions That Should Compel You To See Your Dermatologist Quickly"
 date: 2021-10-15
 excerpt: "A look at four common skin conditionsâ€”persistent adult acne, cold sores, psoriasis, and varicose and spider veinsâ€”that warrant a prompt visit to your dermatologist for proper diagnosis and treatment."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633729.jpg"
+image: "/images/blog/2633729.jpg"
 author: ""
 ---
 

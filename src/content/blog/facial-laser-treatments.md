@@ -2,7 +2,7 @@
 title: "Facial Laser Treatments"
 date: 2015-11-10
 excerpt: "An overview of facial laser treatments, including laser skin resurfacing for wrinkles and acne scars, the CO2 and erbium lasers, candidacy and medical considerations, and the laser rejuvenation options offered at Orlando Dermatology Center."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422038.jpg"
+image: "/images/blog/422038.webp"
 author: ""
 ---
 

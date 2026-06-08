@@ -2,7 +2,7 @@
 title: "I Regret My Tattoo: Can You Help?"
 date: 2025-05-01
 excerpt: "Regret a tattoo? Modern laser treatments make tattoos far less permanent than they once were. Learn how laser tattoo removal works, what to expect during sessions, and how long the process takes."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2790039.jpg"
+image: "/images/blog/2790039.jpg"
 author: ""
 ---
 

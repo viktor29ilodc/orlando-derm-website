@@ -2,7 +2,7 @@
 title: "All About Superficial Radiation Therapy (SRT) for Scars"
 date: 2025-01-09
 excerpt: "Superficial radiation therapy (SRT) is a noninvasive way to reduce the appearance of keloid scars by using gentle, low-dose radiation to break down excess collagen and prevent regrowth. Learn how the treatment works and which scars it treats best."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2771221.jpeg"
+image: "/images/blog/2771221.jpg"
 author: ""
 ---
 

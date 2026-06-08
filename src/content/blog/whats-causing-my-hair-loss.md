@@ -2,7 +2,7 @@
 title: "What's Causing My Hair Loss?"
 date: 2025-02-03
 excerpt: "Hair loss can stem from genetics, stress, hormones, styling habits, autoimmune disease, or medications. Learn the most common causes of hair loss and the treatment options available at Orlando Dermatology Center."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2774709.jpeg"
+image: "/images/blog/2774709.jpg"
 author: ""
 ---
 

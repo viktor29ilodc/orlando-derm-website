@@ -2,7 +2,7 @@
 title: "Help! My Teen Has Warts"
 date: 2026-02-17
 excerpt: "Teens often pick up warts in damp public spaces like locker rooms and pools where HPV thrives. Learn how to spot warts, the treatment options that clear them faster, and simple steps to prevent the spread."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2832446.jpeg"
+image: "/images/blog/2832446.jpg"
 author: ""
 ---
 

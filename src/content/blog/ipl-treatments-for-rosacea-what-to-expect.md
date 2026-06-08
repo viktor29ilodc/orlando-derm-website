@@ -2,7 +2,7 @@
 title: "IPL Treatments for Rosacea: What to Expect"
 date: 2025-06-02
 excerpt: "IPL laser rejuvenation uses broadband light to break down redness and broken blood vessels caused by rosacea. Learn how the treatment works, what to expect during each session, and the benefits of this gentle, adjustable photofacial."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2795053.jpeg"
+image: "/images/blog/2795053.jpg"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "Basal Cell Carcinoma: A Highly Curable Cancer If Treated Early!"
 date: 2018-03-07
 excerpt: "Basal cell carcinoma is one of the most common and most curable skin cancers when caught early, with effective surgical and nonsurgical treatment options. Learn how it's identified, what causes it, who is at risk, and how it's treated."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422145.jpg"
+image: "/images/blog/422145.webp"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "How Tattoo Removal Works"
 date: 2020-03-12
 excerpt: "Laser tattoo removal is a safe, effective cosmetic procedure that works by shattering tattoo ink into smaller particles the body's immune system can flush away. Learn how lasers became the standard treatment compared to older surgical removal methods."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633676.gif"
+image: "/images/blog/2633676.gif"
 author: ""
 ---
 

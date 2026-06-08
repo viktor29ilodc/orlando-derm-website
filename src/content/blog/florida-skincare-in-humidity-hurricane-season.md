@@ -2,7 +2,7 @@
 title: "Florida Skincare in Humidity & Hurricane Season"
 date: 2020-09-02
 excerpt: "Florida's hurricane-season heat and humidity boost oil and sweat production, which can clog pores and trigger breakouts. Learn three dermatologist-recommended skincare adjustments: cleanse twice daily, switch to lighter water-based products, and use deodorant to control sweat."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633687.jpg"
+image: "/images/blog/2633687.jpg"
 author: ""
 ---
 

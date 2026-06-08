@@ -2,7 +2,7 @@
 title: "November Is National Healthy Skin Month!"
 date: 2020-11-02
 excerpt: "In celebration of National Healthy Skin Month, Dr. Vitaly Blatnoy shares five facts about your skin, from why it's the body's largest organ to how over-cleansing can trigger breakouts."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633692.jpg"
+image: "/images/blog/2633692.jpg"
 author: "Dr. Vitaly Blatnoy"
 ---
 

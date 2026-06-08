@@ -2,7 +2,7 @@
 title: "Orlando Photofacial Treatment to Repair Skin Damage & Make Your Skin Look Younger"
 date: 2022-07-05
 excerpt: "Learn how the Lumenis M22 Intense Pulsed Light (IPL) photofacial gently treats sun spots, broken capillaries, redness, and other signs of aging to rejuvenate your skin with little to no downtime."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633761.jpg"
+image: "/images/blog/2633761.jpg"
 author: ""
 ---
 

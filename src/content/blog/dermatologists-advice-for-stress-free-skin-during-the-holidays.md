@@ -2,7 +2,7 @@
 title: "Dermatologist's Advice for Stress Free Skin During The Holidays"
 date: 2022-11-15
 excerpt: "Stress can trigger acne, eczema, and other skin conditions by disrupting the skin's protective barrier. Learn how a consistent cleansing, exfoliating, and moisturizing routine can keep your skin calm and healthy through the holiday season."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633765.jpg"
+image: "/images/blog/2633765.jpg"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "Chemical Peel"
 date: 2015-11-03
 excerpt: "Chemical peels offered at Orlando Dermatology Center use a chemical solution to shed damaged skin and reveal smoother, less wrinkled skin. Learn how the procedure works, recovery time, results, and aftercare."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422001.jpg"
+image: "/images/blog/422001.webp"
 author: ""
 ---
 

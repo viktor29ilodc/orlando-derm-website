@@ -2,7 +2,7 @@
 title: "Treating Acne Scars"
 date: 2015-11-06
 excerpt: "Treating acne scars starts with a dermatologist consultation to build a tailored plan based on scar type and location. Learn about surgical, resurfacing, filler, and injection options for both depressed and raised acne scars."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422003.jpg"
+image: "/images/blog/422003.webp"
 author: ""
 ---
 

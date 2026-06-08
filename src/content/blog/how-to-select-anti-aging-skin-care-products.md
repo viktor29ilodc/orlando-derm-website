@@ -2,7 +2,7 @@
 title: "How To Select Anti-Aging Skin Care Products"
 date: 2018-08-10
 excerpt: "Shopping for anti-aging skin care can feel overwhelming with so many choices. These dermatologist-backed tips help you pick the right sunscreen, moisturizer, and targeted treatments for your skin type and budget."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633317.jpg"
+image: "/images/blog/2633317.jpg"
 author: ""
 ---
 

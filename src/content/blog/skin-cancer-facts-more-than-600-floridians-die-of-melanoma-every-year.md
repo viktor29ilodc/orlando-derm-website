@@ -2,7 +2,7 @@
 title: "Skin Cancer Facts: More Than 600 Floridians Die of Melanoma Every Year!"
 date: 2021-05-03
 excerpt: "Florida has the second-highest incidence of melanoma in the U.S., with more than 600 residents dying from the disease each year. Learn the key skin cancer facts and how the Orlando Dermatology Center treats melanoma with Mohs surgery."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633708.jpg"
+image: "/images/blog/2633708.jpg"
 author: ""
 ---
 

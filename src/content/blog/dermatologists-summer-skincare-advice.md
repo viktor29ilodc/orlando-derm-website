@@ -2,7 +2,7 @@
 title: "Dermatologist's Summer Skincare Advice"
 date: 2019-06-18
 excerpt: "Orlando dermatologist Dr. Vitaly Blatnoy shares a summer skincare battle planâ€”covering exfoliation, switching to lighter cleansers and serums, and diligent sunscreen use for your face, body, and lipsâ€”to protect your skin from increased sun and sweat."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633672.jpg"
+image: "/images/blog/2633672.jpg"
 author: "Dr. Vitaly Blatnoy"
 ---
 

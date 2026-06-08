@@ -2,7 +2,7 @@
 title: "Exploring the Link Between Diet and Skin Health: What to Eat for a Clear Complexion"
 date: 2023-04-12
 excerpt: "Your diet plays a major role in the health of your skin. Learn which foods, nutrients, and habits support a clear complexion and which common dietary mistakes to avoid."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633772.jpg"
+image: "/images/blog/2633772.jpg"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "4 Possible Psoriasis Complications (and How to Reduce Your Risk)"
 date: 2025-08-01
 excerpt: "Psoriasis can lead to complications beyond the skin, including psoriatic arthritis, heart disease, eye problems, and Type 2 diabetes. Learn the four most common complications and simple lifestyle steps to lower your risk."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2804447.jpeg"
+image: "/images/blog/2804447.jpg"
 author: ""
 ---
 

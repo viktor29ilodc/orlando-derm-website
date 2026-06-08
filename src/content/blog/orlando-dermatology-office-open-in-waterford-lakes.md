@@ -2,7 +2,7 @@
 title: "Orlando Dermatology Office Open In Waterford Lakes"
 date: 2015-10-30
 excerpt: "Dr. Vitaly Blatnoy has opened a second Orlando Dermatology Center office in the Waterford Lakes area on Alafaya, offering pediatric and adult medical, cosmetic, and surgical dermatology with short wait times."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633269.jpg"
+image: "/images/blog/2633269.jpg"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "5 Tips for Healthy Holiday Skin"
 date: 2025-11-04
 excerpt: "Cold, dry holiday air can highlight dryness and wrinkles, making late autumn the perfect time to prioritize your skin. Discover five dermatologist-recommended treatments, from chemical peels to microneedling, to help your skin glow for holiday photos and parties."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2819207.jpeg"
+image: "/images/blog/2819207.jpg"
 author: ""
 ---
 

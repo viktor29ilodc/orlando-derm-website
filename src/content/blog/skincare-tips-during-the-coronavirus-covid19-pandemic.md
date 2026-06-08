@@ -2,7 +2,7 @@
 title: "Skincare Tips during the Coronavirus (COVID19) Pandemic"
 date: 2021-02-01
 excerpt: "Frequent handwashing and mask-wearing help prevent the spread of COVID-19 but can dry out skin and trigger breakouts. Learn simple skincare routines to protect your face and hands while staying safe."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633700.jpg"
+image: "/images/blog/2633700.jpg"
 author: ""
 ---
 

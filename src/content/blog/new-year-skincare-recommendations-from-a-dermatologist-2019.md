@@ -2,7 +2,7 @@
 title: "New Year Skincare Recommendations from A Dermatologist (2019)"
 date: 2019-01-03
 excerpt: "Start the new year with a healthier skincare routine: a dermatologist explains what happens during a yearly skin exam, how often to see a dermatologist, and the daily habitsâ€”like SPF moisturizer and exfoliatingâ€”that keep your skin protected in sunny Florida."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633665.jpg"
+image: "/images/blog/2633665.jpg"
 author: ""
 ---
 

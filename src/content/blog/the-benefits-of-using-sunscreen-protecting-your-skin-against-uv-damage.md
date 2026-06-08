@@ -2,7 +2,7 @@
 title: "The Benefits of Using Sunscreen: Protecting Your Skin Against UV Damage"
 date: 2023-03-26
 excerpt: "Learn how UV radiation damages your skin and why daily sunscreen use is essential for preventing premature aging, sunburns, and skin cancer while keeping your complexion healthy."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633771.jpg"
+image: "/images/blog/2633771.jpg"
 author: ""
 ---
 

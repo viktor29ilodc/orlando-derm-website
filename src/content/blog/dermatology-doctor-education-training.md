@@ -2,7 +2,7 @@
 title: "Dermatology Doctor Education & Training"
 date: 2015-10-30
 excerpt: "An overview of the long road to becoming a dermatologist, covering the pre-medical bachelor's degree, medical school, internship, dermatology residency, and board certification that make up the roughly 12-year training path."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633271.jpg"
+image: "/images/blog/2633271.jpg"
 author: ""
 ---
 

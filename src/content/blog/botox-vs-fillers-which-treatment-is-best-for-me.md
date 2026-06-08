@@ -2,7 +2,7 @@
 title: "Botox vs. Fillers: Which Treatment Is Best for Me?"
 date: 2023-10-03
 excerpt: "Botox and dermal fillers are minimally invasive injectable treatments that reduce signs of aging without surgery. Learn how each works and which option is best for your skin goals."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2638560.jpg"
+image: "/images/blog/2638560.jpg"
 author: ""
 ---
 

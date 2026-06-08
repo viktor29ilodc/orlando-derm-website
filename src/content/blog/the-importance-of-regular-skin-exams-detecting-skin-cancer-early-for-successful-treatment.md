@@ -2,7 +2,7 @@
 title: "The Importance of Regular Skin Exams: Detecting Skin Cancer Early for Successful Treatment"
 date: 2023-03-15
 excerpt: "Skin cancer is highly treatable when caught early, making regular skin exams essential for prevention and detection. Learn the benefits of early detection, the signs to watch for, and why prompt treatment leads to better outcomes."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633770.jpg"
+image: "/images/blog/2633770.jpg"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "Cosmetic Skin Treatments"
 date: 2015-11-11
 excerpt: "An overview of cosmetic skin surgery performed by dermatologists, covering minimally invasive procedures such as anti-aging treatments, chemical peels, dermabrasion, hair restoration, and laser hair removal."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422057.jpg"
+image: "/images/blog/422057.webp"
 author: ""
 ---
 

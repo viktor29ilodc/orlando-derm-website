@@ -2,7 +2,7 @@
 title: "The Ultimate Solution to Cystic Acne"
 date: 2018-05-11
 excerpt: "Cystic acne is the most severe, scarring stage of acne and rarely responds to over-the-counter products. Learn how dermatologists treat it with oral antibiotics, hormonal therapy, prescription retinoids, and isotretinoin."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422152.png"
+image: "/images/blog/422152.png"
 author: ""
 ---
 

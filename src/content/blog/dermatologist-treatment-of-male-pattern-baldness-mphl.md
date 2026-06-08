@@ -2,7 +2,7 @@
 title: "Dermatologist Treatment of Male Pattern Baldness (MPHL)"
 date: 2018-07-21
 excerpt: "Male pattern hair loss (MPHL), or androgenetic alopecia, is an inherited condition driven by sensitivity to DHT that affects most men over time. Learn the causes and the range of dermatologist treatments, from minoxidil and finasteride to laser therapy and hair transplantation."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633314.jpg"
+image: "/images/blog/2633314.jpg"
 author: ""
 ---
 

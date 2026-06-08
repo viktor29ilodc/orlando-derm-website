@@ -2,7 +2,7 @@
 title: "Dermatology Orlando News: CryoDestructionâ„¢ Technique"
 date: 2015-11-26
 excerpt: "Orlando Dermatology Center introduces CryoDestructionâ„¢, a liquid-nitrogen technique that freezes keloid scars from the inside out with a 97% success rate, and launches the dedicated Florida Keloid Center."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422102.jpg"
+image: "/images/blog/422102.webp"
 author: ""
 ---
 

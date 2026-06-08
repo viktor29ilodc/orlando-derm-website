@@ -2,7 +2,7 @@
 title: "Dermatologist's Tips on Relieving Dry Skin"
 date: 2019-11-17
 excerpt: "When humidity drops, your usual skin care routine may leave skin dry, itchy, and flaky. Dermatologists share simple tips on bathing, cleansing, exfoliating, and lip care to heal dry skin and prevent it from returning."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422266.jpg"
+image: "/images/blog/422266.webp"
 author: ""
 ---
 
