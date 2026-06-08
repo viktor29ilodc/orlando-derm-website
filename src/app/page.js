@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
-        <div className="relative w-full min-h-[480px] md:min-h-[560px]">
+        <div className="relative w-full min-h-[350px] md:min-h-[400px]">
           <Image
             src="/images/hero/hero-derm-2560.jpg"
             alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
@@ -69,31 +69,53 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-tr from-navy/85 via-navy/45 to-transparent"
           />
-          <div className="relative z-10 flex min-h-[480px] md:min-h-[560px] items-end">
-            <div className="container-site w-full pt-24 pb-12 md:pt-28 md:pb-20">
-              <div className="max-w-2xl">
-                <p className="mb-4 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-sky-accent">
-                  Central Florida Dermatology
-                </p>
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-5">
-                  ORLANDO<br />DERMATOLOGY<br />CENTER
+          <div className="relative z-10 flex min-h-[350px] md:min-h-[400px] items-end">
+            <div className="container-site w-full pt-14 pb-10 md:pt-16 md:pb-12">
+              <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] mb-3">
+                  Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-base md:text-lg text-white/90 mb-8 max-w-xl leading-relaxed">
-                  Dermatology &amp; Mohs Surgery Practice located in Oviedo, Orlando, Lake Mary and Casselberry, FL
+                <p className="text-lg md:text-xl font-medium text-[#4AABB8] mb-5">
+                  20 Years of Expert Skin Care for Adults &amp; Children
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-5 max-w-xl">
+                  {[
+                    'Adult & Pediatric Dermatology',
+                    'Mohs Surgery & Skin Cancer Treatment',
+                    'Superficial Radiation Therapy',
+                    'Cosmetic Dermatology & Lasers',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm md:text-base text-white">
+                      <svg
+                        className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#4AABB8]"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs md:text-sm text-white/70 mb-6">
+                  Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  
-                    <a
-                  
-                      href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer"
+                  <a
+                    href={PRACTICE.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-teal hover:bg-teal-hover text-white px-7 py-3 rounded-card text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
                   >
                     Book Appointment
                   </a>
-                  
-                    <a
-                  
-                      href={`tel:${LOCATIONS[0].phoneTel}`}
+                  <a
+                    href={`tel:${LOCATIONS[0].phoneTel}`}
                     className="border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-7 py-3 rounded-card text-sm font-semibold transition-colors"
                   >
                     {LOCATIONS[0].phone}
