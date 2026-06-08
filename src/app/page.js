@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
-        <div className="relative h-[55vh] min-h-[440px] max-h-[620px] w-full">
+        <div className="relative w-full min-h-[480px] md:min-h-[560px]">
           <Image
             src="/images/hero/hero-derm-2560.jpg"
             alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
@@ -69,8 +69,8 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-tr from-navy/85 via-navy/45 to-transparent"
           />
-          <div className="relative z-10 flex h-full items-end">
-            <div className="container-site w-full pb-12 md:pb-20">
+          <div className="relative z-10 flex min-h-[480px] md:min-h-[560px] items-end">
+            <div className="container-site w-full pt-24 pb-12 md:pt-28 md:pb-20">
               <div className="max-w-2xl">
                 <p className="mb-4 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-sky-accent">
                   Central Florida Dermatology
