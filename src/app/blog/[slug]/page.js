@@ -77,11 +77,19 @@ export default function BlogPostPage({ params }) {
       {/* Article */}
       <article className="section-white py-12 md:py-16">
         <div className="container-site max-w-3xl">
-          {meta.image && (
-            <div className="mb-8 rounded-card overflow-hidden">
+          <div className="mb-8 rounded-card overflow-hidden">
+            {meta.image ? (
               <img src={meta.image} alt={meta.title} className="w-full h-64 md:h-80 object-cover" />
-            </div>
-          )}
+            ) : (
+              <div className="w-full h-64 md:h-80 bg-soft-blue flex items-center justify-center p-10">
+                <img
+                  src="/images/logo-navy.png"
+                  alt="Orlando Dermatology Center"
+                  className="max-h-24 w-auto opacity-80"
+                />
+              </div>
+            )}
+          </div>
 
           {meta.excerpt && (
             <p className="text-lg text-dark-gray leading-relaxed mb-6 font-medium">{meta.excerpt}</p>

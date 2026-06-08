@@ -61,10 +61,12 @@ export default function BlogPage() {
                   className="w-full h-56 md:h-full object-cover"
                 />
               ) : (
-                <div className="w-full h-56 md:h-full bg-soft-blue flex items-center justify-center">
-                  <span className="text-navy/40 font-semibold text-sm uppercase tracking-widest">
-                    Orlando Dermatology Center
-                  </span>
+                <div className="w-full h-56 md:h-full bg-soft-blue flex items-center justify-center p-8">
+                  <img
+                    src="/images/logo-navy.png"
+                    alt="Orlando Dermatology Center"
+                    className="max-h-20 w-auto opacity-80"
+                  />
                 </div>
               )}
               <div className="p-6 md:p-8 flex flex-col justify-center">
@@ -95,8 +97,12 @@ export default function BlogPage() {
                 {post.image ? (
                   <img src={post.image} alt={post.title} className="w-full h-44 object-cover" />
                 ) : (
-                  <div className="w-full h-44 bg-soft-blue flex items-center justify-center">
-                    <div className="h-1 w-12 bg-sky-accent rounded" />
+                  <div className="w-full h-44 bg-soft-blue flex items-center justify-center p-6">
+                    <img
+                      src="/images/logo-navy.png"
+                      alt="Orlando Dermatology Center"
+                      className="max-h-14 w-auto opacity-80"
+                    />
                   </div>
                 )}
                 <div className="p-5 flex flex-col flex-1">
