@@ -39,14 +39,14 @@ function NavBar() {
           </Link>
 
           {/* Action buttons */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
             <a href={`tel:${LOCATIONS[0].phoneTel}`} className="hidden sm:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
               Call Us
             </a>
             <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
               Book Online
             </a>
-            <a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
+            <a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer" className="inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
               Make a Payment
             </a>
           </div>
