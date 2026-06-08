@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
-        <div className="relative w-full min-h-[390px] md:min-h-[450px]">
+        <div className="relative w-full min-h-[285px] md:min-h-[330px]">
           <Image
             src="/images/hero/hero-derm-2560.jpg"
             alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
@@ -69,19 +69,19 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/38 to-transparent"
           />
-          <div className="relative z-10 flex min-h-[390px] md:min-h-[450px] items-end">
-            <div className="container-site w-full pt-14 pb-10 md:pt-16 md:pb-12">
+          <div className="relative z-10 flex min-h-[285px] md:min-h-[330px] items-end">
+            <div className="container-site w-full pt-10 pb-8 md:pt-12 md:pb-10">
               <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <p className="mb-3 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-[#E8C97A]">
+                <p className="mb-2 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-[#E8C97A]">
                   Central Florida Dermatology
                 </p>
-                <h1 className="text-xl md:text-2xl font-normal text-white leading-snug mb-2 [text-shadow:0_2px_16px_rgba(232,201,122,0.25)]">
+                <h1 className="text-base md:text-lg font-normal text-white leading-snug mb-1 [text-shadow:0_2px_16px_rgba(232,201,122,0.25)]">
                   Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-2xl md:text-4xl font-bold text-[#2DC4D4] leading-tight mb-5">
+                <p className="text-xl md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-3">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-5 max-w-xl">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-3 max-w-xl">
                   {[
                     'Adult & Pediatric Dermatology',
                     'Mohs Surgery & Skin Cancer Treatment',
@@ -90,10 +90,10 @@ export default function HomePage() {
                   ].map((item, i) => (
                     <li
                       key={item}
-                      className={`flex items-start gap-2 text-base md:text-lg ${i % 2 === 0 ? 'text-white' : 'text-[#F5E6C8]'}`}
+                      className={`flex items-start gap-2 text-sm md:text-base ${i % 2 === 0 ? 'text-white' : 'text-[#F5E6C8]'}`}
                     >
                       <svg
-                        className="mt-1 h-5 w-5 flex-shrink-0 text-[#2DC4D4]"
+                        className="mt-0.5 h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-[#2DC4D4]"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -108,7 +108,7 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs md:text-sm text-[#F0F4F4]/70 mb-6">
+                <p className="text-xs md:text-sm text-[#F0F4F4]/70 mb-4">
                   Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -116,13 +116,13 @@ export default function HomePage() {
                     href={PRACTICE.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-7 py-3 rounded-card text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
+                    className="bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-6 py-2.5 rounded-card text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
                   >
                     Book Appointment
                   </a>
                   <a
                     href={`tel:${LOCATIONS[0].phoneTel}`}
-                    className="border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-7 py-3 rounded-card text-sm font-semibold transition-colors"
+                    className="border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-2.5 rounded-card text-sm font-semibold transition-colors"
                   >
                     {LOCATIONS[0].phone}
                   </a>
