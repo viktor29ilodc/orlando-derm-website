@@ -63,22 +63,22 @@ export default function HomePage() {
             sizes="100vw"
             placeholder="blur"
             blurDataURL="/images/hero/hero-derm-blur.jpg"
-            className="object-cover object-[35%_center] md:object-center"
+            className="object-cover object-[35%_center] md:object-center brightness-110 saturate-150 sepia-[0.12] contrast-105"
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-tr from-navy/85 via-navy/45 to-transparent"
+            className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/38 to-transparent"
           />
           <div className="relative z-10 flex min-h-[390px] md:min-h-[450px] items-end">
             <div className="container-site w-full pt-14 pb-10 md:pt-16 md:pb-12">
               <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <p className="mb-3 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-sky-accent">
+                <p className="mb-3 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-[#E8C97A]">
                   Central Florida Dermatology
                 </p>
-                <h1 className="text-xl md:text-2xl font-normal text-white leading-snug mb-2">
+                <h1 className="text-xl md:text-2xl font-normal text-white leading-snug mb-2 [text-shadow:0_2px_16px_rgba(232,201,122,0.25)]">
                   Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-2xl md:text-4xl font-bold text-[#4AABB8] leading-tight mb-5">
+                <p className="text-2xl md:text-4xl font-bold text-[#2DC4D4] leading-tight mb-5">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-5 max-w-xl">
@@ -90,10 +90,10 @@ export default function HomePage() {
                   ].map((item, i) => (
                     <li
                       key={item}
-                      className={`flex items-start gap-2 text-base md:text-lg ${i % 2 === 0 ? 'text-white' : 'text-[#A8D8DF]'}`}
+                      className={`flex items-start gap-2 text-base md:text-lg ${i % 2 === 0 ? 'text-white' : 'text-[#F5E6C8]'}`}
                     >
                       <svg
-                        className="mt-1 h-5 w-5 flex-shrink-0 text-[#4AABB8]"
+                        className="mt-1 h-5 w-5 flex-shrink-0 text-[#2DC4D4]"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -116,7 +116,7 @@ export default function HomePage() {
                     href={PRACTICE.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-teal hover:bg-teal-hover text-white px-7 py-3 rounded-card text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
+                    className="bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-7 py-3 rounded-card text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
                   >
                     Book Appointment
                   </a>
