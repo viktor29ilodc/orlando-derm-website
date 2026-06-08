@@ -218,6 +218,37 @@ export function organizationSchema() {
   };
 }
 
+// Generate BlogPosting schema for a blog article
+export function blogPostingSchema(post) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    url: `${PRACTICE.url}/blog/${post.slug}`,
+    ...(post.excerpt && { description: post.excerpt }),
+    ...(post.date && { datePublished: post.date, dateModified: post.date }),
+    ...(post.image && { image: post.image }),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${PRACTICE.url}/blog/${post.slug}`,
+    },
+    author: {
+      '@type': 'Physician',
+      name: 'Vitaly Blatnoy, MD',
+      url: `${PRACTICE.url}/providers/vitaly-blatnoy-md`,
+    },
+    publisher: {
+      '@type': 'MedicalOrganization',
+      name: PRACTICE.name,
+      url: PRACTICE.url,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${PRACTICE.url}/images/logo.png`,
+      },
+    },
+  };
+}
+
 // Helper to render schema as script tag
 export function SchemaScript({ schema }) {
   return (
