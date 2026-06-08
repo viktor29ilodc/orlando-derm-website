@@ -1,4 +1,5 @@
 import { PRACTICE, LOCATIONS, PROVIDERS, SERVICES, CONDITIONS } from '@/data/practice';
+import { BLOG_POSTS } from '@/data/blog';
 
 export default function sitemap() {
   const baseUrl = PRACTICE.url;
@@ -9,9 +10,18 @@ export default function sitemap() {
     { url: `${baseUrl}/conditions`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/providers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/locations`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${baseUrl}/testimonials`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/new-patients`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   ];
+
+  const blogPages = BLOG_POSTS.map(p => ({
+    url: `${baseUrl}/blog/${p.slug}`,
+    lastModified: p.date ? new Date(p.date) : new Date(),
+    changeFrequency: 'yearly',
+    priority: 0.6,
+  }));
 
   const servicePages = SERVICES.map(s => ({
     url: `${baseUrl}/services/${s.slug}`,
@@ -41,5 +51,5 @@ export default function sitemap() {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...servicePages, ...conditionPages, ...locationPages, ...providerPages];
+  return [...staticPages, ...servicePages, ...conditionPages, ...locationPages, ...providerPages, ...blogPages];
 }
