@@ -2,7 +2,7 @@
 title: "Will My Unsightly Veins Eventually Go Away on Their Own?"
 date: 2024-09-19
 excerpt: "Varicose veins on the legs rarely disappear on their own and can worsen over time with a sedentary lifestyle. Learn how varicose veins form, at-home steps to reduce their appearance, and the laser vein removal treatments offered at Orlando Dermatology Center."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2752671.jpg"
+image: "/images/blog/2752671.jpg"
 author: ""
 ---
 

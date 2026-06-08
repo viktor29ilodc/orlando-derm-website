@@ -2,7 +2,7 @@
 title: "Where Did These Skin Tags Come From?"
 date: 2026-03-03
 excerpt: "Skin tags are harmless growths that commonly develop with age, often where skin rubs together. Learn how skin tags form, where they appear, and the safe removal options available."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2835030.jpeg"
+image: "/images/blog/2835030.jpg"
 author: ""
 ---
 

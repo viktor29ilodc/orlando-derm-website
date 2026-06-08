@@ -2,7 +2,7 @@
 title: "My Acne is Embarrassing: Can You Help?"
 date: 2023-11-06
 excerpt: "Embarrassed by stubborn acne that over-the-counter products can't fix? The board-certified team at Orlando Dermatology Center explains how acne forms and the professional treatments, from topicals to chemical peels and lasers, that can clear your skin and reduce scarring."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2687738.jpg"
+image: "/images/blog/2687738.jpg"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "Understanding Mohs Surgery: What to Expect"
 date: 2023-01-12
 excerpt: "Mohs surgery offers the highest success rate for treating certain skin cancers like basal cell carcinoma, squamous cell carcinoma, and melanoma. Learn how the procedure works, how to prepare, and what to expect during recovery."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633767.jpg"
+image: "/images/blog/2633767.jpg"
 author: ""
 ---
 

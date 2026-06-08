@@ -2,7 +2,7 @@
 title: "Thinning Hair and Hair Loss in Women (FPHL)"
 date: 2018-07-16
 excerpt: "Female Pattern Hair Loss (FPHL) is the most common cause of hair loss in women and is a progressive condition that responds best to early treatment. Learn about common treatments like minoxidil, spironolactone, hair transplants, and more, and why a dermatologist's diagnosis matters."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422155.jpg"
+image: "/images/blog/422155.webp"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "Get Rid Of Signs Of Aging With An IPL Photofacial!"
 date: 2022-08-24
 excerpt: "An IPL Photofacial uses Intense Pulsed Light therapy to reduce sun damage, brown spots, redness, and other signs of aging with no surgery and minimal recovery time. Learn what it treats, whether it hurts, and what to expect after treatment."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633762.jpg"
+image: "/images/blog/2633762.jpg"
 author: ""
 ---
 

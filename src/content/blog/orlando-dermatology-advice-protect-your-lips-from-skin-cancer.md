@@ -2,7 +2,7 @@
 title: "Orlando Dermatology Advice: Protect Your Lips From Skin Cancer"
 date: 2022-01-14
 excerpt: "Skin cancer on the lips can be surprisingly aggressive because lip skin is fragile and poorly protected from UV rays. Learn what lip cancer looks like, why it's dangerous, and how to protect your lips from skin cancer."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633734.jpg"
+image: "/images/blog/2633734.jpg"
 author: ""
 ---
 

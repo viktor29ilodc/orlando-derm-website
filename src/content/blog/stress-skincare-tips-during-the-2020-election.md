@@ -2,7 +2,7 @@
 title: "Stress Skincare Tips During the 2020 Election"
 date: 2020-10-01
 excerpt: "Stress can take a visible toll on your skin by raising cortisol and inflammation. This post shares three simple ways to keep your skin healthy during stressful times: a clean diet, regular exercise, and quality sleep."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633689.jpg"
+image: "/images/blog/2633689.jpg"
 author: ""
 ---
 

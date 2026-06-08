@@ -2,7 +2,7 @@
 title: "Are Keloid Scars A Serious Condition"
 date: 2022-10-15
 excerpt: "Keloid scars are an exuberant healing response most common in younger people and those with darker skin. Learn how dermatologists at Orlando Dermatology Center diagnose keloids and treat them, including the CryoDestruction technique with a 97% success rate."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633764.jpg"
+image: "/images/blog/2633764.jpg"
 author: ""
 ---
 

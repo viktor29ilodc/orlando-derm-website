@@ -2,7 +2,7 @@
 title: "High Tech Keloid Treatments that Actually Work!"
 date: 2022-03-08
 excerpt: "Keloids are thick, raised scars that often grow back after removal, making them notoriously hard to treat. Learn how the Orlando Dermatology Center uses high-tech CryoDestruction and SRT100 radiation therapy to remove keloid scars with a 97% success rate."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633738.jpg"
+image: "/images/blog/2633738.jpg"
 author: ""
 ---
 

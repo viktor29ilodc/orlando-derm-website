@@ -2,7 +2,7 @@
 title: "Skin Cancer Treatments"
 date: 2015-11-06
 excerpt: "An overview of how dermatologists diagnose and treat skin cancer, including biopsy, excision, Mohs surgery, and curettage, plus why early detection through regular skin checks is essential for the best outcomes."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422016.jpg"
+image: "/images/blog/422016.webp"
 author: ""
 ---
 

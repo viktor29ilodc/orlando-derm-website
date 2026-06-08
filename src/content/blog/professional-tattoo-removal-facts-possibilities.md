@@ -2,7 +2,7 @@
 title: "Professional Tattoo Removal: Facts & Possibilities"
 date: 2021-02-12
 excerpt: "As many as 25% of people with a tattoo regret getting it. Learn how professional laser and surgical tattoo removal work, what to expect during and after treatment, and why choosing a certified provider keeps the procedure safe."
-image: "https://sa1s3optim.patientpop.com/assets/docs/421994.jpg"
+image: "/images/blog/421994.webp"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "Pediatric Dermatology Sunscreen - Protect Your Children's Skin in the Florida Sun"
 date: 2022-04-20
 excerpt: "A pediatric sun-safety guide for Florida families, covering whether kids can use adult sunscreen, the case for mineral-based broad-spectrum SPF 30+, and practical tips to prevent sun damage and skin cancer."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633741.jpg"
+image: "/images/blog/2633741.jpg"
 author: ""
 ---
 

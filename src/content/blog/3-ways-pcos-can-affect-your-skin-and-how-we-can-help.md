@@ -2,7 +2,7 @@
 title: "3 Ways PCOS Can Affect Your Skin â€” And How We Can Help"
 date: 2025-09-15
 excerpt: "PCOS affects more than your reproductive system â€” hormone fluctuations can trigger acne, excess hair growth, and dark skin patches. Learn how Orlando Dermatology Center treats these common PCOS-related skin issues."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2811639.jpeg"
+image: "/images/blog/2811639.jpg"
 author: ""
 ---
 

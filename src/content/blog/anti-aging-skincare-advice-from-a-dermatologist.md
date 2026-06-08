@@ -2,7 +2,7 @@
 title: "Anti-Aging Skincare Advice from a Dermatologist"
 date: 2022-02-03
 excerpt: "A dermatologist's guide to what causes skin to age faster, why sun exposure is the biggest culprit, and the everyday sun-protection habits that help keep skin looking youthful."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633736.jpg"
+image: "/images/blog/2633736.jpg"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "How To Deal With Hormonal Acne"
 date: 2018-07-01
 excerpt: "Hormonal acne affects roughly half of women ages 20 to 30, typically forming cysts along the lower face. Learn the causes, symptoms, and the oral, topical, and lifestyle treatments that actually work."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633313.jpg"
+image: "/images/blog/2633313.jpg"
 author: ""
 ---
 

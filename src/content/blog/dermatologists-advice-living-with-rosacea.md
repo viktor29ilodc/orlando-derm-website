@@ -2,7 +2,7 @@
 title: "Dermatologist's Advice: Living with Rosacea"
 date: 2019-04-12
 excerpt: "Rosacea is a common, chronic skin condition that causes facial redness and can progress through four subtypes. Learn a dermatologist's daily tips for managing rosacea and why professional treatment is the most reliable approach."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422261.jpg"
+image: "/images/blog/422261.webp"
 author: ""
 ---
 

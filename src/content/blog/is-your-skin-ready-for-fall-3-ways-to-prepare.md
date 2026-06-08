@@ -2,7 +2,7 @@
 title: "Is Your Skin Ready for Fall? 3 Ways to Prepare"
 date: 2025-10-17
 excerpt: "As Florida's weather cools in fall, lower humidity can leave skin drier and irritated. Learn three ways to prepare your skin for the season, from optimizing your skincare routine to chemical peels and Botox."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2816765.jpeg"
+image: "/images/blog/2816765.jpg"
 author: ""
 ---
 

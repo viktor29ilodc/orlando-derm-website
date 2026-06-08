@@ -2,7 +2,7 @@
 title: "5 Signs That Mole Might Be Cancerous"
 date: 2021-09-11
 excerpt: "With one in five Americans developing skin cancer in their lifetime, knowing how to spot a potentially cancerous mole is critical. Use the ABCDE method (Asymmetry, Border, Color, Diameter, Evolving) to identify warning signs and know when to see a dermatologist."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633727.jpg"
+image: "/images/blog/2633727.jpg"
 author: ""
 ---
 

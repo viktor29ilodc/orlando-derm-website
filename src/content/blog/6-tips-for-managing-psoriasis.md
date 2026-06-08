@@ -2,7 +2,7 @@
 title: "6 Tips for Managing Psoriasis"
 date: 2024-01-11
 excerpt: "Psoriasis flare-ups can appear without warning, but they often respond to simple care and lifestyle changes. Learn six dermatologist-recommended tips for managing psoriasis of any type."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2703926.jpg"
+image: "/images/blog/2703926.jpg"
 author: ""
 ---
 

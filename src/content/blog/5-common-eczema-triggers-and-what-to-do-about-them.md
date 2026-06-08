@@ -2,7 +2,7 @@
 title: "5 Common Eczema Triggers â€” And What to Do About Them"
 date: 2024-12-11
 excerpt: "Eczema flare-ups are often set off by everyday triggers like allergens, stress, harsh soaps, dry air, and irritating fabrics. Learn the five most common eczema triggers and practical steps to avoid them and keep your skin calm."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2767199.jpeg"
+image: "/images/blog/2767199.jpg"
 author: ""
 ---
 

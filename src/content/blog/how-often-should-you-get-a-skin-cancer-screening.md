@@ -2,7 +2,7 @@
 title: "How Often Should You Get A Skin Cancer Screening?"
 date: 2018-04-03
 excerpt: "Living in sunny Florida raises your risk of skin cancer, making regular screenings essential. Learn what a skin cancer screening involves, why yearly exams matter, and how to prepare for your visit."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422150.jpg"
+image: "/images/blog/422150.webp"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "Dermatologist Tips for Healthy Skin"
 date: 2023-02-26
 excerpt: "A dermatologist's guide to maintaining healthy, glowing skin, covering skin care basics, essential daily practices, the benefits of regular dermatology visits, and expert product recommendations."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633769.jpg"
+image: "/images/blog/2633769.jpg"
 author: ""
 ---
 

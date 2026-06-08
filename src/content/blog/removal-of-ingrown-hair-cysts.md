@@ -2,7 +2,7 @@
 title: "Removal of Ingrown Hair Cysts"
 date: 2019-02-20
 excerpt: "An ingrown hair cyst is an ingrown hair that develops into a painful bump beneath and on the skin's surface. Learn how to identify, treat, and prevent ingrown hair cysts to avoid infection and scarring."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633668.jpg"
+image: "/images/blog/2633668.jpg"
 author: ""
 ---
 

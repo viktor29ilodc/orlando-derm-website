@@ -2,7 +2,7 @@
 title: "4 Encouraging Facts About Skin Cancer Surgery"
 date: 2024-10-08
 excerpt: "Skin cancer surgery is a first-line treatment with a high cure rate and minimal scarring thanks to modern techniques like Mohs surgery. Learn four encouraging facts about the procedure and why early detection matters."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2756334.jpeg"
+image: "/images/blog/2756334.jpg"
 author: ""
 ---
 

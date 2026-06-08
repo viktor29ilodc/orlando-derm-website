@@ -2,7 +2,7 @@
 title: "Androgenetic Alopecia: Understanding Your Treatment Options for Male-Pattern Hair Loss"
 date: 2025-07-02
 excerpt: "Male-pattern hair loss (androgenetic alopecia) is genetic and can't be prevented, but several treatments can help. Learn about hair growth medications, laser therapy, and hair transplant surgery offered at Orlando Dermatology Center."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2799220.jpeg"
+image: "/images/blog/2799220.jpg"
 author: ""
 ---
 

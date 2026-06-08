@@ -2,7 +2,7 @@
 title: "Look Your Best for the Holidays with BotoxÂ® and Fillers"
 date: 2025-12-10
 excerpt: "BotoxÂ® and fillers can give you a subtle, refreshed look in time for holiday gatherings. Learn what each treatment does, how long results last, and why to book at least a week ahead."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2823965.jpeg"
+image: "/images/blog/2823965.jpg"
 author: ""
 ---
 

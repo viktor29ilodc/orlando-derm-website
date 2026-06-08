@@ -2,7 +2,7 @@
 title: "4 Winter Skincare Tips from Dermatologists"
 date: 2019-10-15
 excerpt: "Cold weather and dry indoor heat can take a toll on your skin. Dermatologists share four simple winter skincare tips, from upgrading your moisturizer to taking lukewarm showers, to keep your skin healthy and hydrated all season."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422264.jpg"
+image: "/images/blog/422264.webp"
 author: ""
 ---
 

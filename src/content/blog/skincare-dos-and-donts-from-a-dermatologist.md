@@ -2,7 +2,7 @@
 title: "Skincare Dos and Don'ts from a Dermatologist"
 date: 2026-05-01
 excerpt: "A dermatologist's guide to the eight key dos and don'ts for healthy skin, from wearing daily sunscreen and checking for signs of skin cancer to avoiding overwashing and popping pimples."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2843680.jpg"
+image: "/images/blog/2843680.jpg"
 author: ""
 ---
 

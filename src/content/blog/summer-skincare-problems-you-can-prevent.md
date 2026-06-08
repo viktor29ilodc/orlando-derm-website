@@ -2,7 +2,7 @@
 title: "Summer Skincare Problems You Can Prevent"
 date: 2020-07-10
 excerpt: "Summer heat and outdoor activity bring common skin issues like acne, sunburn, poison ivy rashes, folliculitis, and dry, irritated skin. Learn simple prevention tips to keep your skin healthy all season long."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633684.jpg"
+image: "/images/blog/2633684.jpg"
 author: ""
 ---
 

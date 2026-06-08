@@ -2,7 +2,7 @@
 title: "Identifying Squamous Cell Carcinoma"
 date: 2018-02-01
 excerpt: "Squamous cell carcinoma is a common skin cancer caused by cumulative UV exposure. Learn how to recognize its warning signs and explore treatment options including Mohs surgery, excisional surgery, and more."
-image: "https://sa1s3optim.patientpop.com/assets/docs/421909.jpg"
+image: "/images/blog/421909.webp"
 author: ""
 ---
 

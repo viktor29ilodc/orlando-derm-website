@@ -2,7 +2,7 @@
 title: "4 Way to Fight Summer Acne"
 date: 2020-05-10
 excerpt: "Summer heat, humidity, and air conditioning can all trigger acne breakouts. Learn four dermatologist-backed tips to fight summer acne, from removing makeup before workouts to applying sunscreen on scars and showering after you sweat."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633682.jpg"
+image: "/images/blog/2633682.jpg"
 author: ""
 ---
 

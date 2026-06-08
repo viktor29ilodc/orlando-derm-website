@@ -2,7 +2,7 @@
 title: "5 Dermatology Tips For Dry Skin"
 date: 2022-04-05
 excerpt: "Dry skin, or dermatitis, can cause itching, flaking, and discomfort. Learn what causes it, how to recognize the symptoms, and simple prevention and treatment tips from the Orlando Dermatology Center."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422326.jpg"
+image: "/images/blog/422326.webp"
 author: ""
 ---
 

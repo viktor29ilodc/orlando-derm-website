@@ -2,7 +2,7 @@
 title: "What Is This Spongy Bump Under My Skin?"
 date: 2025-04-15
 excerpt: "Not every lump under your skin is cause for alarm. Learn how dermatologists tell the difference between cysts and lipomas, two common spongy bumps, and when treatment may be needed."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2787973.jpg"
+image: "/images/blog/2787973.jpg"
 author: ""
 ---
 

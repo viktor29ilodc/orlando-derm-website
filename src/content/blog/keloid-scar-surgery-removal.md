@@ -2,7 +2,7 @@
 title: "Keloid Scar Surgery & Removal"
 date: 2015-11-11
 excerpt: "Keloid scars are overgrowths of scar tissue that form around a wound and are more common in people with darker skin tones. Learn what causes keloids, how to recognize their symptoms, and the treatment options available, including the CryoDestruction technique used at the Florida Keloid Center in Orlando."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422082.jpg"
+image: "/images/blog/422082.webp"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "Is It Possible To Cure Eczema Completely?"
 date: 2018-06-10
 excerpt: "Eczema is a skin reaction pattern caused by at least 11 different conditions, making a true cure difficult. Learn what causes eczema and how dermatologists manage symptoms through skin care, medication, and trigger avoidance."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422153.jpg"
+image: "/images/blog/422153.webp"
 author: ""
 ---
 

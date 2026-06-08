@@ -2,7 +2,7 @@
 title: "New Year, New Skin: 3 Resolutions for a Healthier Glow"
 date: 2026-01-02
 excerpt: "Start 2026 with three simple resolutions for brighter, healthier skin: wear sunscreen daily, quit smoking, and schedule regular resurfacing treatments like chemical peels and laser resurfacing."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2829548.jpeg"
+image: "/images/blog/2829548.jpg"
 author: ""
 ---
 

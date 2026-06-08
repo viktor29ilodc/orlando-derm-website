@@ -2,7 +2,7 @@
 title: "Cold Weather Eczema: How To Treat It"
 date: 2018-11-15
 excerpt: "Cold, dry winter air can trigger or worsen eczema flare-ups. Learn what cold weather eczema is and how to treat and prevent it with daily moisturizing, topical steroids, humidified air, and healthy habits."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422153.jpg"
+image: "/images/blog/422153.webp"
 author: ""
 ---
 

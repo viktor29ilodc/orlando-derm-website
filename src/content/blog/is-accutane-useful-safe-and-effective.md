@@ -2,7 +2,7 @@
 title: "Is Accutane Useful, Safe, And Effective?"
 date: 2018-03-07
 excerpt: "Accutane (isotretinoin) is a highly effective treatment for severe acne, with over a 90% cure rate after a 4-to-6-month course. Learn how it works, its possible side effects, and the precautions needed for safe use."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422149.jpg"
+image: "/images/blog/422149.webp"
 author: ""
 ---
 

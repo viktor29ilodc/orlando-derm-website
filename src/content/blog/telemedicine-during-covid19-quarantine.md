@@ -2,7 +2,7 @@
 title: "Telemedicine during COVID19 Quarantine"
 date: 2020-04-06
 excerpt: "In response to the COVID-19 pandemic, the Orlando Dermatology Center offers secure telemedicine visits via the DOXY.ME platform for new and existing patients using any video-capable device."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633680.jpg"
+image: "/images/blog/2633680.jpg"
 author: ""
 ---
 

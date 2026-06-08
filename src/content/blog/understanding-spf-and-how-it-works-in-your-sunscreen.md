@@ -2,7 +2,7 @@
 title: "Understanding SPF and How It Works in Your Sunscreen"
 date: 2024-08-07
 excerpt: "SPF measures how well a sunscreen protects your skin from harmful UV rays. Learn how sunscreen works, the difference between physical and chemical ingredients, and how to choose the right SPF to reduce sun damage and skin cancer risk."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2745538.jpg"
+image: "/images/blog/2745538.jpg"
 author: ""
 ---
 

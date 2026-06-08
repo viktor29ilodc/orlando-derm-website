@@ -2,7 +2,7 @@
 title: "7 Signs Your Skin Needs Professional Attention Now"
 date: 2026-06-02
 excerpt: "A guide to seven warning signs that mean it's time to see a dermatologist, from new or changing moles to stubborn acne, unexplained growths, itchy rashes, keloid scars, and visible veins."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2847868.jpg"
+image: "/images/blog/2847868.jpg"
 author: ""
 ---
 

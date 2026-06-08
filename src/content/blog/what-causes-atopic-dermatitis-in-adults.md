@@ -2,7 +2,7 @@
 title: "What Causes Atopic Dermatitis In Adults?"
 date: 2022-09-15
 excerpt: "Atopic dermatitis (eczema) is a chronic, non-contagious condition that causes dry, itchy, inflamed skin and can affect adults due to irritants, allergens, and environmental triggers. Learn the signs, statistics, home care tips, and medical treatments available."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633763.jpg"
+image: "/images/blog/2633763.jpg"
 author: ""
 ---
 

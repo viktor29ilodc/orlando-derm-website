@@ -2,7 +2,7 @@
 title: "Understanding Melanoma: Causes and Treatment"
 date: 2023-02-28
 excerpt: "Melanoma is one of the most serious forms of skin cancer, but with early diagnosis and treatment many cases can be successfully managed. Learn the genetic and environmental causes of melanoma and the surgical, medication, and radiation treatment options available."
-image: "https://sa1s3optim.patientpop.com/assets/docs/422336.jpg"
+image: "/images/blog/422336.webp"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "What Does Laser Tattoo Removal Feel Like?"
 date: 2024-10-25
 excerpt: "Worried that laser tattoo removal will hurt? Learn what the treatment actually feels like, the factors that affect discomfort, and how numbing options can make the process virtually pain free."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2759721.jpeg"
+image: "/images/blog/2759721.jpg"
 author: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "11 Ways To Reduce Premature Skin Aging"
 date: 2018-08-01
 excerpt: "While natural aging is out of our control, sun exposure and lifestyle choices cause skin to age prematurely. Dermatologists share 11 practical tips to slow extrinsic aging and keep your skin looking younger."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633315.jpg"
+image: "/images/blog/2633315.jpg"
 author: ""
 ---
 

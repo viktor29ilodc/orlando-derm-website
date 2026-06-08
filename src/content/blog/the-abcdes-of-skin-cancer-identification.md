@@ -2,7 +2,7 @@
 title: "The ABCDE's of Skin Cancer Identification"
 date: 2023-01-26
 excerpt: "Skin cancer is the most common cancer in the United States, but early detection greatly improves treatment success. Learn the ABCDE rule for spotting warning signs and the preventative steps that lower your risk."
-image: "https://sa1s3optim.patientpop.com/50x/filters:format(webp)/assets/images/provider/photos/2633768.jpg"
+image: "/images/blog/2633768.jpg"
 author: ""
 ---
 
