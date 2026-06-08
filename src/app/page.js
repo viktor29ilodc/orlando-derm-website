@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
-        <div className="relative w-full min-h-[350px] md:min-h-[400px]">
+        <div className="relative w-full min-h-[390px] md:min-h-[450px]">
           <Image
             src="/images/hero/hero-derm-2560.jpg"
             alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
@@ -69,25 +69,31 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-tr from-navy/85 via-navy/45 to-transparent"
           />
-          <div className="relative z-10 flex min-h-[350px] md:min-h-[400px] items-end">
+          <div className="relative z-10 flex min-h-[390px] md:min-h-[450px] items-end">
             <div className="container-site w-full pt-14 pb-10 md:pt-16 md:pb-12">
               <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] mb-3">
+                <p className="mb-3 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-sky-accent">
+                  Central Florida Dermatology
+                </p>
+                <h1 className="text-xl md:text-2xl font-normal text-white leading-snug mb-2">
                   Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-lg md:text-xl font-medium text-[#4AABB8] mb-5">
+                <p className="text-2xl md:text-4xl font-bold text-[#4AABB8] leading-tight mb-5">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-5 max-w-xl">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-5 max-w-xl">
                   {[
                     'Adult & Pediatric Dermatology',
                     'Mohs Surgery & Skin Cancer Treatment',
                     'Superficial Radiation Therapy',
                     'Cosmetic Dermatology & Lasers',
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm md:text-base text-white">
+                  ].map((item, i) => (
+                    <li
+                      key={item}
+                      className={`flex items-start gap-2 text-base md:text-lg ${i % 2 === 0 ? 'text-white' : 'text-[#A8D8DF]'}`}
+                    >
                       <svg
-                        className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#4AABB8]"
+                        className="mt-1 h-5 w-5 flex-shrink-0 text-[#4AABB8]"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -102,7 +108,7 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs md:text-sm text-white/70 mb-6">
+                <p className="text-xs md:text-sm text-[#F0F4F4]/70 mb-6">
                   Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                 </p>
                 <div className="flex flex-wrap gap-3">
