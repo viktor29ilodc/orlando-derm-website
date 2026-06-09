@@ -26,7 +26,7 @@ export default function NavBar() {
         <div className="container-site flex items-center justify-between py-4 md:py-6">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0" onClick={() => setOpen(false)}>
-            <img src="/images/logo-white.png" alt="Orlando Dermatology Center" className="h-9 sm:h-10 md:h-12 w-auto" />
+            <img src="/images/logo-white.png" alt="Orlando Dermatology Center" className="h-9 sm:h-10 md:h-[72px] w-auto" />
           </Link>
 
           {/* Action buttons */}
