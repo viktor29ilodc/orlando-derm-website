@@ -102,7 +102,11 @@ export default function LiveReviews({ fallback = [] }) {
 
   const items =
     status === 'live'
-      ? reviews.map((r) => ({
+      ? reviews
+          // Second guard: never render anything below 4 stars, even if the
+          // API response somehow included it.
+          .filter((r) => typeof r.rating === 'number' && r.rating >= 4)
+          .map((r) => ({
           key: r.id,
           author: r.author,
           text: r.text,

@@ -69,7 +69,9 @@ export async function GET() {
     const seen = new Set();
     const reviews = perPlace
       .flatMap((p) => p.reviews)
-      .filter((r) => r.rating >= 4 && r.text) // 4 & 5 stars, with text
+      // STRICT: only 4- and 5-star reviews with text. Anything missing a
+      // numeric rating, or rated 3 or below, is excluded — no exceptions.
+      .filter((r) => typeof r.rating === 'number' && r.rating >= 4 && r.text)
       .sort((a, b) => b.time - a.time)
       .filter((r) => {
         const k = `${r.author}|${r.text.slice(0, 80)}`;
