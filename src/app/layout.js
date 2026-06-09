@@ -39,15 +39,17 @@ function NavBar() {
           </Link>
 
           {/* Action buttons */}
-          <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
-            <a href={`tel:${LOCATIONS[0].phoneTel}`} className="hidden sm:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
+          <div className="flex flex-nowrap items-center justify-end gap-1.5 sm:gap-3">
+            <a href={`tel:${LOCATIONS[0].phoneTel}`} className="hidden sm:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide whitespace-nowrap">
               Call Us
             </a>
-            <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
-              Book Online
+            <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex bg-teal hover:bg-teal-hover text-white px-3 sm:px-4 py-1.5 rounded-card text-[11px] sm:text-xs font-semibold transition-colors uppercase tracking-wide whitespace-nowrap">
+              <span className="sm:hidden">Book</span>
+              <span className="hidden sm:inline">Book Online</span>
             </a>
-            <a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer" className="inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide">
-              Make a Payment
+            <a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer" className="inline-flex border border-white text-white hover:bg-white hover:text-navy px-3 sm:px-4 py-1.5 rounded-card text-[11px] sm:text-xs font-semibold transition-colors uppercase tracking-wide whitespace-nowrap">
+              <span className="sm:hidden">Pay</span>
+              <span className="hidden sm:inline">Make a Payment</span>
             </a>
           </div>
         </div>
