@@ -49,12 +49,12 @@ export default function TestimonialsPage() {
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">What Our Patients Say</h1>
           <p className="text-lg text-gray-300 max-w-2xl">
-            Our patients are at the heart of everything we do. Here’s a sample of the 600+ reviews
-            shared by the people we care for across Central Florida.
+            Our patients are at the heart of everything we do. Here’s a sample of feedback from the
+            over 5,000 patients we care for across Central Florida.
           </p>
           <div className="flex flex-wrap items-center gap-3 mt-6">
             <Stars />
-            <span className="text-sm text-gray-300">Trusted by 600+ reviewers</span>
+            <span className="text-sm text-gray-300">Trusted by Over 5,000 Patients</span>
           </div>
         </div>
       </section>
