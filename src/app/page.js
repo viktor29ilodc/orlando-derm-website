@@ -67,18 +67,18 @@ export default function HomePage() {
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-tr from-navy/75 via-navy/38 to-transparent"
+            className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/45 to-transparent md:from-navy/65 md:via-navy/30"
           />
           <div className="relative z-10 flex min-h-[285px] md:min-h-[330px] items-end">
             <div className="container-site w-full pt-10 pb-8 md:pt-12 md:pb-10">
               <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <p className="mb-2 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-[#E8C97A] [text-shadow:0_1px_3px_rgba(0,0,0,0.6)]">
+                <p className="mb-2 text-[10px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
                   Central Florida Dermatology
                 </p>
-                <h1 className="text-base md:text-lg font-normal text-white leading-snug mb-1 [text-shadow:0_2px_16px_rgba(232,201,122,0.25)]">
+                <h1 className="text-[13px] md:text-lg font-normal text-white leading-snug mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
                   Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-xl md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-3">
+                <p className="text-base md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-3 max-w-xl">
@@ -90,7 +90,7 @@ export default function HomePage() {
                   ].map((item, i) => (
                     <li
                       key={item}
-                      className={`flex items-start gap-2 text-sm md:text-base ${i % 2 === 0 ? 'text-white' : 'text-[#F5E6C8]'}`}
+                      className={`flex items-start gap-2 text-[11px] md:text-base [text-shadow:0_1px_2px_rgba(0,0,0,0.55)] ${i % 2 === 0 ? 'text-white' : 'text-[#F5E6C8]'}`}
                     >
                       <svg
                         className="mt-0.5 h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-[#2DC4D4]"
@@ -108,7 +108,7 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs md:text-sm text-[#F0F4F4]/70 mb-4">
+                <p className="text-[10px] md:text-sm text-[#F0F4F4]/85 mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
                   Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                 </p>
                 <div className="flex flex-wrap gap-3">
