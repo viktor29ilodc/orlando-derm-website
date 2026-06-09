@@ -81,7 +81,7 @@ export default function HomePage() {
                 <p className="text-base md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-3 max-w-xl">
+                <ul className="grid grid-cols-2 gap-x-6 gap-y-1.5 mb-3 max-w-xl">
                   {[
                     'Adult & Pediatric Dermatology',
                     'Mohs Surgery & Skin Cancer Treatment',
