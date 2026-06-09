@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { PRACTICE, LOCATIONS } from '@/data/practice';
 import { TESTIMONIALS, REVIEW_LINKS } from '@/data/testimonials';
 import { breadcrumbSchema, SchemaScript } from '@/lib/schema';
+import LiveReviews from '@/components/LiveReviews';
 
 export const metadata = {
   title: 'Patient Testimonials & Reviews',
@@ -9,13 +10,6 @@ export const metadata = {
     'Read what patients say about Orlando Dermatology Center. Real reviews on the care provided by our board-certified dermatologists across 4 Central Florida locations.',
   alternates: { canonical: '/testimonials' },
 };
-
-function formatDate(iso) {
-  if (!iso) return '';
-  const d = new Date(iso);
-  if (isNaN(d)) return iso;
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-}
 
 function Stars() {
   return (
@@ -62,23 +56,7 @@ export default function TestimonialsPage() {
       {/* Testimonials grid */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t, i) => (
-              <figure
-                key={i}
-                className="bg-white border border-warm-gray rounded-card p-6 flex flex-col hover:border-sky-accent transition-colors"
-              >
-                <Stars />
-                <blockquote className="text-dark-gray leading-relaxed mt-4 mb-4 flex-1">
-                  “{t.quote}”
-                </blockquote>
-                <figcaption className="border-t border-warm-gray pt-3">
-                  <span className="block text-navy font-semibold text-sm">{t.name}</span>
-                  {t.date && <span className="text-mid-gray text-xs">{formatDate(t.date)}</span>}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
+          <LiveReviews fallback={TESTIMONIALS} />
 
           {/* Read / leave reviews */}
           <div className="mt-12 p-6 bg-ice-white rounded-card border border-warm-gray text-center">
