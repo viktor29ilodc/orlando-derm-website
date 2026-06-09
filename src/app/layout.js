@@ -1,6 +1,7 @@
 import './globals.css';
 import { PRACTICE, LOCATIONS, SERVICES, CONDITIONS } from '@/data/practice';
 import Link from 'next/link';
+import NavBar from '@/components/NavBar';
 
 export const metadata = {
   metadataBase: new URL(PRACTICE.url),
@@ -26,65 +27,6 @@ export const metadata = {
     canonical: PRACTICE.url,
   },
 };
-
-function NavBar() {
-  return (
-    <header className="sticky top-0 z-50">
-      {/* Top bar — logo + action buttons */}
-      <div className="bg-navy">
-        <div className="container-site flex items-center justify-between py-6">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
-            <img src="/images/logo-white.png" alt="Orlando Dermatology Center" className="h-10 md:h-12 w-auto" />
-          </Link>
-
-          {/* Action buttons */}
-          <div className="flex flex-nowrap items-center justify-end gap-1.5 sm:gap-3">
-            <a href={`tel:${LOCATIONS[0].phoneTel}`} className="hidden sm:inline-flex border border-white text-white hover:bg-white hover:text-navy px-4 py-1.5 rounded-card text-xs font-semibold transition-colors uppercase tracking-wide whitespace-nowrap">
-              Call Us
-            </a>
-            <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex bg-teal hover:bg-teal-hover text-white px-3 sm:px-4 py-1.5 rounded-card text-[11px] sm:text-xs font-semibold transition-colors uppercase tracking-wide whitespace-nowrap">
-              <span className="sm:hidden">Book</span>
-              <span className="hidden sm:inline">Book Online</span>
-            </a>
-            <a href={PRACTICE.paymentUrl} target="_blank" rel="noopener noreferrer" className="inline-flex border border-white text-white hover:bg-white hover:text-navy px-3 sm:px-4 py-1.5 rounded-card text-[11px] sm:text-xs font-semibold transition-colors uppercase tracking-wide whitespace-nowrap">
-              <span className="sm:hidden">Pay</span>
-              <span className="hidden sm:inline">Make a Payment</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Navigation tabs */}
-      <nav className="bg-white border-b border-warm-gray">
-        <div className="container-site">
-          <div className="flex items-center overflow-x-auto">
-            {[
-              { label: 'Home', href: '/' },
-              { label: 'Conditions', href: '/conditions' },
-              { label: 'Services', href: '/services' },
-              { label: 'Laser Treatments', href: '/services/laser-treatments' },
-              { label: 'New Patients', href: '/new-patients' },
-              { label: 'Patient Portal', href: 'https://patientportal.advancedmd.com/account/logon?lk=140478', external: true },
-              { label: 'Blog', href: '/blog' },
-              { label: 'Testimonials', href: '/testimonials' },
-              { label: 'Contact Us', href: '/contact' },
-            ].map(item => (
-              <a
-                key={item.label}
-                href={item.href}
-                {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                className="px-4 py-3.5 text-dark-gray hover:text-teal text-xs font-semibold uppercase tracking-widest whitespace-nowrap transition-colors border-b-2 border-transparent hover:border-teal"
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
-    </header>
-  );
-}
 
 function Footer() {
   return (
