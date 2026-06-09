@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="relative z-10 flex min-h-[285px] md:min-h-[330px] items-end">
             <div className="container-site w-full pt-10 pb-8 md:pt-12 md:pb-10">
               <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <p className="mb-2 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-[#E8C97A]">
+                <p className="mb-2 text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-[#E8C97A] [text-shadow:0_1px_3px_rgba(0,0,0,0.6)]">
                   Central Florida Dermatology
                 </p>
                 <h1 className="text-base md:text-lg font-normal text-white leading-snug mb-1 [text-shadow:0_2px_16px_rgba(232,201,122,0.25)]">
