@@ -171,7 +171,6 @@ export function organizationSchema() {
     sameAs: [
       'https://www.facebook.com/orlandodermatology/',
       'https://www.healthgrades.com/physician/dr-vitaly-blatnoy-xms8t',
-      'https://www.zocdoc.com/doctor/vitaly-blatnoy-md-56078',
       'https://health.usnews.com/doctors/vitaly-blatnoy-202282',
       'https://www.vitals.com/doctors/Dr_Vitaly_Blatnoy.html',
       'https://doctor.webmd.com/doctor/vitaly-blatnoy-d292c295-d500-4f2e-b8e9-be490e3faff1-overview',

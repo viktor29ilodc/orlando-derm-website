@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { PRACTICE, LOCATIONS } from '@/data/practice';
-import { TESTIMONIALS, REVIEW_LINKS } from '@/data/testimonials';
+import { TESTIMONIALS, REVIEW_LINKS, LOCATION_REVIEW_LINKS } from '@/data/testimonials';
 import { breadcrumbSchema, SchemaScript } from '@/lib/schema';
 import LiveReviews from '@/components/LiveReviews';
 
@@ -58,11 +58,11 @@ export default function TestimonialsPage() {
         <div className="container-site">
           <LiveReviews fallback={TESTIMONIALS} />
 
-          {/* Read / leave reviews */}
+          {/* Read more reviews */}
           <div className="mt-12 p-6 bg-ice-white rounded-card border border-warm-gray text-center">
-            <h2 className="text-xl font-bold text-navy mb-2">Read More Reviews or Share Your Experience</h2>
+            <h2 className="text-xl font-bold text-navy mb-2">Read More Reviews</h2>
             <p className="text-dark-gray text-sm mb-5">
-              We’re grateful for every patient who takes the time to leave a review.
+              See more of what our patients say on our review profiles.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {REVIEW_LINKS.map((r) => (
@@ -73,7 +73,28 @@ export default function TestimonialsPage() {
                   rel="noopener noreferrer"
                   className="border border-teal text-teal hover:bg-teal hover:text-white px-5 py-2.5 rounded-card font-semibold text-sm transition-colors"
                 >
-                  Review us on {r.label}
+                  Read on {r.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Leave a review — one Google profile per location */}
+          <div className="mt-8 p-6 bg-ice-white rounded-card border border-warm-gray text-center">
+            <h2 className="text-xl font-bold text-navy mb-2">Leave a Review</h2>
+            <p className="text-dark-gray text-sm mb-5">
+              Loved your visit? Share your experience on Google — choose your location:
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {LOCATION_REVIEW_LINKS.map((loc) => (
+                <a
+                  key={loc.label}
+                  href={loc.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-teal hover:bg-teal-hover text-white px-5 py-2.5 rounded-card font-semibold text-sm transition-colors"
+                >
+                  {loc.label}
                 </a>
               ))}
             </div>

@@ -13,9 +13,16 @@ export const TESTIMONIALS = [
   { name: 'Jay S.', date: '2026-06-07', quote: 'Fantastic!' },
 ];
 
-// Where patients can read more reviews or leave their own.
+// Where patients can read existing reviews (Google + Healthgrades).
 export const REVIEW_LINKS = [
   { label: 'Google', url: 'https://www.google.com/maps/place/Orlando+Dermatology+Center/@28.652085,-81.2437102,17z/data=!4m6!3m5!1s0x88e7694983e1236b:0x9d96e99285765f3a!8m2!3d28.652085!4d-81.2437102!16s%2Fg%2F11bcdhznr4' },
   { label: 'Healthgrades', url: 'https://www.healthgrades.com/physician/dr-vitaly-blatnoy-xms8t' },
-  { label: 'Zocdoc', url: 'https://www.zocdoc.com/doctor/vitaly-blatnoy-md-56078' },
+];
+
+// Direct "write a review" links for each location's Google Business profile.
+export const LOCATION_REVIEW_LINKS = [
+  { label: 'Oviedo', url: 'https://search.google.com/local/writereview?placeid=ChIJayPhg0lp54gROl92hZLplp0' },
+  { label: 'Waterford Lakes', url: 'https://search.google.com/local/writereview?placeid=ChIJDejpsrJn54gR3Gk8P4LCFfU' },
+  { label: 'Lake Mary', url: 'https://search.google.com/local/writereview?placeid=ChIJlxvPtPQN54gREhQmf8Y2FjU' },
+  { label: 'Casselberry', url: 'https://search.google.com/local/writereview?placeid=ChIJow31eMFv54gRDYv5aPjvNMo' },
 ];
