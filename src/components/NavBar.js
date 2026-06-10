@@ -6,6 +6,8 @@ import { PRACTICE, LOCATIONS } from '@/data/practice';
 
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Providers', href: '/providers' },
   { label: 'Conditions', href: '/conditions' },
   { label: 'Services', href: '/services' },
   { label: 'Laser Treatments', href: '/services/laser-treatments' },
