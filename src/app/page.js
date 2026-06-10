@@ -69,19 +69,19 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/45 to-transparent md:from-navy/65 md:via-navy/30"
           />
-          <div className="relative z-10 flex min-h-[285px] md:min-h-[330px] items-end">
-            <div className="container-site w-full pt-10 pb-8 md:pt-12 md:pb-10">
+          <div className="relative z-10 flex min-h-[285px] md:min-h-[330px] items-start md:items-end">
+            <div className="container-site w-full pt-5 pb-6 md:pt-12 md:pb-10">
               <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <p className="mb-2 text-[10px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
+                <p className="mb-1 md:mb-2 text-[8px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
                   Central Florida Dermatology
                 </p>
-                <h1 className="text-[13px] md:text-lg font-normal text-white leading-snug mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
+                <h1 className="text-[10px] md:text-lg font-normal text-white leading-tight md:leading-snug mb-0.5 md:mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
                   Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-base md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
+                <p className="text-xs md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-1.5 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
-                <ul className="grid grid-cols-2 gap-x-6 gap-y-1.5 mb-3 max-w-xl">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-0 md:gap-y-1.5 mb-1.5 md:mb-3 max-w-xl">
                   {[
                     'Adult & Pediatric Dermatology',
                     'Mohs Surgery & Skin Cancer Treatment',
@@ -90,13 +90,13 @@ export default function HomePage() {
                   ].map((item) => (
                     <li
                       key={item}
-                      className="text-[11px] md:text-base text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
+                      className="text-[9px] md:text-base leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
                     >
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="text-[10px] md:text-sm text-[#F0F4F4]/85 mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
+                <p className="text-[8px] md:text-sm text-[#F0F4F4]/85 mb-2 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
                   Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -104,13 +104,13 @@ export default function HomePage() {
                     href={PRACTICE.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-6 py-2.5 rounded-card text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
+                    className="bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-4 py-2 md:px-6 md:py-2.5 rounded-card text-xs md:text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
                   >
                     Book Appointment
                   </a>
                   <a
                     href={`tel:${LOCATIONS[0].phoneTel}`}
-                    className="border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-2.5 rounded-card text-sm font-semibold transition-colors"
+                    className="border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-card text-xs md:text-sm font-semibold transition-colors"
                   >
                     {LOCATIONS[0].phone}
                   </a>
@@ -123,8 +123,19 @@ export default function HomePage() {
 
       {/* LOCATIONS BAR */}
       <section className="bg-ice-white border-b border-warm-gray">
-        <div className="container-site py-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="container-site py-5 md:py-8">
+          {/* Mobile only: compact horizontal scroll strip (name, city, phone) */}
+          <div className="md:hidden flex gap-3 overflow-x-auto -mx-6 px-6 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {LOCATIONS.map(loc => (
+              <Link key={loc.id} href={`/locations/${loc.id}`} className="flex-shrink-0 min-w-[148px] bg-white rounded-card p-3 border border-warm-gray">
+                <h2 className="text-navy font-bold text-xs leading-tight mb-0.5">{loc.name}</h2>
+                <p className="text-dark-gray text-[11px] mb-1">{loc.city}, {loc.state}</p>
+                <span className="text-teal font-semibold text-[11px]">{loc.phone}</span>
+              </Link>
+            ))}
+          </div>
+          {/* Desktop (>=768px): full grid — unchanged */}
+          <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {LOCATIONS.map(loc => (
               <Link key={loc.id} href={`/locations/${loc.id}`} className="bg-white rounded-card p-5 border border-warm-gray hover:border-sky-accent transition-colors">
                 <h2 className="text-navy font-bold text-base mb-1">{loc.name}</h2>
@@ -138,7 +149,7 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT */}
-      <section className="section-white py-12 md:py-16">
+      <section className="section-white py-8 md:py-16">
         <div className="container-site max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">About Orlando Dermatology Center</h2>
           <div className="text-dark-gray leading-relaxed space-y-4">
@@ -156,7 +167,7 @@ export default function HomePage() {
       </section>
 
       {/* AWARDS */}
-      <section className="section-ice py-12">
+      <section className="section-ice py-8 md:py-12">
         <div className="container-site">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
             <div className="text-center md:text-left">
@@ -178,10 +189,10 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES GRID */}
-      <section className="bg-navy py-12 md:py-16">
+      <section className="bg-navy py-8 md:py-16">
         <div className="container-site">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-2">Services</h2>
-          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-6 md:mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {SERVICES.map(service => {
               const img = serviceImages[service.slug];
@@ -210,10 +221,10 @@ export default function HomePage() {
       </section>
 
       {/* CONDITIONS GRID */}
-      <section className="bg-navy py-12 md:py-16 border-t border-gray-700">
+      <section className="bg-navy py-8 md:py-16 border-t border-gray-700">
         <div className="container-site">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-2">Conditions</h2>
-          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-6 md:mb-10" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {CONDITIONS.map(condition => {
               const img = conditionImages[condition.slug];
@@ -242,7 +253,7 @@ export default function HomePage() {
       </section>
 
       {/* AFFILIATIONS */}
-      <section className="section-white py-12">
+      <section className="section-white py-8 md:py-12">
         <div className="container-site">
           <h2 className="text-2xl font-bold text-navy text-center mb-2">Affiliations</h2>
           <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-8" />
@@ -264,7 +275,7 @@ export default function HomePage() {
       </section>
 
       {/* OUR MISSION */}
-      <section className="section-ice py-12 md:py-16">
+      <section className="section-ice py-8 md:py-16">
         <div className="container-site max-w-4xl">
           <div className="text-center mb-8">
             <p className="text-mid-gray text-sm uppercase tracking-widest mb-2">OUR</p>
@@ -281,12 +292,12 @@ export default function HomePage() {
       </section>
 
       {/* PROVIDERS */}
-      <section className="section-white py-12 md:py-16">
+      <section className="section-white py-8 md:py-16">
         <div className="container-site">
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">
             Meet <span className="font-bold">Our Providers</span>
           </h2>
-          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-6 md:mb-10" />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
             {PROVIDERS.map(provider => {
               const ext = provider.slug === 'joanna-kluger-wesley-pa' ? 'png' : 'jpg';
@@ -308,10 +319,10 @@ export default function HomePage() {
       </section>
 
       {/* NEW PATIENTS */}
-      <section className="section-ice py-12">
+      <section className="section-ice py-8 md:py-12">
         <div className="container-site">
           <h2 className="text-2xl font-bold text-navy text-center mb-2">NEW PATIENTS</h2>
-          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-6 md:mb-10" />
           <div className="flex flex-col sm:flex-row justify-center gap-8 md:gap-16">
             <Link href="/new-patients" className="text-center group">
               <div className="w-20 h-20 bg-navy rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -332,11 +343,11 @@ export default function HomePage() {
       </section>
 
       {/* FIND US */}
-      <section className="section-white py-12 md:py-16">
+      <section className="section-white py-8 md:py-16">
         <div className="container-site">
           <h3 className="text-mid-gray text-sm uppercase tracking-widest text-center mb-1">FIND US</h3>
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">OUR LOCATIONS</h2>
-          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-6 md:mb-10" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {LOCATIONS.map(loc => (
               <div key={loc.id} className="bg-white border border-warm-gray rounded-card overflow-hidden">
@@ -363,10 +374,10 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="section-ice py-12 md:py-16">
+      <section className="section-ice py-8 md:py-16">
         <div className="container-site max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">What Our Patients Say</h2>
-          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-10" />
+          <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-6 md:mb-10" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-card p-6 border border-warm-gray">
               <div className="text-sky-accent text-2xl mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -386,7 +397,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="section-white py-12 md:py-16">
+      <section className="section-white py-8 md:py-16">
         <div className="container-site max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">Frequently Asked Questions</h2>
           <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-8" />
@@ -402,7 +413,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA BANNER */}
-      <section className="bg-navy text-white py-12">
+      <section className="bg-navy text-white py-8 md:py-12">
         <div className="container-site text-center">
           <h2 className="text-2xl font-bold mb-4">Ready to Schedule Your Visit?</h2>
           <p className="text-gray-300 mb-6 max-w-lg mx-auto">Accepting new patients at all 4 locations. Book online or call today.</p>
