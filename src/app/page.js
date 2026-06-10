@@ -70,12 +70,12 @@ export default function HomePage() {
             className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/45 to-transparent md:from-navy/65 md:via-navy/30"
           />
           <div className="relative z-10 flex min-h-[285px] md:min-h-[330px] items-start md:items-end">
-            <div className="container-site w-full pt-5 pb-6 md:pt-12 md:pb-10">
+            <div className="container-site w-full pt-2 pb-6 md:pt-12 md:pb-10">
               <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
                 <p className="mb-1 md:mb-2 text-[8px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
                   Central Florida Dermatology
                 </p>
-                <h1 className="text-[10px] md:text-lg font-normal text-white leading-tight md:leading-snug mb-0.5 md:mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
+                <h1 className="hidden md:block text-[10px] md:text-lg font-normal text-white leading-tight md:leading-snug mb-0.5 md:mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
                   Trusted Dermatology Care in Central Florida
                 </h1>
                 <p className="text-xs md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-1.5 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
@@ -129,6 +129,7 @@ export default function HomePage() {
             {LOCATIONS.map(loc => (
               <Link key={loc.id} href={`/locations/${loc.id}`} className="flex-shrink-0 min-w-[148px] bg-white rounded-card p-3 border border-warm-gray">
                 <h2 className="text-navy font-bold text-xs leading-tight mb-0.5">{loc.name}</h2>
+                <p className="text-dark-gray text-[10px] leading-tight mb-0.5">{loc.address}</p>
                 <p className="text-dark-gray text-[11px] mb-1">{loc.city}, {loc.state}</p>
                 <span className="text-teal font-semibold text-[11px]">{loc.phone}</span>
               </Link>
