@@ -44,7 +44,7 @@ export default function TestimonialsPage() {
           <h1 className="text-3xl md:text-4xl font-bold mb-4">What Our Patients Say</h1>
           <p className="text-lg text-gray-300 max-w-2xl">
             Our patients are at the heart of everything we do. Here’s a sample of feedback from the
-            over 5,000 patients we care for across Central Florida.
+            patients we care for across Central Florida.
           </p>
           <div className="flex flex-wrap items-center gap-3 mt-6">
             <Stars />
