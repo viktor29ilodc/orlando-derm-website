@@ -4,6 +4,10 @@ import Link from 'next/link';
 import NavBar from '@/components/NavBar';
 import MobileStickyBar from '@/components/MobileStickyBar';
 
+// Non-production deployments (e.g. *.vercel.app preview builds) must not be
+// indexed — only the canonical production domain should appear in search.
+const isProduction = process.env.VERCEL_ENV ? process.env.VERCEL_ENV === 'production' : true;
+
 export const metadata = {
   metadataBase: new URL(PRACTICE.url),
   title: {
@@ -19,11 +23,9 @@ export const metadata = {
     title: 'Orlando Dermatology Center | Dermatology & Mohs Surgery',
     description: PRACTICE.description,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
+  robots: isProduction
+    ? { index: true, follow: true, googleBot: { index: true, follow: true } }
+    : { index: false, follow: false, googleBot: { index: false, follow: false } },
   alternates: {
     canonical: PRACTICE.url,
   },

@@ -12,7 +12,7 @@ export function generateMetadata({ params }) {
   const condition = CONDITIONS.find(c => c.slug === params.slug);
   if (!condition) return {};
   return {
-    title: `${condition.name} Treatment in Orlando, Oviedo, Lake Mary & Casselberry FL`,
+    title: `${condition.name} Treatment in Orlando, FL`,
     description: `Expert ${condition.name.toLowerCase()} diagnosis and treatment by board-certified dermatologists. Orlando Dermatology Center — 4 Central Florida locations. Accepting new patients.`,
     alternates: { canonical: `/conditions/${condition.slug}` },
   };
@@ -69,6 +69,7 @@ export default function ConditionPage({ params }) {
             <p className="text-sm text-mid-gray">
               <span className="font-semibold text-navy">Reviewed by Dr. Vitaly Blatnoy, MD</span> — Board-Certified Dermatologist, FAAD.{' '}
               <Link href="/providers/vitaly-blatnoy-md" className="text-teal hover:underline">View credentials</Link>
+              <span className="block mt-1 text-mid-gray">Last reviewed June 2026.</span>
             </p>
           </div>
         </div>

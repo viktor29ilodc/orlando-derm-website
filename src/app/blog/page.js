@@ -17,12 +17,38 @@ function formatDate(iso) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  '@id': `${PRACTICE.url}/blog#blog`,
+  name: 'Orlando Dermatology Center Blog',
+  description:
+    'Expert skin care advice, treatment guides, and dermatology news from the board-certified team at Orlando Dermatology Center.',
+  url: `${PRACTICE.url}/blog`,
+  publisher: {
+    '@type': 'MedicalOrganization',
+    '@id': `${PRACTICE.url}/#organization`,
+    name: PRACTICE.name,
+    url: PRACTICE.url,
+  },
+  blogPost: [...BLOG_POSTS]
+    .sort((a, b) => (a.date < b.date ? 1 : -1))
+    .slice(0, 20)
+    .map((p) => ({
+      '@type': 'BlogPosting',
+      headline: p.title,
+      url: `${PRACTICE.url}/blog/${p.slug}`,
+      ...(p.date && { datePublished: p.date }),
+    })),
+};
+
 export default function BlogPage() {
   const posts = [...BLOG_POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
   const [featured, ...rest] = posts;
 
   return (
     <>
+      <SchemaScript schema={blogSchema} />
       <SchemaScript
         schema={breadcrumbSchema([
           { name: 'Home', url: '/' },

@@ -1,6 +1,7 @@
 ﻿import Link from 'next/link';
 import Image from 'next/image';
 import { PRACTICE, LOCATIONS, PROVIDERS, SERVICES, CONDITIONS } from '@/data/practice';
+import { TESTIMONIALS } from '@/data/testimonials';
 import { organizationSchema, SchemaScript, faqSchema } from '@/lib/schema';
 
 export const metadata = {
@@ -54,7 +55,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
-        <div className="relative w-full min-h-[285px] md:min-h-[330px]">
+        <div className="relative w-full min-h-[330px] md:min-h-[330px]">
           <Image
             src="/images/hero/hero-derm-2560.jpg"
             alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
@@ -69,19 +70,19 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/45 to-transparent md:from-navy/65 md:via-navy/30"
           />
-          <div className="relative z-10 flex min-h-[285px] md:min-h-[330px] items-start md:items-end">
-            <div className="container-site w-full pt-2 pb-6 md:pt-12 md:pb-10">
+          <div className="relative z-10 flex min-h-[330px] md:min-h-[330px] items-start md:items-end">
+            <div className="container-site w-full pt-3 pb-6 md:pt-12 md:pb-10">
               <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <p className="mb-1 md:mb-2 text-[8px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
+                <p className="mb-1 md:mb-2 text-[10px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
                   Central Florida Dermatology
                 </p>
-                <h1 className="hidden md:block text-[10px] md:text-lg font-normal text-white leading-tight md:leading-snug mb-0.5 md:mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
+                <h1 className="block text-base md:text-lg font-semibold md:font-normal text-white leading-snug mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
                   Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-xs md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-1.5 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
+                <p className="text-sm md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-2 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-0 md:gap-y-1.5 mb-1.5 md:mb-3 max-w-xl">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-0.5 md:gap-y-1.5 mb-2 md:mb-3 max-w-xl">
                   {[
                     'Adult & Pediatric Dermatology',
                     'Mohs Surgery & Skin Cancer Treatment',
@@ -90,13 +91,13 @@ export default function HomePage() {
                   ].map((item) => (
                     <li
                       key={item}
-                      className="text-[9px] md:text-base leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
+                      className="text-[11px] md:text-base leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
                     >
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="text-[8px] md:text-sm text-[#F0F4F4]/85 mb-2 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
+                <p className="text-[10px] md:text-sm text-[#F0F4F4]/85 mb-2 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
                   Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -354,7 +355,7 @@ export default function HomePage() {
               <div key={loc.id} className="bg-white border border-warm-gray rounded-card overflow-hidden">
                 <div className="h-48 bg-warm-gray">
                   <iframe
-                    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:${loc.placeId}`}
+                    src={`https://www.google.com/maps/embed/v1/place?key=${PRACTICE.mapsApiKey}&q=place_id:${loc.placeId}`}
                     width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
                     title={`Map to ${loc.name} office`}
                   />
@@ -380,16 +381,13 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-2">What Our Patients Say</h2>
           <div className="w-16 h-0.5 bg-sky-accent mx-auto mb-6 md:mb-10" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-card p-6 border border-warm-gray">
-              <div className="text-sky-accent text-2xl mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <p className="text-dark-gray text-sm leading-relaxed italic mb-4">&ldquo;Dr. Blatnoy and his entire team are outstanding. Professional, thorough, and genuinely caring. Best dermatology experience I&apos;ve had in Central Florida.&rdquo;</p>
-              <p className="text-navy font-semibold text-sm">&mdash; Patient Review</p>
-            </div>
-            <div className="bg-white rounded-card p-6 border border-warm-gray">
-              <div className="text-sky-accent text-2xl mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <p className="text-dark-gray text-sm leading-relaxed italic mb-4">&ldquo;The staff is amazing and the wait time is minimal. I had my skin cancer screening done quickly and efficiently. Highly recommend Orlando Dermatology Center.&rdquo;</p>
-              <p className="text-navy font-semibold text-sm">&mdash; Patient Review</p>
-            </div>
+            {[TESTIMONIALS[3], TESTIMONIALS[0]].map((t) => (
+              <div key={t.name} className="bg-white rounded-card p-6 border border-warm-gray">
+                <div className="text-sky-accent text-2xl mb-3" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p className="text-dark-gray text-sm leading-relaxed italic mb-4">&ldquo;{t.quote}&rdquo;</p>
+                <p className="text-navy font-semibold text-sm">&mdash; {t.name}</p>
+              </div>
+            ))}
           </div>
           <div className="text-center mt-8">
             <Link href="/testimonials" className="text-teal font-semibold hover:underline">Read More Testimonials &rarr;</Link>

@@ -15,7 +15,7 @@ export function generateMetadata({ params }) {
   const service = SERVICES.find(s => s.slug === params.slug);
   if (!service) return {};
   return {
-    title: `${service.name} in Oviedo, Orlando, Lake Mary & Casselberry FL`,
+    title: `${service.name} in Orlando, FL`,
     description: `${service.shortDesc} Board-certified dermatologists at Orlando Dermatology Center. 4 Central Florida locations. Accepting new patients.`,
     alternates: { canonical: `/services/${service.slug}` },
   };
@@ -81,6 +81,15 @@ export default function ServicePage({ params }) {
             <p className="text-sm text-mid-gray">
               <span className="font-semibold text-navy">Reviewed by Dr. Vitaly Blatnoy, MD</span> — Board-Certified Dermatologist, Fellow of the American Academy of Dermatology.{' '}
               <Link href="/providers/vitaly-blatnoy-md" className="text-teal hover:underline">View credentials</Link>
+              <span className="block mt-1 text-mid-gray">Last reviewed June 2026.</span>
+            </p>
+          </div>
+
+          {/* Insurance & financing */}
+          <div className="mt-4 p-4 bg-white rounded-card border border-warm-gray">
+            <p className="text-sm text-dark-gray">
+              <span className="font-semibold text-navy">Insurance &amp; financing:</span> Medically necessary dermatology is covered by most major insurance plans. Cosmetic treatments are eligible for CareCredit financing.{' '}
+              <Link href="/insurance" className="text-teal hover:underline font-semibold">See accepted plans &amp; financing</Link>.
             </p>
           </div>
         </div>

@@ -108,6 +108,7 @@ export default function BlogPostPage({ params }) {
               <Link href="/providers/vitaly-blatnoy-md" className="text-teal hover:underline">
                 View credentials
               </Link>
+              {meta.date && <span className="block mt-1 text-mid-gray">Last reviewed {formatDate(meta.date)}.</span>}
             </p>
           </div>
 
