@@ -5,7 +5,7 @@
 // Notes / limits:
 // - The Places "Details" endpoint returns at most ~5 reviews per place, so the
 //   max here is 4 locations x 5 = ~20 reviews before filtering.
-// - We keep only 4- and 5-star reviews with non-empty text, newest first.
+// - We keep only 5-star reviews with non-empty text, newest first.
 // - Results are cached in-process for 1 hour to stay well under API quota.
 
 export const dynamic = 'force-dynamic';
@@ -69,9 +69,9 @@ export async function GET() {
     const seen = new Set();
     const reviews = perPlace
       .flatMap((p) => p.reviews)
-      // STRICT: only 4- and 5-star reviews with text. Anything missing a
-      // numeric rating, or rated 3 or below, is excluded — no exceptions.
-      .filter((r) => typeof r.rating === 'number' && r.rating >= 4 && r.text)
+      // STRICT: only 5-star reviews with text. Anything missing a numeric
+      // rating, or rated 4 or below, is excluded — no exceptions.
+      .filter((r) => r.rating === 5 && r.text)
       .sort((a, b) => b.time - a.time)
       .filter((r) => {
         const k = `${r.author}|${r.text.slice(0, 80)}`;

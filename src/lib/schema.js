@@ -1,15 +1,22 @@
 import { PRACTICE, LOCATIONS } from '@/data/practice';
 
-// Generate LocalBusiness schema for a specific location
+// Generate LocalBusiness schema for a specific location.
+// MedicalClinic is the precise type for a multi-physician outpatient practice;
+// the array keeps the broader MedicalBusiness/LocalBusiness behavior too.
 export function localBusinessSchema(location) {
+  const [monOpen, monClose] = PRACTICE.hoursStructured.monday.split('-');
+  const [friOpen, friClose] = PRACTICE.hoursStructured.friday.split('-');
   return {
     '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
-    '@id': `${PRACTICE.url}/locations/${location.id}`,
+    '@type': ['MedicalClinic', 'MedicalBusiness'],
+    '@id': `${PRACTICE.url}/locations/${location.id}#clinic`,
     name: `${PRACTICE.name} - ${location.name}`,
     image: `${PRACTICE.url}/images/logo.png`,
     url: `${PRACTICE.url}/locations/${location.id}`,
     telephone: location.phoneTel,
+    priceRange: '$$',
+    currenciesAccepted: 'USD',
+    paymentAccepted: 'Cash, Credit Card, Insurance, CareCredit',
     address: {
       '@type': 'PostalAddress',
       streetAddress: location.address,
@@ -24,31 +31,44 @@ export function localBusinessSchema(location) {
       longitude: location.lng,
     },
     openingHoursSpecification: [
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'], opens: '08:00', closes: '16:00' },
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Friday', opens: '08:00', closes: '14:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'], opens: monOpen, closes: monClose },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Friday', opens: friOpen, closes: friClose },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday', 'Sunday'], opens: '00:00', closes: '00:00' },
     ],
-    medicalSpecialty: 'Dermatology',
+    medicalSpecialty: 'https://schema.org/Dermatology',
+    areaServed: { '@type': 'City', name: `${location.city}, ${location.state}` },
     hasMap: location.mapUrl,
+    ...(location.mapUrl && { sameAs: [location.mapUrl] }),
     parentOrganization: {
-      '@type': 'MedicalOrganization',
+      '@type': ['MedicalOrganization', 'MedicalClinic'],
+      '@id': `${PRACTICE.url}/#organization`,
       name: PRACTICE.name,
       url: PRACTICE.url,
     },
   };
 }
 
-// Generate Physician schema for a provider
+// Generate provider schema. Only MD/DO providers are typed `Physician`;
+// APRNs and PAs are typed `Person` with a jobTitle, which is the correct
+// schema.org type for mid-level providers.
 export function physicianSchema(provider) {
+  const isPhysician = /\b(MD|DO)\b/.test(provider.name);
+  const ext = provider.slug === 'joanna-kluger-wesley-pa' ? 'png' : 'jpg';
   return {
     '@context': 'https://schema.org',
-    '@type': 'Physician',
+    '@type': isPhysician ? 'Physician' : 'Person',
+    '@id': `${PRACTICE.url}/providers/${provider.slug}#provider`,
     name: provider.name,
     url: `${PRACTICE.url}/providers/${provider.slug}`,
-    image: `${PRACTICE.url}/images/providers/${provider.slug}.jpg`,
-    medicalSpecialty: 'Dermatology',
-    isAcceptingNewPatients: true,
+    image: `${PRACTICE.url}/images/providers/${provider.slug}.${ext}`,
+    jobTitle: provider.title,
+    ...(isPhysician && {
+      medicalSpecialty: 'https://schema.org/Dermatology',
+      isAcceptingNewPatients: true,
+    }),
     worksFor: {
       '@type': 'MedicalOrganization',
+      '@id': `${PRACTICE.url}/#organization`,
       name: PRACTICE.name,
       url: PRACTICE.url,
     },
@@ -65,14 +85,20 @@ export function physicianSchema(provider) {
         credentialCategory: c,
       })),
     }),
+    ...(provider.education && {
+      alumniOf: provider.education.split(', ').map(inst => ({
+        '@type': 'CollegeOrUniversity',
+        name: inst,
+      })),
+    }),
     ...(provider.languages && {
       knowsLanguage: provider.languages,
     }),
     ...(provider.services && {
-      availableService: provider.services.map(s => ({
-        '@type': 'MedicalProcedure',
-        name: s,
-      })),
+      knowsAbout: provider.services,
+    }),
+    ...(provider.sameAs && {
+      sameAs: provider.sameAs,
     }),
   };
 }
@@ -82,9 +108,10 @@ export function medicalConditionSchema(condition) {
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalCondition',
+    '@id': `${PRACTICE.url}/conditions/${condition.slug}#condition`,
     name: condition.name,
     url: `${PRACTICE.url}/conditions/${condition.slug}`,
-    medicalSpecialty: 'Dermatology',
+    medicalSpecialty: 'https://schema.org/Dermatology',
     ...(condition.description && { description: condition.description }),
     ...(condition.relatedServices && {
       possibleTreatment: condition.relatedServices.map(s => ({
@@ -100,20 +127,20 @@ export function medicalProcedureSchema(service) {
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalProcedure',
+    '@id': `${PRACTICE.url}/services/${service.slug}#procedure`,
     name: service.name,
     url: `${PRACTICE.url}/services/${service.slug}`,
     description: service.shortDesc,
-    medicalSpecialty: 'Dermatology',
-    availableService: {
-      '@type': 'MedicalTherapy',
-      name: service.name,
-    },
-    // E-E-A-T: Medical content reviewed by board-certified physician
+    medicalSpecialty: 'https://schema.org/Dermatology',
+    ...(service.procedureType && { procedureType: `https://schema.org/${service.procedureType}` }),
+    ...(service.bodyLocation && { bodyLocation: service.bodyLocation }),
+    // E-E-A-T: Medical content reviewed by board-certified physician.
+    // author must be Person/Organization for rich results — not Physician.
     author: {
-      '@type': 'Physician',
+      '@type': 'Person',
       name: 'Vitaly Blatnoy, MD',
       url: `${PRACTICE.url}/providers/vitaly-blatnoy-md`,
-      qualification: 'Board-Certified Dermatologist, FAAD',
+      jobTitle: 'Board-Certified Dermatologist, FAAD',
     },
   };
 }
@@ -155,7 +182,8 @@ export function organizationSchema() {
 
   return {
     '@context': 'https://schema.org',
-    '@type': 'MedicalOrganization',
+    '@type': ['MedicalOrganization', 'MedicalClinic'],
+    '@id': `${PRACTICE.url}/#organization`,
     name: PRACTICE.name,
     legalName: PRACTICE.legalName,
     url: PRACTICE.url,
@@ -166,14 +194,12 @@ export function organizationSchema() {
       propertyID: 'NPI',
       value: PRACTICE.npi,
     },
-    medicalSpecialty: ['Dermatology', 'Mohs Surgery'],
+    medicalSpecialty: 'https://schema.org/Dermatology',
     isAcceptingNewPatients: true,
+    // Practice-level profiles only. Individual physician directory listings
+    // (Healthgrades, Vitals, WebMD) live on the provider's Physician node.
     sameAs: [
       'https://www.facebook.com/orlandodermatology/',
-      'https://www.healthgrades.com/physician/dr-vitaly-blatnoy-xms8t',
-      'https://health.usnews.com/doctors/vitaly-blatnoy-202282',
-      'https://www.vitals.com/doctors/Dr_Vitaly_Blatnoy.html',
-      'https://doctor.webmd.com/doctor/vitaly-blatnoy-d292c295-d500-4f2e-b8e9-be490e3faff1-overview',
     ],
     potentialAction: {
       '@type': 'ReserveAction',
@@ -181,8 +207,8 @@ export function organizationSchema() {
         '@type': 'EntryPoint',
         urlTemplate: bookingUrl,
         actionPlatform: [
-          'http://schema.org/DesktopWebPlatform',
-          'http://schema.org/MobileWebPlatform',
+          'https://schema.org/DesktopWebPlatform',
+          'https://schema.org/MobileWebPlatform',
         ],
       },
       result: {
@@ -209,8 +235,8 @@ export function organizationSchema() {
       '@type': 'GeoCircle',
       geoMidpoint: {
         '@type': 'GeoCoordinates',
-        latitude: 28.6396,
-        longitude: -81.2084,
+        latitude: 28.65209,
+        longitude: -81.24371,
       },
       geoRadius: '50000',
     },
@@ -225,16 +251,26 @@ export function blogPostingSchema(post) {
     headline: post.title,
     url: `${PRACTICE.url}/blog/${post.slug}`,
     ...(post.excerpt && { description: post.excerpt }),
-    ...(post.date && { datePublished: post.date, dateModified: post.date }),
-    ...(post.image && { image: post.image }),
+    ...(post.date && { datePublished: post.date, dateModified: post.updatedDate || post.date }),
+    // Article rich results require an absolute image URL; fall back to the logo.
+    image: {
+      '@type': 'ImageObject',
+      url: post.image
+        ? (post.image.startsWith('http') ? post.image : `${PRACTICE.url}${post.image}`)
+        : `${PRACTICE.url}/images/logo.png`,
+    },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${PRACTICE.url}/blog/${post.slug}`,
     },
     author: {
-      '@type': 'Physician',
-      name: 'Vitaly Blatnoy, MD',
-      url: `${PRACTICE.url}/providers/vitaly-blatnoy-md`,
+      '@type': 'Person',
+      name: post.author || 'Vitaly Blatnoy, MD',
+      // Link + dermatologist title only when the byline is Dr. Blatnoy.
+      ...((!post.author || /blatnoy/i.test(post.author)) && {
+        url: `${PRACTICE.url}/providers/vitaly-blatnoy-md`,
+        jobTitle: 'Board-Certified Dermatologist, FAAD',
+      }),
     },
     publisher: {
       '@type': 'MedicalOrganization',

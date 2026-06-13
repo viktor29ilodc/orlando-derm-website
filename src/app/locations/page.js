@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { LOCATIONS } from '@/data/practice';
+import { LOCATIONS, PRACTICE } from '@/data/practice';
+import { breadcrumbSchema, SchemaScript } from '@/lib/schema';
 
 export const metadata = {
   title: 'Locations | 4 Offices in Oviedo, Orlando, Lake Mary & Casselberry',
@@ -7,9 +8,39 @@ export const metadata = {
   alternates: { canonical: '/locations' },
 };
 
+const locationsItemList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Orlando Dermatology Center Locations',
+  itemListElement: LOCATIONS.map((loc, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': ['MedicalClinic', 'MedicalBusiness'],
+      '@id': `${PRACTICE.url}/locations/${loc.id}#clinic`,
+      name: `${PRACTICE.name} - ${loc.name}`,
+      url: `${PRACTICE.url}/locations/${loc.id}`,
+      telephone: loc.phoneTel,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: loc.address,
+        addressLocality: loc.city,
+        addressRegion: loc.state,
+        postalCode: loc.zip,
+        addressCountry: 'US',
+      },
+    },
+  })),
+};
+
 export default function LocationsPage() {
   return (
     <>
+      <SchemaScript schema={locationsItemList} />
+      <SchemaScript schema={breadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Locations' },
+      ])} />
       <section className="bg-navy text-white py-12 md:py-16">
         <div className="container-site">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Locations</h1>
@@ -26,7 +57,7 @@ export default function LocationsPage() {
               <div key={loc.id} className="bg-white border border-warm-gray rounded-card overflow-hidden">
                 <div className="h-48 bg-warm-gray">
                   <iframe
-                    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:${loc.placeId}`}
+                    src={`https://www.google.com/maps/embed/v1/place?key=${PRACTICE.mapsApiKey}&q=place_id:${loc.placeId}`}
                     width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
                     title={`Map to ${loc.name} office`}
                   />

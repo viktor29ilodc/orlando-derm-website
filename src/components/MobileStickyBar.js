@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { PRACTICE, LOCATIONS } from '@/data/practice';
 
 // Turn-by-turn Google Maps directions to a specific office. Built from the
@@ -20,6 +21,15 @@ const PinIcon = ({ className }) => (
 
 export default function MobileStickyBar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  // On a specific location page, surface that office first and dial its number.
+  const currentId = pathname?.match(/^\/locations\/([^/]+)/)?.[1];
+  const current = LOCATIONS.find(l => l.id === currentId);
+  const orderedLocations = current
+    ? [current, ...LOCATIONS.filter(l => l.id !== current.id)]
+    : LOCATIONS;
+  const callTel = current ? current.phoneTel : LOCATIONS[0].phoneTel;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-navy border-t border-sky-accent lg:hidden">
@@ -35,7 +45,7 @@ export default function MobileStickyBar() {
       )}
 
       <div className="relative z-50 flex items-center justify-around py-2.5 px-2">
-        <a href={`tel:${LOCATIONS[0].phoneTel}`} className="flex flex-col items-center text-white text-xs gap-1">
+        <a href={`tel:${callTel}`} className="flex flex-col items-center text-white text-xs gap-1">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
           <span>Call</span>
         </a>
@@ -67,7 +77,7 @@ export default function MobileStickyBar() {
               <p className="px-4 py-2 text-[11px] font-semibold uppercase tracking-widest text-mid-gray bg-ice-white border-b border-warm-gray">
                 Get directions to
               </p>
-              {LOCATIONS.map((loc) => (
+              {orderedLocations.map((loc) => (
                 <a
                   key={loc.id}
                   href={directionsUrl(loc)}

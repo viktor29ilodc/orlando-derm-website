@@ -103,9 +103,9 @@ export default function LiveReviews({ fallback = [] }) {
   const items =
     status === 'live'
       ? reviews
-          // Second guard: never render anything below 4 stars, even if the
-          // API response somehow included it.
-          .filter((r) => typeof r.rating === 'number' && r.rating >= 4)
+          // Second guard: never render anything other than 5 stars, even if
+          // the API response somehow included it.
+          .filter((r) => r.rating === 5)
           .map((r) => ({
           key: r.id,
           author: r.author,
@@ -132,7 +132,7 @@ export default function LiveReviews({ fallback = [] }) {
       </div>
       {status === 'live' && (
         <p className="text-mid-gray text-xs mt-6 text-center">
-          Live 4- and 5-star reviews from our Google Business profiles, across all four locations.
+          Live 5-star reviews from our Google Business profiles, across all four locations.
         </p>
       )}
     </>
