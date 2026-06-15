@@ -235,8 +235,8 @@ export function organizationSchema() {
       '@type': 'GeoCircle',
       geoMidpoint: {
         '@type': 'GeoCoordinates',
-        latitude: 28.65209,
-        longitude: -81.24371,
+        latitude: 28.652236,
+        longitude: -81.243721,
       },
       geoRadius: '50000',
     },
