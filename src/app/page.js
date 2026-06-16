@@ -55,7 +55,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
-        <div className="relative w-full min-h-[440px] md:min-h-[330px]">
+        <div className="relative w-full min-h-[330px] md:min-h-[330px]">
           <Image
             src="/images/hero/hero-derm-2560.jpg"
             alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
@@ -70,7 +70,7 @@ export default function HomePage() {
               left-to-right gradient preserved at md+ (desktop untouched). */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-b from-navy/85 via-navy/20 to-navy/90 md:bg-gradient-to-r md:from-navy/65 md:via-navy/30 md:to-transparent"
+            className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/45 to-transparent md:from-navy/65 md:via-navy/30 md:to-transparent"
           />
           {/* DESKTOP hero (>=768px) — original layout, unchanged. Gated to md+ so
               the mobile redesign below can't affect it. */}
@@ -124,50 +124,58 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* MOBILE hero (<=768px): compact top text · open banner · compact bottom text · small centered buttons */}
-          <div className="md:hidden relative z-10 flex flex-col min-h-[440px]" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-            {/* 1. top text */}
-            <div className="px-4 pt-2">
-              <h1 className="text-[18px] leading-tight font-semibold text-[#2DC4D4] py-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
-                Trusted Dermatology Care in Central Florida
-              </h1>
-              <p className="text-[14px] leading-tight font-bold text-[#2DC4D4] py-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
-                20 Years of Expert Skin Care for Adults &amp; Children
-              </p>
-            </div>
-
-            {/* 2. breathing room — banner image shows through */}
-            <div className="flex-1 min-h-[130px]" aria-hidden="true" />
-
-            {/* 3. bottom text */}
-            <div className="px-4 py-2">
-              <p className="text-[13px] leading-snug font-semibold text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                Adult &amp; Pediatric Dermatology
-              </p>
-              <p className="text-[12px] leading-snug text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                Mohs Surgery &amp; Skin Cancer Treatment · Superficial Radiation Therapy · Cosmetic Dermatology &amp; Lasers
-              </p>
-              <p className="text-[12px] leading-snug text-[#F0F4F4]/90 [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
-              </p>
-            </div>
-
-            {/* 4. small centered buttons */}
-            <div className="flex flex-col items-center gap-2 mt-3 px-4 pb-4">
-              <a
-                href={PRACTICE.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-[120px] h-[36px] bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white text-[11px] font-semibold rounded-card transition-colors shadow-lg shadow-navy/30 whitespace-nowrap"
-              >
-                Book Appointment
-              </a>
-              <a
-                href={`tel:${LOCATIONS[0].phoneTel}`}
-                className="inline-flex items-center justify-center w-[120px] h-[36px] border border-white/70 bg-white/10 backdrop-blur-sm text-white text-[11px] font-semibold rounded-card transition-colors whitespace-nowrap"
-              >
-                Call {LOCATIONS[0].phone}
-              </a>
+          {/* MOBILE hero (<=768px): original compact stack restored, with smaller
+              service text and navbar-sized horizontal buttons. Desktop block above
+              is untouched. */}
+          <div className="md:hidden relative z-10 flex min-h-[330px] items-start" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
+            <div className="container-site w-full pt-3 pb-6">
+              <div className="max-w-2xl">
+                <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
+                  Central Florida Dermatology
+                </p>
+                <h1 className="text-base font-semibold text-white leading-snug mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
+                  Trusted Dermatology Care in Central Florida
+                </h1>
+                <p className="text-sm font-bold text-[#2DC4D4] leading-tight mb-2 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
+                  20 Years of Expert Skin Care for Adults &amp; Children
+                </p>
+                {/* service list — 12px, tight line-height */}
+                <ul className="grid grid-cols-1 gap-y-0 mb-2 max-w-xl">
+                  {[
+                    'Adult & Pediatric Dermatology',
+                    'Mohs Surgery & Skin Cancer Treatment',
+                    'Superficial Radiation Therapy',
+                    'Cosmetic Dermatology & Lasers',
+                  ].map((item) => (
+                    <li
+                      key={item}
+                      className="text-[12px] leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-[10px] text-[#F0F4F4]/85 mb-2 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
+                  Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
+                </p>
+                {/* buttons — horizontal, navbar-sized, auto width (not full-width) */}
+                <div className="flex flex-row flex-wrap gap-2">
+                  <a
+                    href={PRACTICE.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-3 py-1.5 rounded-card text-[11px] font-semibold transition-colors shadow-lg shadow-navy/30 whitespace-nowrap"
+                  >
+                    Book Appointment
+                  </a>
+                  <a
+                    href={`tel:${LOCATIONS[0].phoneTel}`}
+                    className="inline-flex items-center justify-center border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-3 py-1.5 rounded-card text-[11px] font-semibold transition-colors whitespace-nowrap"
+                  >
+                    Call {LOCATIONS[0].phone}
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -179,11 +187,11 @@ export default function HomePage() {
           {/* Mobile only: compact horizontal scroll strip (name, city, phone) */}
           <div className="md:hidden flex gap-3 overflow-x-auto -mx-6 px-6 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {LOCATIONS.map(loc => (
-              <Link key={loc.id} href={`/locations/${loc.id}`} className="flex-shrink-0 min-w-[148px] bg-white rounded-card py-2 px-4 border border-warm-gray">
+              <Link key={loc.id} href={`/locations/${loc.id}`} className="flex-shrink-0 min-w-[124px] bg-white rounded-card py-2 px-3 border border-warm-gray">
                 <h2 className="text-navy font-bold text-[13px] leading-tight mb-1">{loc.name}</h2>
-                <p className="text-dark-gray text-[13px] leading-tight mb-0.5">{loc.address}</p>
-                <p className="text-dark-gray text-[13px] leading-tight mb-1">{loc.city}, {loc.state}</p>
-                <span className="text-teal font-semibold text-[13px]">{loc.phone}</span>
+                <p className="text-dark-gray text-[12px] leading-tight mb-0.5">{loc.address}</p>
+                <p className="text-dark-gray text-[12px] leading-tight mb-1">{loc.city}, {loc.state}</p>
+                <span className="text-teal font-semibold text-[12px]">{loc.phone}</span>
               </Link>
             ))}
           </div>
