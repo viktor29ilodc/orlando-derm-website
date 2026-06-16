@@ -70,9 +70,11 @@ export default function HomePage() {
               left-to-right gradient preserved at md+ (desktop untouched). */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/55 to-navy/90 md:bg-gradient-to-r md:from-navy/65 md:via-navy/30 md:to-transparent"
+            className="absolute inset-0 bg-gradient-to-b from-navy/85 via-navy/20 to-navy/90 md:bg-gradient-to-r md:from-navy/65 md:via-navy/30 md:to-transparent"
           />
-          <div className="relative z-10 flex min-h-[440px] md:min-h-[330px] items-stretch md:items-end">
+          {/* DESKTOP hero (>=768px) — original layout, unchanged. Gated to md+ so
+              the mobile redesign below can't affect it. */}
+          <div className="hidden md:flex relative z-10 min-h-[330px] items-end">
             <div className="container-site w-full pt-8 pb-6 md:pt-12 md:pb-10 flex flex-col md:block">
               <div className="flex flex-1 flex-col md:block max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
                 <p className="mb-2 text-[11px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
@@ -102,8 +104,6 @@ export default function HomePage() {
                 <p className="text-xs md:text-sm text-[#F0F4F4]/85 mb-6 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
                   Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                 </p>
-                {/* Mobile: full-width stacked button bar pinned to the bottom of
-                    the hero. Desktop: original inline auto-width row (md:). */}
                 <div className="mt-auto md:mt-0 flex flex-col md:flex-row md:flex-wrap gap-3">
                   <a
                     href={PRACTICE.bookingUrl}
@@ -117,10 +117,57 @@ export default function HomePage() {
                     href={`tel:${LOCATIONS[0].phoneTel}`}
                     className="inline-flex items-center justify-center w-full md:w-auto min-h-[48px] md:min-h-0 border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-3.5 md:px-6 md:py-2.5 rounded-card text-sm font-semibold transition-colors"
                   >
-                    <span className="md:hidden">Call&nbsp;</span>{LOCATIONS[0].phone}
+                    {LOCATIONS[0].phone}
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* MOBILE hero (<=768px): compact top text · open banner · compact bottom text · small centered buttons */}
+          <div className="md:hidden relative z-10 flex flex-col min-h-[440px]" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
+            {/* 1. top text */}
+            <div className="px-4 pt-2">
+              <h1 className="text-[18px] leading-tight font-semibold text-[#2DC4D4] py-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]">
+                Trusted Dermatology Care in Central Florida
+              </h1>
+              <p className="text-[14px] leading-tight font-bold text-[#2DC4D4] py-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
+                20 Years of Expert Skin Care for Adults &amp; Children
+              </p>
+            </div>
+
+            {/* 2. breathing room — banner image shows through */}
+            <div className="flex-1 min-h-[130px]" aria-hidden="true" />
+
+            {/* 3. bottom text */}
+            <div className="px-4 py-2">
+              <p className="text-[13px] leading-snug font-semibold text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                Adult &amp; Pediatric Dermatology
+              </p>
+              <p className="text-[12px] leading-snug text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                Mohs Surgery &amp; Skin Cancer Treatment · Superficial Radiation Therapy · Cosmetic Dermatology &amp; Lasers
+              </p>
+              <p className="text-[12px] leading-snug text-[#F0F4F4]/90 [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
+              </p>
+            </div>
+
+            {/* 4. small centered buttons */}
+            <div className="flex flex-col items-center gap-2 mt-3 px-4 pb-4">
+              <a
+                href={PRACTICE.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-[120px] h-[36px] bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white text-[11px] font-semibold rounded-card transition-colors shadow-lg shadow-navy/30 whitespace-nowrap"
+              >
+                Book Appointment
+              </a>
+              <a
+                href={`tel:${LOCATIONS[0].phoneTel}`}
+                className="inline-flex items-center justify-center w-[120px] h-[36px] border border-white/70 bg-white/10 backdrop-blur-sm text-white text-[11px] font-semibold rounded-card transition-colors whitespace-nowrap"
+              >
+                Call {LOCATIONS[0].phone}
+              </a>
             </div>
           </div>
         </div>
@@ -132,11 +179,11 @@ export default function HomePage() {
           {/* Mobile only: compact horizontal scroll strip (name, city, phone) */}
           <div className="md:hidden flex gap-3 overflow-x-auto -mx-6 px-6 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {LOCATIONS.map(loc => (
-              <Link key={loc.id} href={`/locations/${loc.id}`} className="flex-shrink-0 min-w-[148px] bg-white rounded-card p-3 border border-warm-gray">
-                <h2 className="text-navy font-bold text-xs leading-tight mb-0.5">{loc.name}</h2>
-                <p className="text-dark-gray text-[10px] leading-tight mb-0.5">{loc.address}</p>
-                <p className="text-dark-gray text-[11px] mb-1">{loc.city}, {loc.state}</p>
-                <span className="text-teal font-semibold text-[11px]">{loc.phone}</span>
+              <Link key={loc.id} href={`/locations/${loc.id}`} className="flex-shrink-0 min-w-[148px] bg-white rounded-card py-2 px-4 border border-warm-gray">
+                <h2 className="text-navy font-bold text-[13px] leading-tight mb-1">{loc.name}</h2>
+                <p className="text-dark-gray text-[13px] leading-tight mb-0.5">{loc.address}</p>
+                <p className="text-dark-gray text-[13px] leading-tight mb-1">{loc.city}, {loc.state}</p>
+                <span className="text-teal font-semibold text-[13px]">{loc.phone}</span>
               </Link>
             ))}
           </div>
