@@ -55,7 +55,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <section className="relative isolate bg-navy overflow-hidden">
-        <div className="relative w-full min-h-[330px] md:min-h-[330px]">
+        <div className="relative w-full min-h-[440px] md:min-h-[330px]">
           <Image
             src="/images/hero/hero-derm-2560.jpg"
             alt="Board-certified dermatologist performing a skin examination with a dermatoscope"
@@ -66,23 +66,25 @@ export default function HomePage() {
             blurDataURL="/images/hero/hero-derm-blur.jpg"
             className="object-cover object-[35%_center] md:object-center brightness-110 saturate-150 sepia-[0.12] contrast-105"
           />
+          {/* Vertical scrim on mobile for full-bleed text legibility; original
+              left-to-right gradient preserved at md+ (desktop untouched). */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/45 to-transparent md:from-navy/65 md:via-navy/30"
+            className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/55 to-navy/90 md:bg-gradient-to-r md:from-navy/65 md:via-navy/30 md:to-transparent"
           />
-          <div className="relative z-10 flex min-h-[330px] md:min-h-[330px] items-start md:items-end">
-            <div className="container-site w-full pt-3 pb-6 md:pt-12 md:pb-10">
-              <div className="max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <p className="mb-1 md:mb-2 text-[10px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
+          <div className="relative z-10 flex min-h-[440px] md:min-h-[330px] items-stretch md:items-end">
+            <div className="container-site w-full pt-8 pb-6 md:pt-12 md:pb-10 flex flex-col md:block">
+              <div className="flex flex-1 flex-col md:block max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
+                <p className="mb-2 text-[11px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
                   Central Florida Dermatology
                 </p>
-                <h1 className="block text-base md:text-lg font-semibold md:font-normal text-white leading-snug mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
+                <h1 className="block text-xl md:text-lg font-semibold md:font-normal text-white leading-snug mb-6 md:mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
                   Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-sm md:text-2xl font-bold text-[#2DC4D4] leading-tight mb-2 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
+                <p className="text-lg md:text-2xl font-bold text-[#2DC4D4] leading-snug md:leading-tight py-4 md:py-0 mb-0 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-0.5 md:gap-y-1.5 mb-2 md:mb-3 max-w-xl">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 md:gap-y-1.5 mt-4 mb-4 md:mt-0 md:mb-3 max-w-xl">
                   {[
                     'Adult & Pediatric Dermatology',
                     'Mohs Surgery & Skin Cancer Treatment',
@@ -91,29 +93,31 @@ export default function HomePage() {
                   ].map((item) => (
                     <li
                       key={item}
-                      className="text-[11px] md:text-base leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
+                      className="text-sm md:text-base leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
                     >
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="text-[10px] md:text-sm text-[#F0F4F4]/85 mb-2 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
+                <p className="text-xs md:text-sm text-[#F0F4F4]/85 mb-6 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
                   Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                 </p>
-                <div className="flex flex-wrap gap-3">
+                {/* Mobile: full-width stacked button bar pinned to the bottom of
+                    the hero. Desktop: original inline auto-width row (md:). */}
+                <div className="mt-auto md:mt-0 flex flex-col md:flex-row md:flex-wrap gap-3">
                   <a
                     href={PRACTICE.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-4 py-2 md:px-6 md:py-2.5 rounded-card text-xs md:text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
+                    className="inline-flex items-center justify-center w-full md:w-auto min-h-[48px] md:min-h-0 bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-6 py-3.5 md:px-6 md:py-2.5 rounded-card text-sm font-semibold transition-colors shadow-lg shadow-navy/30"
                   >
                     Book Appointment
                   </a>
                   <a
                     href={`tel:${LOCATIONS[0].phoneTel}`}
-                    className="border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-card text-xs md:text-sm font-semibold transition-colors"
+                    className="inline-flex items-center justify-center w-full md:w-auto min-h-[48px] md:min-h-0 border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-3.5 md:px-6 md:py-2.5 rounded-card text-sm font-semibold transition-colors"
                   >
-                    {LOCATIONS[0].phone}
+                    <span className="md:hidden">Call&nbsp;</span>{LOCATIONS[0].phone}
                   </a>
                 </div>
               </div>
