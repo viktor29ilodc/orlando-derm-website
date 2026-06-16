@@ -81,7 +81,7 @@ export default function HomePage() {
                 <h1 className="block text-xl md:text-lg font-semibold md:font-normal text-white leading-snug mb-6 md:mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
                   Trusted Dermatology Care in Central Florida
                 </h1>
-                <p className="text-lg md:text-2xl font-bold text-[#2DC4D4] leading-snug md:leading-tight py-4 md:py-0 mb-0 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
+                <p className="text-lg md:text-2xl font-bold text-[#2DC4D4] leading-snug py-4 md:py-0 mb-0 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 md:gap-y-1.5 mt-4 mb-4 md:mt-0 md:mb-3 max-w-xl">
