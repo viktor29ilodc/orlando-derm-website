@@ -124,58 +124,37 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* MOBILE hero (<=768px): original compact stack restored, with smaller
-              service text and navbar-sized horizontal buttons. Desktop block above
-              is untouched. */}
-          <div className="md:hidden relative z-10 flex min-h-[330px] items-start" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-            <div className="container-site w-full pt-3 pb-6">
-              <div className="max-w-2xl">
-                <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
-                  Central Florida Dermatology
-                </p>
-                <h1 className="text-base font-semibold text-white leading-snug mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
-                  Trusted Dermatology Care in Central Florida
-                </h1>
-                <p className="text-sm font-bold text-[#2DC4D4] leading-tight mb-2 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
-                  20 Years of Expert Skin Care for Adults &amp; Children
-                </p>
-                {/* service list — 12px, tight line-height */}
-                <ul className="grid grid-cols-1 gap-y-0 mb-2 max-w-xl">
-                  {[
-                    'Adult & Pediatric Dermatology',
-                    'Mohs Surgery & Skin Cancer Treatment',
-                    'Superficial Radiation Therapy',
-                    'Cosmetic Dermatology & Lasers',
-                  ].map((item) => (
-                    <li
-                      key={item}
-                      className="text-[12px] leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-[10px] text-[#F0F4F4]/85 mb-2 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
-                  Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
-                </p>
-                {/* buttons — horizontal, navbar-sized, auto width (not full-width) */}
-                <div className="flex flex-row flex-wrap gap-2">
-                  <a
-                    href={PRACTICE.bookingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#0FA6BB] hover:bg-[#0C8B9D] text-white px-3 py-1.5 rounded-card text-[11px] font-semibold transition-colors shadow-lg shadow-navy/30 whitespace-nowrap"
-                  >
-                    Book Appointment
-                  </a>
-                  <a
-                    href={`tel:${LOCATIONS[0].phoneTel}`}
-                    className="inline-flex items-center justify-center border border-white/70 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-3 py-1.5 rounded-card text-[11px] font-semibold transition-colors whitespace-nowrap"
-                  >
-                    Call {LOCATIONS[0].phone}
-                  </a>
-                </div>
-              </div>
+          {/* MOBILE hero (<=768px): label/headline/tagline at top, open banner in the
+              middle, service text pinned to the bottom, no buttons (they're in the
+              navbar). Desktop block above is untouched. */}
+          <div className="md:hidden relative z-10 flex flex-col min-h-[330px]" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
+            {/* top: label + headline + tagline (unchanged) */}
+            <div className="container-site w-full pt-3">
+              <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
+                Central Florida Dermatology
+              </p>
+              <h1 className="text-base font-semibold text-white leading-snug mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
+                Trusted Dermatology Care in Central Florida
+              </h1>
+              <p className="text-sm font-bold text-[#2DC4D4] leading-tight [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
+                20 Years of Expert Skin Care for Adults &amp; Children
+              </p>
+            </div>
+
+            {/* open banner — image shows through */}
+            <div className="flex-1 min-h-[80px]" aria-hidden="true" />
+
+            {/* service text — pinned to bottom, 3 lines, 12px, 12px from the edge */}
+            <div className="px-3 pb-3">
+              <p className="text-[12px] leading-tight font-semibold text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                Adult &amp; Pediatric Dermatology
+              </p>
+              <p className="text-[12px] leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                Mohs Surgery &amp; Skin Cancer Treatment · Superficial Radiation Therapy · Cosmetic Dermatology &amp; Lasers
+              </p>
+              <p className="text-[12px] leading-tight text-[#F0F4F4]/90 [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
+              </p>
             </div>
           </div>
         </div>
