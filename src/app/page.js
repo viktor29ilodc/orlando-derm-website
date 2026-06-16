@@ -128,14 +128,8 @@ export default function HomePage() {
               middle, service text pinned to the bottom, no buttons (they're in the
               navbar). Desktop block above is untouched. */}
           <div className="md:hidden relative z-10 flex flex-col min-h-[330px]" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-            {/* top: label + headline + tagline (unchanged) */}
+            {/* top: tagline only on mobile (label + headline remain on the desktop block) */}
             <div className="container-site w-full pt-3">
-              <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
-                Central Florida Dermatology
-              </p>
-              <h1 className="text-base font-semibold text-white leading-snug mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
-                Trusted Dermatology Care in Central Florida
-              </h1>
               <p className="text-sm font-bold text-[#2DC4D4] leading-tight [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                 20 Years of Expert Skin Care for Adults &amp; Children
               </p>
