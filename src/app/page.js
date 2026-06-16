@@ -149,8 +149,11 @@ export default function HomePage() {
               <p className="text-[12px] leading-tight font-semibold text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
                 Adult &amp; Pediatric Dermatology
               </p>
+              <p className="text-[11px] tracking-tight leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                Mohs Surgery &amp; Skin Cancer Treatment · Superficial Radiation Therapy
+              </p>
               <p className="text-[12px] leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                Mohs Surgery &amp; Skin Cancer Treatment · Superficial Radiation Therapy · Cosmetic Dermatology &amp; Lasers
+                Cosmetic Dermatology &amp; Lasers
               </p>
               <p className="text-[12px] leading-tight text-[#F0F4F4]/90 [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
                 Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
@@ -189,9 +192,9 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT */}
-      <section className="section-white py-8 md:py-16">
+      <section className="section-white pt-6 pb-8 md:py-16">
         <div className="container-site max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">About Orlando Dermatology Center</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-navy mb-5 md:mb-6">About Orlando Dermatology Center</h2>
           <div className="text-dark-gray leading-relaxed space-y-4">
             <p>Orlando Dermatology Center is well known for the team&apos;s dedication to patient-centered care, personalized attention, and inclusive culture that makes everyone feel at home. Their exceptional team of board-certified dermatologists, physician assistants, certified nurse practitioners, and other compassionate staff welcome children, teens, and adults to their offices in Oviedo, Lake Mary, Casselberry and Orlando, Florida.</p>
             <p>The practice has a long history in Central Florida, serving as leaders that uphold the highest standards of courtesy and medical professionalism, making sure that each patient is treated with respect and understanding.</p>
