@@ -26,7 +26,9 @@ const heroServiceLinks = {
   cosmetic: { label: 'Cosmetic Dermatology & Lasers', href: '/services/laser-treatments' },
   locations: { label: 'Serving Oviedo, Orlando, Lake Mary & Casselberry, FL', href: '/locations' },
 };
-const heroLinkClass = 'text-[#2a9a9a] hover:underline cursor-pointer';
+// Hero link styling — two-tone brand palette, always underlined.
+const heroServiceLinkClass = 'text-[#2DC4D4] underline hover:opacity-80 cursor-pointer';
+const heroLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
 
 const serviceImages = {
   'adult-pediatric-dermatology': 'services-adult-and-pediatric-dermatology.png',
@@ -88,12 +90,6 @@ export default function HomePage() {
           <div className="hidden md:flex relative z-10 min-h-[330px] items-end">
             <div className="container-site w-full pt-8 pb-6 md:pt-12 md:pb-10 flex flex-col md:block">
               <div className="flex flex-1 flex-col md:block max-w-2xl" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-                <p className="mb-2 text-[11px] md:text-sm font-semibold uppercase tracking-[0.22em] text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.85)]">
-                  Central Florida Dermatology
-                </p>
-                <h1 className="block text-xl md:text-lg font-semibold md:font-normal text-white leading-snug mb-6 md:mb-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.65)]">
-                  Trusted Dermatology Care in Central Florida
-                </h1>
                 <p className="text-lg md:text-2xl font-bold text-[#2DC4D4] leading-snug py-4 md:py-0 mb-0 md:mb-3 [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                   20 Years of Expert Skin Care for Adults &amp; Children
                 </p>
@@ -108,12 +104,12 @@ export default function HomePage() {
                       key={href}
                       className="text-sm md:text-base leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
                     >
-                      <Link href={href} className={heroLinkClass}>{label}</Link>
+                      <Link href={href} className={heroServiceLinkClass}>{label}</Link>
                     </li>
                   ))}
                 </ul>
                 <p className="text-xs md:text-sm mb-6 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
-                  <Link href={heroServiceLinks.locations.href} className={heroLinkClass}>
+                  <Link href={heroServiceLinks.locations.href} className={heroLocationsLinkClass}>
                     Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                   </Link>
                 </p>
@@ -142,7 +138,7 @@ export default function HomePage() {
               navbar). Desktop block above is untouched. */}
           <div className="md:hidden relative z-10 flex flex-col min-h-[330px]" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
             {/* top: tagline only on mobile (label + headline remain on the desktop block) */}
-            <div className="container-site w-full pt-3">
+            <div className="container-site w-full pt-7">
               <p className="text-sm font-bold text-[#2DC4D4] leading-tight [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                 20 Years of Expert Skin Care for Adults &amp; Children
               </p>
@@ -151,21 +147,21 @@ export default function HomePage() {
             {/* open banner — image shows through */}
             <div className="flex-1 min-h-[80px]" aria-hidden="true" />
 
-            {/* service text — pinned to bottom, 3 lines, 12px, 12px from the edge */}
-            <div className="px-3 pb-3">
-              <p className="text-[12px] leading-tight font-semibold [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                <Link href={heroServiceLinks.adultPediatric.href} className={heroLinkClass}>Adult &amp; Pediatric Dermatology</Link>
+            {/* service text — pinned to bottom, looser line spacing, 12px from the edge */}
+            <div className="px-3 pb-3 space-y-2">
+              <p className="text-[12px] leading-snug font-semibold [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                <Link href={heroServiceLinks.adultPediatric.href} className={heroServiceLinkClass}>Adult &amp; Pediatric Dermatology</Link>
               </p>
-              <p className="text-[11px] tracking-tight leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                <Link href={heroServiceLinks.mohs.href} className={heroLinkClass}>Mohs Surgery &amp; Skin Cancer Treatment</Link>
+              <p className="text-[11px] tracking-tight leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                <Link href={heroServiceLinks.mohs.href} className={heroServiceLinkClass}>Mohs Surgery &amp; Skin Cancer Treatment</Link>
                 <span className="text-white"> · </span>
-                <Link href={heroServiceLinks.srt.href} className={heroLinkClass}>Superficial Radiation Therapy</Link>
+                <Link href={heroServiceLinks.srt.href} className={heroServiceLinkClass}>Superficial Radiation Therapy</Link>
               </p>
-              <p className="text-[12px] leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                <Link href={heroServiceLinks.cosmetic.href} className={heroLinkClass}>Cosmetic Dermatology &amp; Lasers</Link>
+              <p className="text-[12px] leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                <Link href={heroServiceLinks.cosmetic.href} className={heroServiceLinkClass}>Cosmetic Dermatology &amp; Lasers</Link>
               </p>
-              <p className="text-[12px] leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                <Link href={heroServiceLinks.locations.href} className={heroLinkClass}>Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL</Link>
+              <p className="text-[12px] leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                <Link href={heroServiceLinks.locations.href} className={heroLocationsLinkClass}>Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL</Link>
               </p>
             </div>
           </div>
