@@ -17,6 +17,17 @@ const homeFaqs = [
   { question: 'Do you treat children?', answer: 'Yes. Our practice provides adult and pediatric dermatology for patients of all ages.' },
 ];
 
+// Hero service links — shared by the desktop and mobile hero blocks so the
+// label/href mapping stays in sync.
+const heroServiceLinks = {
+  adultPediatric: { label: 'Adult & Pediatric Dermatology', href: '/services/adult-pediatric-dermatology' },
+  mohs: { label: 'Mohs Surgery & Skin Cancer Treatment', href: '/services/mohs-surgery' },
+  srt: { label: 'Superficial Radiation Therapy', href: '/services/superficial-radiation-treatment' },
+  cosmetic: { label: 'Cosmetic Dermatology & Lasers', href: '/services/laser-treatments' },
+  locations: { label: 'Serving Oviedo, Orlando, Lake Mary & Casselberry, FL', href: '/locations' },
+};
+const heroLinkClass = 'text-[#2a9a9a] hover:underline cursor-pointer';
+
 const serviceImages = {
   'adult-pediatric-dermatology': 'services-adult-and-pediatric-dermatology.png',
   'skin-cancer-surgery': 'services-skin-cancer-surgery.png',
@@ -88,21 +99,23 @@ export default function HomePage() {
                 </p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 md:gap-y-1.5 mt-4 mb-4 md:mt-0 md:mb-3 max-w-xl">
                   {[
-                    'Adult & Pediatric Dermatology',
-                    'Mohs Surgery & Skin Cancer Treatment',
-                    'Superficial Radiation Therapy',
-                    'Cosmetic Dermatology & Lasers',
-                  ].map((item) => (
+                    heroServiceLinks.adultPediatric,
+                    heroServiceLinks.mohs,
+                    heroServiceLinks.srt,
+                    heroServiceLinks.cosmetic,
+                  ].map(({ label, href }) => (
                     <li
-                      key={item}
-                      className="text-sm md:text-base leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
+                      key={href}
+                      className="text-sm md:text-base leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
                     >
-                      {item}
+                      <Link href={href} className={heroLinkClass}>{label}</Link>
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs md:text-sm text-[#F0F4F4]/85 mb-6 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
-                  Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
+                <p className="text-xs md:text-sm mb-6 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
+                  <Link href={heroServiceLinks.locations.href} className={heroLinkClass}>
+                    Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
+                  </Link>
                 </p>
                 <div className="mt-auto md:mt-0 flex flex-col md:flex-row md:flex-wrap gap-3">
                   <a
@@ -140,17 +153,19 @@ export default function HomePage() {
 
             {/* service text — pinned to bottom, 3 lines, 12px, 12px from the edge */}
             <div className="px-3 pb-3">
-              <p className="text-[12px] leading-tight font-semibold text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                Adult &amp; Pediatric Dermatology
+              <p className="text-[12px] leading-tight font-semibold [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                <Link href={heroServiceLinks.adultPediatric.href} className={heroLinkClass}>Adult &amp; Pediatric Dermatology</Link>
               </p>
-              <p className="text-[11px] tracking-tight leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                Mohs Surgery &amp; Skin Cancer Treatment · Superficial Radiation Therapy
+              <p className="text-[11px] tracking-tight leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                <Link href={heroServiceLinks.mohs.href} className={heroLinkClass}>Mohs Surgery &amp; Skin Cancer Treatment</Link>
+                <span className="text-white"> · </span>
+                <Link href={heroServiceLinks.srt.href} className={heroLinkClass}>Superficial Radiation Therapy</Link>
               </p>
-              <p className="text-[12px] leading-tight text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                Cosmetic Dermatology &amp; Lasers
+              <p className="text-[12px] leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                <Link href={heroServiceLinks.cosmetic.href} className={heroLinkClass}>Cosmetic Dermatology &amp; Lasers</Link>
               </p>
-              <p className="text-[12px] leading-tight text-[#F0F4F4]/90 [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
+              <p className="text-[12px] leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
+                <Link href={heroServiceLinks.locations.href} className={heroLinkClass}>Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL</Link>
               </p>
             </div>
           </div>

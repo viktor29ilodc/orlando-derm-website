@@ -4,3 +4,8 @@ out/
 .env
 .env.local
 .DS_Store
+
+# Scratch artifacts from local tooling/agents (screenshots, capture scripts)
+.tmp-screenshots/
+scripts/capture_*.py
+scripts/hero_*.py
