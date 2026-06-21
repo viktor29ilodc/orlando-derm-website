@@ -26,9 +26,10 @@ const heroServiceLinks = {
   cosmetic: { label: 'Cosmetic Dermatology & Lasers', href: '/services/laser-treatments' },
   locations: { label: 'Serving Oviedo, Orlando, Lake Mary & Casselberry, FL', href: '/locations' },
 };
-// Hero link styling — two-tone brand palette, always underlined.
-const heroServiceLinkClass = 'text-[#2DC4D4] underline hover:opacity-80 cursor-pointer';
-const heroLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
+// Hero links — navy (#0A2240, matches the nav bar) on a translucent white
+// chip so they stay legible over the dark hero photo. Always underlined.
+const heroServiceLinkClass = 'inline-block bg-white/90 hover:bg-white text-navy underline rounded px-2 py-0.5 cursor-pointer [text-shadow:none]';
+const heroLocationsLinkClass = heroServiceLinkClass;
 
 const serviceImages = {
   'adult-pediatric-dermatology': 'services-adult-and-pediatric-dermatology.png',
@@ -137,8 +138,9 @@ export default function HomePage() {
               middle, service text pinned to the bottom, no buttons (they're in the
               navbar). Desktop block above is untouched. */}
           <div className="md:hidden relative z-10 flex flex-col min-h-[330px]" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
-            {/* top: tagline only on mobile (label + headline remain on the desktop block) */}
-            <div className="container-site w-full pt-7">
+            {/* top: tagline only on mobile (label + headline remain on the desktop block).
+                !pt-12 forces top padding past .container-site's `padding:0` shorthand. */}
+            <div className="container-site w-full !pt-12">
               <p className="text-sm font-bold text-[#2DC4D4] leading-tight [text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                 20 Years of Expert Skin Care for Adults &amp; Children
               </p>
