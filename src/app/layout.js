@@ -15,6 +15,11 @@ export const metadata = {
     template: '%s | Orlando Dermatology Center',
   },
   description: PRACTICE.description,
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
