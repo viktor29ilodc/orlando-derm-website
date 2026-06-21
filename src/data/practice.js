@@ -122,7 +122,7 @@ export const PROVIDERS = [
   {
     id: 'tim-nyckowski-do',
     name: 'Tim Nyckowski, DO',
-    title: 'Dermatologist',
+    title: 'Dermatologist & Mohs Surgeon',
     npi: '1003313735',
     credentials: ['Double Board-Certified Dermatologist'],
     education: 'University of Illinois at Urbana-Champaign, Des Moines University',
