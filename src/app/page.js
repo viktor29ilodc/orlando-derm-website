@@ -26,10 +26,14 @@ const heroServiceLinks = {
   cosmetic: { label: 'Cosmetic Dermatology & Lasers', href: '/services/laser-treatments' },
   locations: { label: 'Serving Oviedo, Orlando, Lake Mary & Casselberry, FL', href: '/locations' },
 };
-// Hero links — navy (#0A2240, matches the nav bar) on a translucent white
-// chip so they stay legible over the dark hero photo. Always underlined.
-const heroServiceLinkClass = 'inline-block bg-white/90 hover:bg-white text-navy underline rounded px-2 py-0.5 cursor-pointer [text-shadow:none]';
-const heroLocationsLinkClass = heroServiceLinkClass;
+// Desktop hero links — brand teal two-tone, underlined (pre-chip styling).
+const heroDesktopServiceLinkClass = 'text-[#2DC4D4] underline hover:opacity-80 cursor-pointer';
+const heroDesktopLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
+
+// Mobile hero links — plain navy (#0A2240, matches the nav bar) text,
+// underlined, no chip/background; a light halo keeps it legible on the photo.
+const heroMobileServiceLinkClass = 'text-navy underline hover:opacity-80 cursor-pointer [text-shadow:0_1px_2px_rgba(255,255,255,0.9)]';
+const heroMobileLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
 
 const serviceImages = {
   'adult-pediatric-dermatology': 'services-adult-and-pediatric-dermatology.png',
@@ -105,12 +109,12 @@ export default function HomePage() {
                       key={href}
                       className="text-sm md:text-base leading-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
                     >
-                      <Link href={href} className={heroServiceLinkClass}>{label}</Link>
+                      <Link href={href} className={heroDesktopServiceLinkClass}>{label}</Link>
                     </li>
                   ))}
                 </ul>
                 <p className="text-xs md:text-sm mb-6 md:mb-4 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">
-                  <Link href={heroServiceLinks.locations.href} className={heroLocationsLinkClass}>
+                  <Link href={heroServiceLinks.locations.href} className={heroDesktopLocationsLinkClass}>
                     Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL
                   </Link>
                 </p>
@@ -152,18 +156,18 @@ export default function HomePage() {
             {/* service text — pinned to bottom, looser line spacing, 12px from the edge */}
             <div className="px-3 pb-3 space-y-2">
               <p className="text-[12px] leading-snug font-semibold [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                <Link href={heroServiceLinks.adultPediatric.href} className={heroServiceLinkClass}>Adult &amp; Pediatric Dermatology</Link>
+                <Link href={heroServiceLinks.adultPediatric.href} className={heroMobileServiceLinkClass}>Adult &amp; Pediatric Dermatology</Link>
               </p>
               <p className="text-[11px] tracking-tight leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                <Link href={heroServiceLinks.mohs.href} className={heroServiceLinkClass}>Mohs Surgery &amp; Skin Cancer Treatment</Link>
+                <Link href={heroServiceLinks.mohs.href} className={heroMobileServiceLinkClass}>Mohs Surgery &amp; Skin Cancer Treatment</Link>
                 <span className="text-white"> · </span>
-                <Link href={heroServiceLinks.srt.href} className={heroServiceLinkClass}>Superficial Radiation Therapy</Link>
+                <Link href={heroServiceLinks.srt.href} className={heroMobileServiceLinkClass}>Superficial Radiation Therapy</Link>
               </p>
               <p className="text-[12px] leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                <Link href={heroServiceLinks.cosmetic.href} className={heroServiceLinkClass}>Cosmetic Dermatology &amp; Lasers</Link>
+                <Link href={heroServiceLinks.cosmetic.href} className={heroMobileServiceLinkClass}>Cosmetic Dermatology &amp; Lasers</Link>
               </p>
               <p className="text-[12px] leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
-                <Link href={heroServiceLinks.locations.href} className={heroLocationsLinkClass}>Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL</Link>
+                <Link href={heroServiceLinks.locations.href} className={heroMobileLocationsLinkClass}>Serving Oviedo, Orlando, Lake Mary &amp; Casselberry, FL</Link>
               </p>
             </div>
           </div>
