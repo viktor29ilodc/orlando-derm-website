@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PRACTICE, LOCATIONS, SERVICES, PROVIDERS } from '@/data/practice';
+import { PRACTICE, LOCATIONS, SERVICES, PROVIDERS, servicesForLocation } from '@/data/practice';
 import { TESTIMONIALS } from '@/data/testimonials';
 import { localBusinessSchema, breadcrumbSchema, SchemaScript } from '@/lib/schema';
 import { notFound } from 'next/navigation';
@@ -174,7 +174,7 @@ export default function LocationPage({ params }) {
         <div className="container-site">
           <h2 className="text-2xl font-bold text-navy mb-6">Services at Our {location.name} Office</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {SERVICES.map(service => (
+            {servicesForLocation(location.id).map(service => (
               <Link key={service.id} href={`/services/${service.slug}`}
                 className="bg-white border border-warm-gray rounded-card p-4 hover:border-sky-accent transition-colors group">
                 <h3 className="text-navy font-semibold text-sm group-hover:text-teal transition-colors">{service.name}</h3>

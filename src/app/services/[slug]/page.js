@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { PRACTICE, SERVICES, LOCATIONS } from '@/data/practice';
+import { PRACTICE, SERVICES, LOCATIONS, locationsForService } from '@/data/practice';
 import { SERVICE_CONTENT } from '@/data/content';
 import { medicalProcedureSchema, faqSchema, breadcrumbSchema, SchemaScript } from '@/lib/schema';
 import { notFound } from 'next/navigation';
@@ -28,6 +28,20 @@ export default function ServicePage({ params }) {
   const content = SERVICE_CONTENT[service.slug] || {};
   const faqs = content.faqs || [];
 
+  // Location availability for this service.
+  const availableLocations = locationsForService(service.id);
+  const atAllLocations = availableLocations.length === LOCATIONS.length;
+  const locationNames = availableLocations.map(l => l.name);
+  const locationNamesText = locationNames.length <= 1
+    ? locationNames.join('')
+    : `${locationNames.slice(0, -1).join(', ')} and ${locationNames[locationNames.length - 1]}`;
+  const availabilityText = atAllLocations
+    ? 'Available at all 4 Orlando Dermatology Center locations.'
+    : `Available at our ${locationNamesText} ${availableLocations.length === 1 ? 'location' : 'locations'}.`;
+  const locationsHeading = atAllLocations
+    ? 'Available at All 4 Locations'
+    : `Available at ${availableLocations.length} Location${availableLocations.length === 1 ? '' : 's'}`;
+
   return (
     <>
       <SchemaScript schema={medicalProcedureSchema(service)} />
@@ -50,7 +64,7 @@ export default function ServicePage({ params }) {
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{service.name}</h1>
           <p className="text-lg text-gray-300 max-w-2xl">
-            {service.shortDesc} Available at all 4 Orlando Dermatology Center locations.
+            {service.shortDesc} {availabilityText}
           </p>
           <div className="flex gap-4 mt-6">
             <a href={PRACTICE.bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-teal hover:bg-teal-hover text-white px-6 py-3 rounded-card font-semibold transition-colors">
@@ -119,9 +133,9 @@ export default function ServicePage({ params }) {
       {/* Locations */}
       <section className="section-white py-12 md:py-16">
         <div className="container-site">
-          <h2 className="text-2xl font-bold text-navy mb-6">Available at All 4 Locations</h2>
+          <h2 className="text-2xl font-bold text-navy mb-6">{locationsHeading}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {LOCATIONS.map(loc => (
+            {availableLocations.map(loc => (
               <Link key={loc.id} href={`/locations/${loc.id}`} className="bg-white border border-warm-gray rounded-card p-4 hover:border-sky-accent transition-colors">
                 <h3 className="text-navy font-semibold text-sm mb-1">{loc.name}</h3>
                 <p className="text-dark-gray text-xs mb-2">{loc.address}</p>

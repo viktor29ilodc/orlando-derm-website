@@ -185,6 +185,37 @@ export const SERVICES = [
   { id: 'laser-treatments', name: 'Laser Treatments', category: 'cosmetic', slug: 'laser-treatments', shortDesc: 'Advanced laser technology for skin rejuvenation and correction.', procedureType: 'NoninvasiveProcedure', bodyLocation: 'Skin' },
 ];
 
+// Location-specific service availability, keyed by service id and listing the
+// LOCATION ids where the service is offered. Any service NOT listed here is
+// available at all locations.
+export const SERVICE_AVAILABILITY = {
+  // Superficial Radiation Therapy (SRT) — Oviedo only.
+  'srt': ['oviedo'],
+  // Mohs Surgery — everywhere except Casselberry.
+  'mohs-surgery': ['oviedo', 'lake-mary', 'orlando-waterford-lakes'],
+  // Cosmetic Dermatology & Lasers (whole category) — Oviedo & Lake Mary only.
+  'botox-fillers': ['oviedo', 'lake-mary'],
+  'ipl': ['oviedo', 'lake-mary'],
+  'co2-laser': ['oviedo', 'lake-mary'],
+  'laser-vein': ['oviedo', 'lake-mary'],
+  'chemical-peels': ['oviedo', 'lake-mary'],
+  'skin-care': ['oviedo', 'lake-mary'],
+  'laser-treatments': ['oviedo', 'lake-mary'],
+};
+
+// Helpers: which locations offer a service, and which services a location offers.
+export function locationsForService(serviceId) {
+  const ids = SERVICE_AVAILABILITY[serviceId];
+  return ids ? LOCATIONS.filter(l => ids.includes(l.id)) : LOCATIONS;
+}
+
+export function servicesForLocation(locationId) {
+  return SERVICES.filter(s => {
+    const ids = SERVICE_AVAILABILITY[s.id];
+    return !ids || ids.includes(locationId);
+  });
+}
+
 export const CONDITIONS = [
   { id: 'acne', name: 'Acne', slug: 'acne', relatedServices: ['Adult & Pediatric Dermatology', 'Chemical Peels', 'Laser Treatments'] },
   { id: 'eczema', name: 'Eczema', slug: 'eczema', relatedServices: ['Adult & Pediatric Dermatology'] },
