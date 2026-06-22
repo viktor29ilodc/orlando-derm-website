@@ -30,9 +30,9 @@ const heroServiceLinks = {
 const heroDesktopServiceLinkClass = 'text-[#2DC4D4] underline hover:opacity-80 cursor-pointer';
 const heroDesktopLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
 
-// Mobile hero service links — white text, underline on hover only, no other
-// effects (the parent's subtle drop shadow matches the hero tagline).
-const heroMobileServiceLinkClass = 'text-white hover:underline cursor-pointer';
+// Mobile hero service links — white text, underline visible by default so
+// they clearly read as clickable.
+const heroMobileServiceLinkClass = 'text-white underline cursor-pointer';
 const heroMobileLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
 
 const serviceImages = {
