@@ -31,9 +31,8 @@ const heroDesktopServiceLinkClass = 'text-[#2DC4D4] underline hover:opacity-80 c
 const heroDesktopLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
 
 // Mobile hero links — plain navy (#0A2240, matches the nav bar) text,
-// underlined, no chip/background; a crisp white outline (4-direction shadow
-// + glow) keeps the dark text clearly readable over the photo.
-const heroMobileServiceLinkClass = 'text-navy underline hover:opacity-80 cursor-pointer [text-shadow:1px_1px_2px_#fff,-1px_1px_2px_#fff,1px_-1px_2px_#fff,-1px_-1px_2px_#fff,0_0_4px_#fff]';
+// underlined, no chip/background and no shadow/halo effects.
+const heroMobileServiceLinkClass = 'text-navy underline hover:opacity-80 cursor-pointer [text-shadow:none]';
 const heroMobileLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
 
 const serviceImages = {

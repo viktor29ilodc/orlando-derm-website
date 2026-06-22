@@ -7,5 +7,9 @@ out/
 
 # Scratch artifacts from local tooling/agents (screenshots, capture scripts)
 .tmp-screenshots/
+# Also catch mangled/flattened variants (e.g. Windows backslash paths that
+# collapse into a single root filename) so they can't slip past the rule above.
+*tmp-screenshots*
+*hero-confirm*
 scripts/capture_*.py
 scripts/hero_*.py
