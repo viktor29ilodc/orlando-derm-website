@@ -11,13 +11,21 @@ const PLANS = [
   'Aetna',
   'Blue Cross Blue Shield (BCBS)',
   'Cigna',
-  'United Healthcare',
+  'UnitedHealthcare (UHC)',
   'Humana',
+  'Humana Gold',
+  'WellCare',
   'Medicare',
-  'Tricare',
+  'Medicare Advantage Plans',
+  'Oscar',
+  'Ambetter',
   'Florida Blue',
+  'AdventHealth Insurance',
+  'Orlando Health Insurance',
+  'Tricare',
   'UMR',
   'Multiplan / PHCS',
+  'And all other major regional and national insurance plans',
 ];
 
 export default function InsurancePage() {
