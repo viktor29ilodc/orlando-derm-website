@@ -47,9 +47,9 @@ export default function InsurancePage() {
 
       <section className="section-white py-12 md:py-16">
         <div className="container-site max-w-3xl">
-          <h2 className="text-2xl font-bold text-navy mb-6">Accepted Insurance Plans</h2>
+          <h2 className="text-2xl font-bold text-navy mb-6">Insurance Coverage</h2>
           <p className="text-dark-gray mb-6">
-            We participate with most major insurance carriers for medically necessary dermatology, including:
+            We are in-network with all local health insurance carriers, including but not limited to:
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 mb-6">
             {PLANS.map(plan => (
