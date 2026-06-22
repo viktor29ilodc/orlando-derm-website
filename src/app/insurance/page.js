@@ -25,7 +25,6 @@ const PLANS = [
   'Tricare',
   'UMR',
   'Multiplan / PHCS',
-  'And all other major regional and national insurance plans',
 ];
 
 export default function InsurancePage() {
@@ -61,7 +60,7 @@ export default function InsurancePage() {
           </ul>
           <p className="text-dark-gray mb-10">
             Plan participation can vary by location and product. Because coverage changes frequently, please
-            call your nearest office to confirm that we are in-network for your specific plan before your appointment.
+            contact your insurance carrier to confirm that we are in-network for your specific plan before your appointment.
           </p>
 
           <h2 className="text-2xl font-bold text-navy mb-6">Referrals</h2>
