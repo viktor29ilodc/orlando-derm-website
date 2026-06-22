@@ -22,7 +22,7 @@ const homeFaqs = [
 const heroServiceLinks = {
   adultPediatric: { label: 'Adult & Pediatric Dermatology', href: '/services/adult-pediatric-dermatology' },
   mohs: { label: 'Mohs Surgery & Skin Cancer Treatment', href: '/services/mohs-surgery' },
-  srt: { label: 'Superficial Radiation Therapy', href: '/services/superficial-radiation-treatment' },
+  srt: { label: 'Superficial Radiation Therapy (SRT)', href: '/services/superficial-radiation-treatment' },
   cosmetic: { label: 'Cosmetic Dermatology & Lasers', href: '/services/laser-treatments' },
   locations: { label: 'Serving Oviedo, Orlando, Lake Mary & Casselberry, FL', href: '/locations' },
 };
@@ -31,8 +31,9 @@ const heroDesktopServiceLinkClass = 'text-[#2DC4D4] underline hover:opacity-80 c
 const heroDesktopLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
 
 // Mobile hero links — plain navy (#0A2240, matches the nav bar) text,
-// underlined, no chip/background; a light halo keeps it legible on the photo.
-const heroMobileServiceLinkClass = 'text-navy underline hover:opacity-80 cursor-pointer [text-shadow:0_1px_2px_rgba(255,255,255,0.9)]';
+// underlined, no chip/background; a crisp white outline (4-direction shadow
+// + glow) keeps the dark text clearly readable over the photo.
+const heroMobileServiceLinkClass = 'text-navy underline hover:opacity-80 cursor-pointer [text-shadow:1px_1px_2px_#fff,-1px_1px_2px_#fff,1px_-1px_2px_#fff,-1px_-1px_2px_#fff,0_0_4px_#fff]';
 const heroMobileLocationsLinkClass = 'text-[#6CB4D9] underline hover:opacity-80 cursor-pointer';
 
 const serviceImages = {
@@ -161,7 +162,7 @@ export default function HomePage() {
               <p className="text-[11px] tracking-tight leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
                 <Link href={heroServiceLinks.mohs.href} className={heroMobileServiceLinkClass}>Mohs Surgery &amp; Skin Cancer Treatment</Link>
                 <span className="text-white"> · </span>
-                <Link href={heroServiceLinks.srt.href} className={heroMobileServiceLinkClass}>Superficial Radiation Therapy</Link>
+                <Link href={heroServiceLinks.srt.href} className={heroMobileServiceLinkClass}>Superficial Radiation Therapy (SRT)</Link>
               </p>
               <p className="text-[12px] leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.85)]">
                 <Link href={heroServiceLinks.cosmetic.href} className={heroMobileServiceLinkClass}>Cosmetic Dermatology &amp; Lasers</Link>
