@@ -1,7 +1,7 @@
 ---
 title: "Cosmetic Skin Treatments"
 date: 2015-11-11
-excerpt: "An overview of cosmetic skin surgery performed by dermatologists, covering minimally invasive procedures such as anti-aging treatments, chemical peels, dermabrasion, hair restoration, and laser hair removal."
+excerpt: "An overview of cosmetic skin surgery performed by dermatologists, covering minimally invasive procedures such as anti-aging treatments, chemical peels, dermabrasion, and hair restoration."
 image: "/images/blog/422057.webp"
 author: ""
 ---
@@ -21,7 +21,5 @@ The differences between a common plastic surgeon and a dermatologic surgeon are 
 **Dermabrasion:** Resurfacing the skin can be done with chemicals but in some cases of scarring, removing tattoos and minimizing age spots and skin growths dermabrasion is required. Dermabrasion mechanically smooths the skin to achieve a rejuvenated appearance.
 
 **Hair Loss and Restoration:** Dermatology is the only medical specialty that focuses on the biology of hair. Hair transplant procedures were invented by dermatologic surgeons back in the 1950s. Other hair restoration treatment uses scalp reduction, scalp extenders, scalp lift and scalp flaps.
-
-**Laser Hair Removal:** Laser technology has revolutionized the cosmetic practice of dermatologic surgery. The light-based technologies work by penetrating the melanin in the hair shaft and disabling the hair follicle.
 
 The Orlando Dermatology Center has two locations for your family's convenience. It is a full-service clinic with a great reputation for cosmetic and medical procedures for both pediatric and adult patients. To schedule an appointment online now, [click here](/contact).

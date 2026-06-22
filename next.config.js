@@ -15,7 +15,15 @@ const nextConfig = {
   
   // Compress responses
   compress: true,
-  
+
+  // Permanent redirects for removed pages (e.g. retired blog posts)
+  async redirects() {
+    return [
+      { source: '/blog/how-does-laser-hair-removal-compare-to-traditional-methods', destination: '/blog', permanent: true },
+      { source: '/blog/yes-you-can-remove-hair-there', destination: '/blog', permanent: true },
+    ];
+  },
+
   // Security headers
   async headers() {
     // CSP permits: inline JSON-LD + Next's inline runtime, Google Maps embeds,

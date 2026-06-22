@@ -18,7 +18,7 @@ The Oviedo location: [7250 Red Bug Lake Rd, # 1020, Oviedo, FL 32765](https://ww
 
 We understand at the Orlando Dermatology Center that our patients live busy lives and cannot always call in during business hours to schedule an appointment. That's why we encourage you to fill out our online form so that we can properly schedule your appointment faster. You can fill out the form below or visit the scheduling page [here](/contact).
 
-It is important to us to make sure you are able to reach us at anytime, anywhere, from any device. Our website was created to run on all devices (phones, tablets, computers, and large screens) to make sure you can schedule an appointment on the move. We respect your busy lives so we try to keep scheduling appropriately to keep wait times low. Some patients come in for "lunch break" treatments such as laser hair removal or keloid CryoDestructionâ„¢ and we want to get them back to their productive day as fast as possible. Schedule an appointment today to experience how our well-trained, informative and friendly staff can provide dermatologic needs to you quickly and safely.
+It is important to us to make sure you are able to reach us at anytime, anywhere, from any device. Our website was created to run on all devices (phones, tablets, computers, and large screens) to make sure you can schedule an appointment on the move. We respect your busy lives so we try to keep scheduling appropriately to keep wait times low. Some patients come in for "lunch break" treatments such as keloid CryoDestructionâ„¢ and we want to get them back to their productive day as fast as possible. Schedule an appointment today to experience how our well-trained, informative and friendly staff can provide dermatologic needs to you quickly and safely.
 
 ## Common Dermatological Procedures
 
@@ -28,7 +28,6 @@ Our list of services is long. Some common procedures include:
 
 **Cosmetic:**
 
-- [Laser Hair Removal](/services/laser-treatments)
 - Acne Scar Removal and/or Reduction
 - Chemical Peels
 - Facial Skin Resurfacing

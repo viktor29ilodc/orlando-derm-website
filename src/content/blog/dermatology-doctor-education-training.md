@@ -14,7 +14,7 @@ Dermatology Doctors also improve the appearance of their patients' skin, hair, a
 
 - Diminish wrinkles, age spots, and other signs of aging.
 - Have less noticeable acne scars.
-- Use laser treatments to remove hair and skin conditions.
+- Use laser treatments to address various skin conditions.
 - Look more like themselves after surgery to remove skin cancer.
 
 Dermatologists see patients of all ages â€” from newborns to people older than 100 years of age. Orlando Dermatology Center is a full-service dermatology clinic serving all ages and includes Mohs surgery.

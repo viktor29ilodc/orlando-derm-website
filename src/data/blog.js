@@ -198,26 +198,10 @@ export const BLOG_POSTS =[
         "author":  "Vitaly Blatnoy, MD"
     },
     {
-        "slug":  "yes-you-can-remove-hair-there",
-        "title":  "Yes, You CAN Remove Hair There",
-        "date":  "2024-06-13",
-        "excerpt":  "Modern laser hair removal can target nearly any body area where you typically shave, offering longer-lasting smoothness than waxing or shaving. Learn which areas are safe to treat, the rare limitations, and whether you\u0027re a good candidate.",
-        "image":  "",
-        "author":  "Vitaly Blatnoy, MD"
-    },
-    {
         "slug":  "can-wrinkles-be-prevented",
         "title":  "Can Wrinkles Be Prevented?",
         "date":  "2024-05-16",
         "excerpt":  "Wrinkles are an unavoidable part of aging, but you can slow them down. Orlando Dermatology Center shares five practical tips for preventing premature skin aging, from sun protection to lifestyle changes.",
-        "image":  "",
-        "author":  "Vitaly Blatnoy, MD"
-    },
-    {
-        "slug":  "how-does-laser-hair-removal-compare-to-traditional-methods",
-        "title":  "How Does Laser Hair Removal Compare to Traditional Methods?",
-        "date":  "2024-04-09",
-        "excerpt":  "Compare laser hair removal with traditional methods like shaving, waxing, and plucking to see why laser treatments offer longer-lasting, lower-maintenance results for smooth, hair-free skin.",
         "image":  "",
         "author":  "Vitaly Blatnoy, MD"
     },
@@ -865,7 +849,7 @@ export const BLOG_POSTS =[
         "slug":  "cosmetic-skin-treatments",
         "title":  "Cosmetic Skin Treatments",
         "date":  "2015-11-11",
-        "excerpt":  "An overview of cosmetic skin surgery performed by dermatologists, covering minimally invasive procedures such as anti-aging treatments, chemical peels, dermabrasion, hair restoration, and laser hair removal.",
+        "excerpt":  "An overview of cosmetic skin surgery performed by dermatologists, covering minimally invasive procedures such as anti-aging treatments, chemical peels, dermabrasion, and hair restoration.",
         "image":  "/images/blog/422057.webp",
         "author":  "Vitaly Blatnoy, MD"
     },

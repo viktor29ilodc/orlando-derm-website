@@ -14,7 +14,7 @@ This is a dermatology clinic specializing in medical, cosmetic and surgical derm
 
 ## What are some of the types of services you offer?
 
-Orlando Dermatology Center offers preventative skin care with thorough skin examinations and mole checks. We also manage skin conditions such as acne, rosacea, psoriasis, warts, hives, skin allergies, infections, scars, rashes, excessive sweating, pigmented spots and eczema. We offer a wide range of procedures including skin surgery, chemical peels, sclerotherapy, Botulinum toxin, dermal fillers and pain-free laser hair removal.
+Orlando Dermatology Center offers preventative skin care with thorough skin examinations and mole checks. We also manage skin conditions such as acne, rosacea, psoriasis, warts, hives, skin allergies, infections, scars, rashes, excessive sweating, pigmented spots and eczema. We offer a wide range of procedures including skin surgery, chemical peels, sclerotherapy, Botulinum toxin, and dermal fillers.
 
 ## How and why did you first decide to open your business now?
 

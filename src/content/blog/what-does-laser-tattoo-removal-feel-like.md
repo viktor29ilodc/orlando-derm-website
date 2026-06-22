@@ -20,7 +20,7 @@ In this article, we explore the sensations of laser tattoo removal so you know w
 
 Laser tattoo removal is a noninvasive treatment for unwanted ink on the skin. The laser's energy breaks down ink particles, which causes them to disperse. They're then filtered out through your lymphatic system. This takes time, so you don't see immediate results from a laser tattoo removal session.
 
-Many people report significant discomfort during laser tattoo removal sessions. Without any form of anesthesia or numbing agent, people report laser tattoo removal feeling like "a hot rubber band or drip of bacon grease hitting the skin." Fortunately, laser hair removal is more advanced and comfortable than ever before.
+Many people report significant discomfort during laser tattoo removal sessions. Without any form of anesthesia or numbing agent, people report laser tattoo removal feeling like "a hot rubber band or drip of bacon grease hitting the skin." Fortunately, laser tattoo removal is more advanced and comfortable than ever before.
 
 Most people need multiple laser tattoo removal sessions to remove an unwanted tattoo completely. You can expect to undergo several sessions spaced 6-8 weeks apart for full tattoo removal.
 
