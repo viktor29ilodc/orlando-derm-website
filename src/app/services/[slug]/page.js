@@ -90,6 +90,20 @@ export default function ServicePage({ params }) {
             <p className="text-lg">{content.intro || service.shortDesc}</p>
           </div>
 
+          {/* Equipment / device image (responsive: full width on mobile, constrained on desktop) */}
+          {content.deviceImage && (
+            <figure className="mt-8">
+              <img
+                src={content.deviceImage.src}
+                alt={content.deviceImage.alt}
+                className="w-full md:max-w-2xl md:mx-auto rounded-card border border-warm-gray"
+              />
+              <figcaption className="mt-3 text-center text-sm text-mid-gray">
+                {content.deviceImage.caption}
+              </figcaption>
+            </figure>
+          )}
+
           {/* Reviewed by */}
           <div className="mt-8 p-4 bg-ice-white rounded-card border border-warm-gray">
             <p className="text-sm text-mid-gray">
