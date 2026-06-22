@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { label: 'Services', href: '/services' },
   { label: 'Laser Treatments', href: '/services/laser-treatments' },
   { label: 'New Patients', href: '/new-patients' },
+  { label: 'Insurance', href: '/insurance' },
   { label: 'Patient Portal', href: 'https://patientportal.advancedmd.com/account/logon?lk=140478', external: true },
   { label: 'Blog', href: '/blog' },
   { label: 'Testimonials', href: '/testimonials' },
