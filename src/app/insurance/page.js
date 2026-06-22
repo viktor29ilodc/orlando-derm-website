@@ -40,8 +40,7 @@ export default function InsurancePage() {
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Insurance & Financing</h1>
           <p className="text-lg text-gray-300 max-w-2xl">
-            Orlando Dermatology Center accepts most major insurance plans for medical dermatology, and offers
-            CareCredit financing for cosmetic treatments. Here is what you need to know before your visit.
+            Orlando Dermatology Center is in-network with all local health insurance carriers serving Central Florida.
           </p>
         </div>
       </section>
@@ -85,8 +84,13 @@ export default function InsurancePage() {
           </p>
 
           <h2 className="text-2xl font-bold text-navy mb-6">Verify Your Coverage</h2>
+          <p className="text-dark-gray mb-4">
+            Coverage details vary by individual plan and policy. Please check directly with your insurance carrier to
+            confirm your specific benefits, deductibles, and copay amounts. Your insurance provider is the most accurate
+            source for your coverage information.
+          </p>
           <p className="text-dark-gray mb-6">
-            Have questions about your benefits? Call the office nearest you and our team will help verify your coverage.
+            We recommend verifying your coverage with your insurance carrier before your appointment to avoid any surprises.
           </p>
           <div className="flex flex-wrap gap-3">
             {LOCATIONS.map(loc => (
