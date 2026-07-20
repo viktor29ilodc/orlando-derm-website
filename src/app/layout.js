@@ -3,6 +3,8 @@ import { PRACTICE, LOCATIONS, SERVICES, CONDITIONS } from '@/data/practice';
 import Link from 'next/link';
 import NavBar from '@/components/NavBar';
 import MobileStickyBar from '@/components/MobileStickyBar';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from 'next/script';
 
 // Non-production deployments (e.g. *.vercel.app preview builds) must not be
 // indexed — only the canonical production domain should appear in search.
@@ -122,6 +124,19 @@ export default function RootLayout({ children }) {
         <NavBar />
         <main className="pb-16 lg:pb-0">{children}</main>
         <Footer />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}');
+          `}
+        </Script>
         <MobileStickyBar />
       </body>
     </html>
